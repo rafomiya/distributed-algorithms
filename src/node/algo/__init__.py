@@ -1,10 +1,8 @@
-"""Registro de algoritmos. Para adicionar um: crie o módulo e registre aqui."""
-# from .heartbeat import Heartbeat
+"""Registro de algoritmos."""
+from .gossip import Gossip
 
 REGISTRY = {
-    # "ricart_agrawala": RicartAgrawala,
-    # "bully": Bully,
-    # "raft": Raft,
+    "gossip": Gossip,
 }
 
 

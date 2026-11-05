@@ -15,6 +15,7 @@ from .algo import load
 class Node:
     def __init__(self):
         self.id = socket.gethostname()                      # node1, node2, ...
+        self.num = int(self.id.replace("node", ""))
         self.n = int(os.environ.get("NUM_NODES", "3"))
         self.port = int(os.environ.get("PORT", "8000"))
         self.seed = int(os.environ.get("SEED", "42"))
@@ -23,12 +24,11 @@ class Node:
         self.peers = [
             f"node{i}"
             for i in range(1, self.n + 1)
-            if f"node{i}" != self.id
+            if (i % self.num or self.num % i) and self.num != i
         ]
         os.makedirs("/data/logs", exist_ok=True)
         self.logf = open(f"/data/logs/{self.id}.jsonl", "a", buffering=1)
         self.session = None
-        self.algo = load(os.environ.get("ALGO", "heartbeat"))(self)
 
     def log(self, event, **kw):
         line = json.dumps({
