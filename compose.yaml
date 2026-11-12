@@ -1,35 +1,67 @@
-x-node: &node
+x-computer: &computer
   build: .
-  image: node:dev
-  cap_add: [NET_ADMIN]          # necessário para tc/netem e iptables
-  restart: "no"                 # crash-stop: quem cair, fica caído até `recover`
-  environment:
+  image: ic-printing:dev
+  restart: "no"
+  cap_add: [NET_ADMIN]
+  environment: &computer-env
     NUM_NODES: ${NUM_NODES:-3}
     SEED: ${SEED:-42}
-    ALGO: ${ALGO:-heartbeat}
     RPC_TIMEOUT: ${RPC_TIMEOUT:-0.8}
-    PORT: "8000"
+    RETRY_INTERVAL: ${RETRY_INTERVAL:-0.2}
+    GOSSIP_INTERVAL: ${GOSSIP_INTERVAL:-0.5}
+    PEER_HOST_SUFFIX: -computers
+    LOG_DIR: /data/logs
   volumes:
-    - ./data/logs:/data/logs
-  networks: [dsnet]
-  healthcheck:
+    - ${LOG_DIR:-./data/logs}:/data/logs
+  networks: [computers, printers]
+  healthcheck: &health
     test: ["CMD", "curl", "-fs", "http://localhost:8000/health"]
-    interval: 2s
+    interval: 1s
     timeout: 1s
-    retries: 10
+    retries: 30
+
+x-printer: &printer
+  build: .
+  image: ic-printing:dev
+  command: ["python", "-m", "node.printer"]
+  restart: "no"
+  environment:
+    PAGE_SECONDS: ${PAGE_SECONDS:-0.15}
+    LOG_DIR: /data/logs
+  volumes:
+    - ${LOG_DIR:-./data/logs}:/data/logs
+  networks: [printers]
+  healthcheck: *health
 
 services:
-  node1:  {<<: *node, hostname: node1,  container_name: node1,  ports: ["8001:8000"]}
-  node2:  {<<: *node, hostname: node2,  container_name: node2,  ports: ["8002:8000"]}
-  node3:  {<<: *node, hostname: node3,  container_name: node3,  ports: ["8003:8000"]}
-  node4:  {<<: *node, hostname: node4,  container_name: node4,  ports: ["8004:8000"]}
-  node5:  {<<: *node, hostname: node5,  container_name: node5,  ports: ["8005:8000"]}
-  node6:  {<<: *node, hostname: node6,  container_name: node6,  ports: ["8006:8000"]}
-  node7:  {<<: *node, hostname: node7,  container_name: node7,  ports: ["8007:8000"]}
-  node8:  {<<: *node, hostname: node8,  container_name: node8,  ports: ["8008:8000"]}
-  node9:  {<<: *node, hostname: node9,  container_name: node9,  ports: ["8009:8000"]}
-  node10: {<<: *node, hostname: node10, container_name: node10, ports: ["8010:8000"]}
+  node1:
+    <<: *computer
+    hostname: node1
+    ports: ["127.0.0.1:8001:8000"]
+    networks: {computers: {aliases: [node1-computers]}, printers: {}}
+  node2:
+    <<: *computer
+    hostname: node2
+    ports: ["127.0.0.1:8002:8000"]
+    networks: {computers: {aliases: [node2-computers]}, printers: {}}
+  node3:
+    <<: *computer
+    hostname: node3
+    ports: ["127.0.0.1:8003:8000"]
+    networks: {computers: {aliases: [node3-computers]}, printers: {}}
+  node4:
+    <<: *computer
+    hostname: node4
+    ports: ["127.0.0.1:8004:8000"]
+    networks: {computers: {aliases: [node4-computers]}, printers: {}}
+  node5:
+    <<: *computer
+    hostname: node5
+    ports: ["127.0.0.1:8005:8000"]
+    networks: {computers: {aliases: [node5-computers]}, printers: {}}
+  printer1: {<<: *printer, hostname: printer1, ports: ["127.0.0.1:9001:8000"]}
+  printer2: {<<: *printer, hostname: printer2, ports: ["127.0.0.1:9002:8000"]}
 
 networks:
-  dsnet:
-    driver: bridge
+  computers: {driver: bridge}
+  printers: {driver: bridge}

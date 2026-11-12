@@ -1,10 +1,5 @@
-"""Registro de algoritmos."""
+"""Algoritmos implementados pela aplicação de impressão."""
 from .gossip import Gossip
+from .ricart_agrawala import RicartAgrawala
 
-REGISTRY = {
-    "gossip": Gossip,
-}
-
-
-def load(name):
-    return REGISTRY[name]
+__all__ = ["Gossip", "RicartAgrawala"]

@@ -1,0 +1,92 @@
+{
+  "jobs": [
+    {
+      "job_id": "node1:f843584995fc40959a549c58c2bf4989:2",
+      "computer": "node1",
+      "printer": "printer1",
+      "document": "node1-0.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node1:f843584995fc40959a549c58c2bf4989:2",
+      "acquire_ms": 580.0289740000153,
+      "total_ms": 644.3122919990856
+    },
+    {
+      "job_id": "node1:f843584995fc40959a549c58c2bf4989:3",
+      "computer": "node1",
+      "printer": "printer2",
+      "document": "node1-1.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node1:f843584995fc40959a549c58c2bf4989:3",
+      "acquire_ms": 624.605574999805,
+      "total_ms": 687.6438759991288
+    },
+    {
+      "job_id": "node2:5fcc8c49fbc04f89b1c048919bb2c157:1",
+      "computer": "node2",
+      "printer": "printer1",
+      "document": "node2-0.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node2:5fcc8c49fbc04f89b1c048919bb2c157:1",
+      "acquire_ms": 420.4428299999563,
+      "total_ms": 484.26179600028263
+    },
+    {
+      "job_id": "node2:5fcc8c49fbc04f89b1c048919bb2c157:2",
+      "computer": "node2",
+      "printer": "printer2",
+      "document": "node2-1.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node2:5fcc8c49fbc04f89b1c048919bb2c157:2",
+      "acquire_ms": 543.711780999729,
+      "total_ms": 611.4921610005695
+    },
+    {
+      "job_id": "node3:c5aa67b51f54421081a0c8063bb36edf:1",
+      "computer": "node3",
+      "printer": "printer1",
+      "document": "node3-0.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node3:c5aa67b51f54421081a0c8063bb36edf:1",
+      "acquire_ms": 501.49003399928915,
+      "total_ms": 569.2791040000884
+    },
+    {
+      "job_id": "node3:c5aa67b51f54421081a0c8063bb36edf:2",
+      "computer": "node3",
+      "printer": "printer2",
+      "document": "node3-1.pdf",
+      "pages": 1,
+      "status": "completed",
+      "request_id": "node3:c5aa67b51f54421081a0c8063bb36edf:2",
+      "acquire_ms": 468.3378879999509,
+      "total_ms": 533.9290880001499
+    }
+  ],
+  "gossip_convergence_ms": [
+    74.154919,
+    80.854129,
+    78.085479,
+    70.00297,
+    126.24961,
+    40.549207
+  ],
+  "rpc_metrics": {
+    "gossip_attempts": 29,
+    "gossip_bytes": 19133,
+    "gossip_failures": 0,
+    "ra_request_attempts": 171,
+    "ra_request_bytes": 27928,
+    "ra_request_response_bytes": 756,
+    "gossip_response_bytes": 15906,
+    "ra_request_dropped": 108,
+    "ra_reply_attempts": 12,
+    "ra_reply_bytes": 1742,
+    "ra_reply_response_bytes": 144,
+    "gossip_dropped": 12
+  }
+}
