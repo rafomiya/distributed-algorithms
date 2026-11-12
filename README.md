@@ -22,28 +22,38 @@ Os nomes e trabalhos simulam o IC; nenhuma impressora real é acessada.
 ## Executar com Docker Compose
 
 Requisitos: Docker Engine/Desktop com acesso ao daemon, Compose v2 ou superior,
-Bash, curl e Python >= 3.10. Instale a dependência Python para os clientes de
-experimentos, testes e demonstração:
+[just >= 1.21](https://just.systems/man/en/packages.html), Bash, curl e
+Python >= 3.10. Prepare o ambiente e inicie os serviços:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-scripts/sim.sh up 3 42
+just setup
+just up 3 42
 ```
 
-`up` inicia uma **nova execução completa**, encerrando os serviços anteriores.
+`just`, `just help` ou `just --list --unsorted` mostra os comandos, parâmetros e
+descrições na ordem do arquivo. `just --color never --list --unsorted` desativa
+as cores da listagem.
+O justfile usa `.venv/bin/python`, sem precisar ativar o ambiente virtual.
+Os argumentos de cada receita são posicionais, com padrões mostrados na ajuda.
+Por exemplo, `just setup python3.12` seleciona a versão de criação do ambiente.
+É possível usar outro diretório com `just venv=.venv-alt setup`, ou outro
+interpretador com `just python=/caminho/python test`. As variáveis de ambiente
+`VENV` e `PYTHON` também são respeitadas. Os scripts originais continuam
+disponíveis em `scripts/`.
+
+`just up` inicia uma **nova execução completa**, encerrando os serviços anteriores.
 São aceitos de três a cinco computadores. As duas impressoras sempre iniciam.
 Os logs anteriores são preservados em diretórios distintos sob `data/logs/`.
 As portas de controle são expostas apenas em localhost.
 
 ```bash
-scripts/sim.sh print 1 1 2 relatorio.pdf   # computador 1, impressora 1, 2 páginas
-scripts/sim.sh print 2 1 1 trabalho.pdf
-scripts/sim.sh print 3 2 3 artigo.pdf
-scripts/sim.sh status
-curl -fs http://localhost:8002/records
-scripts/sim.sh down
+just print 1 1 2 relatorio.pdf          # computador, impressora, páginas, documento
+just print 2 1 1 trabalho.pdf
+just print 3 2 3 "artigo do IC.pdf"
+just status
+just records 2
+just logs node1
+just down
 ```
 
 As submissões retornam HTTP 202: o trabalho permanece em espera até obter todas
@@ -55,24 +65,24 @@ em paralelo. Cada computador também mantém uma fila local por impressora.
 ## Demonstração e falhas
 
 ```bash
-scripts/sim.sh demo
+just demo
 ```
 
 A demonstração verifica automaticamente: disputa normal, partição apenas do
 gossip com histórico divergente e posterior convergência, partição total com
 pedidos bloqueados e retomada após `heal`, e crash-stop de um computador.
 Os estados de evidência são salvos em `data/demo/scenarios.json`. O ambiente
-permanece ativo com `node3` desligado; encerre-o com `scripts/sim.sh down`.
+permanece ativo com `node3` desligado; encerre-o com `just down`.
 
 Também é possível controlar as falhas manualmente:
 
 ```bash
-scripts/sim.sh partition '1,2' '3'
-scripts/sim.sh print 1 1
-scripts/sim.sh heal
-scripts/sim.sh pause printer1
-scripts/sim.sh unpause printer1
-scripts/sim.sh crash node3
+just partition 1,2 3
+just print 1 1
+just heal
+just pause printer1
+just unpause printer1
+just crash node3
 ```
 
 `partition`/`heal` atuam no envio de mensagens da aplicação entre computadores;
@@ -84,21 +94,30 @@ versão: após um crash, inicie uma nova execução completa com `up`.
 Para atraso/perda probabilística de RPC, com RNG separado e semente registrada:
 
 ```bash
-curl -fs http://localhost:8001/fault -H 'Content-Type: application/json' \
-  -d '{"delay_ms":50,"loss":0.2}'
+just fault 1 50 0.2
+just fault 1 50 0.2 gossip
 ```
 
-`types: ["gossip"]` restringe a falha ao gossip;
-`types: ["ra_request","ra_reply"]` restringe-a à coordenação.
-Sem `types`, a falha afeta ambos. A perda simulada ocorre antes do envio;
+O quarto argumento de `just fault` seleciona os tipos de RPC: `gossip` restringe
+a falha ao gossip; `"ra_request ra_reply"` restringe-a à coordenação.
+Sem esse argumento, a falha afeta ambos. A perda simulada ocorre antes do envio;
 respostas HTTP não são descartadas por esse mecanismo. O `netem` original também
-continua disponível em `scripts/sim.sh netem 1 100 10 5` (Linux/NET_ADMIN).
+continua disponível (Linux/NET_ADMIN):
+
+```bash
+just netem 1 100 10 5   # computador, atraso em ms, perda em %, jitter em ms
+just netem-clear 1
+```
+
+A perda em `just fault` é uma fração de 0 a 1; em `just netem` é uma porcentagem
+de 0 a 100.
 
 ## Testes e verificações
 
 ```bash
-scripts/sim.sh test
-python scripts/verify.py data/logs/DIRETORIO_DA_EXECUCAO
+just test
+just verify data/logs/DIRETORIO_DA_EXECUCAO
+just check
 ```
 
 Os testes incluem algoritmos em uma rede simulada e integração HTTP com três
@@ -117,7 +136,7 @@ Os ensaios normais exigem que não existam intervalos abertos ao terminar.
 O ambiente de referência é Docker Compose:
 
 ```bash
-python scripts/experiments.py --backend docker
+just experiments
 ```
 
 Por padrão são **18 ensaios**: 3/4/5 computadores × normal/perda de 20% com 10 ms
@@ -127,9 +146,9 @@ dessa impressão e 0,5 s adicionais, excluídos da amostra. Uma rodada opcional 
 partições pode ser incluída com `--scenarios normal loss partition`.
 
 ```bash
-python scripts/experiments.py --backend docker --nodes 3 4 5 \
-  --seeds 11 22 33 --jobs-per-node 10 --warmup 1 \
-  --scenarios normal loss partition --output data/experiments/compose-final
+just experiments --nodes 3 4 5 --seeds 11 22 33 \
+  --jobs-per-node 10 --warmup 1 --scenarios normal loss partition \
+  --output data/experiments/compose-final
 ```
 
 Saídas: metadados de hardware/SO/Python/aiohttp/Docker/configuração em
@@ -157,9 +176,18 @@ e as latências entre processos pressupõem o mesmo relógio monotônico do host
 Sem Docker, os mesmos serviços podem ser exercitados em processos locais:
 
 ```bash
-python scripts/scenarios.py --backend local --output data/demo-local
-python scripts/experiments.py --backend local --output data/experiments/local
+just demo-local data/demo-local
+just experiments-local --output data/experiments/local
 ```
+
+As receitas experimentais encaminham os argumentos diretamente para
+`scripts/experiments.py`, incluindo `--gossip-interval 0.08`,
+`--partition-seconds 0.4` e `--timeout 30`. Consulte todas as opções com
+`just experiments --help`. Sem `--output`, os experimentos usam uma pasta com
+timestamp. Nas demonstrações, o diretório de saída é um argumento posicional
+opcional, com padrão `data/demo` ou `data/demo-local`.
+`just up N SEED` configura uma execução; `--nodes` e `--seeds` definem a matriz
+dos experimentos.
 
 Esse backend não reproduz isolamento de redes/contêineres e seus resultados não
 devem ser comparados diretamente aos do Compose. O conjunto inicial preservado
