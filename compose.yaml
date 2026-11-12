@@ -9,6 +9,8 @@ x-computer: &computer
     RPC_TIMEOUT: ${RPC_TIMEOUT:-0.8}
     RETRY_INTERVAL: ${RETRY_INTERVAL:-0.2}
     GOSSIP_INTERVAL: ${GOSSIP_INTERVAL:-0.5}
+    GOSSIP_FANOUT: ${GOSSIP_FANOUT:-1}
+    DATA_ITEMS: ${DATA_ITEMS:-5}
     PEER_HOST_SUFFIX: -computers
     LOG_DIR: /data/logs
   volumes:

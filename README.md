@@ -62,6 +62,24 @@ as permissões faltantes, os registros conhecidos e os contadores de RPC.
 A disputa é independente por impressora; impressoras diferentes podem trabalhar
 em paralelo. Cada computador também mantém uma fila local por impressora.
 
+O gossip mantém uma entrada versionada por computador, contendo os dados de
+exemplo e todos os seus registros de impressão. Novas versões preservam os
+registros anteriores; `/records` continua mostrando apenas o histórico de
+impressões. As respostas de anti-entropia retornam as entradas cujas versões
+o solicitante ainda não conhece.
+
+O intervalo e o número de pares de cada rodada podem ser configurados no Compose:
+
+```bash
+GOSSIP_INTERVAL=0.25 GOSSIP_FANOUT=2 just up 3 42
+```
+
+Os padrões são 0,5 s e um par. O fanout é limitado à quantidade de pares
+disponíveis; cada rodada aguarda as trocas e adiciona até 10% de jitter ao
+intervalo de espera. `DATA_ITEMS` controla a quantidade de inteiros de exemplo
+por entrada (padrão 5, ou 0 para desativá-los), sem alterar os registros de
+impressão. Essas opções ficam visíveis em `/state`.
+
 ## Demonstração e falhas
 
 ```bash

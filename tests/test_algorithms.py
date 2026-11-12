@@ -14,7 +14,7 @@ class Endpoint:
         self.rng = random.Random(name)
         self.network = network
         self.ra = RicartAgrawala(self, ["printer1", "printer2"], 0.005)
-        self.gossip = Gossip(self, 0.005)
+        self.gossip = Gossip(self, interval_s=0.005)
         self.events = []
 
     def log(self, event, **fields):

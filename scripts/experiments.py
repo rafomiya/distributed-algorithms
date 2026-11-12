@@ -47,6 +47,8 @@ def metadata(args):
         "git_status": version("git", "status", "--short"),
         "page_seconds": 0.05, "retry_interval": 0.03, "rpc_timeout": 0.8,
         "gossip_interval": args.gossip_interval, "failure_loss": 0.2, "failure_delay_ms": 10,
+        "gossip_fanout": int(os.environ.get("GOSSIP_FANOUT", "1")),
+        "data_items": int(os.environ.get("DATA_ITEMS", "5")),
         "topology": "malha completa de computadores e duas impressoras independentes"}
 
 

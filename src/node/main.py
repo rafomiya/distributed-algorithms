@@ -42,7 +42,7 @@ class Node:
         self.tasks = set()
         self.metrics = Counter()
         self.fault = {"delay_ms": 0, "loss": 0.0, "blocked_peers": [], "types": []}
-        self.gossip = Gossip(self, float(os.environ.get("GOSSIP_INTERVAL", "0.5")))
+        self.gossip = Gossip(self)
         self.ra = RicartAgrawala(self, self.printers, self.retry_interval)
 
     async def start(self, app):

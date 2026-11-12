@@ -98,14 +98,31 @@ carga e do número de pedidos anteriores para a mesma impressora.
 ## Segurança e vivacidade de Gossip
 
 Cada registro concluído é imutável e indexado por `job_id` globalmente único.
-O merge é união por ID: associativo, comutativo e idempotente para registros
-válidos. Conteúdos diferentes para um mesmo ID são erro. Somente o computador
-que recebeu a confirmação de impressão cria o registro; os demais o aprendem
-por anti-entropia. RPCs duplicadas não duplicam o histórico.
+Cada computador publica esses registros na própria entrada versionada, junto
+com os dados de exemplo. Publicar uma impressão incrementa a versão; atualizar
+os dados de exemplo preserva todos os registros. Snapshots novos não podem
+remover ou alterar impressões já conhecidas. Snapshots antigos são ignorados;
+conteúdo diferente com a mesma versão é erro. Um lote inválido é rejeitado antes
+de modificar o estado. Não há recuperação individual a partir de réplicas.
 
-Cada rodada escolhe um computador aleatório por semente, envia o histórico
-completo e incorpora o histórico retornado. Não há retransmissão dirigida a
-TODOS em cada evento: a difusão é feita pelas trocas periódicas aleatórias.
+O histórico apresentado pela aplicação é a união por ID dos registros dessas
+entradas: associativa, comutativa e idempotente para registros válidos.
+Conteúdos diferentes para um mesmo ID são erro. Somente o computador que recebeu
+a confirmação de impressão cria o registro; os demais o aprendem por
+anti-entropia. RPCs duplicadas não duplicam o histórico.
+
+Cada rodada escolhe até `GOSSIP_FANOUT` computadores aleatórios por semente
+(padrão 1), envia as entradas completas e as versões conhecidas e incorpora
+as entradas mais novas retornadas. As respostas omitem versões que o solicitante
+já conhece. A rodada aguarda as trocas, limitando RPCs simultâneas ao fanout, e
+espera `GOSSIP_INTERVAL` mais até 10% de jitter. A finalização cancela e aguarda
+as trocas em curso antes de fechar o cliente HTTP. Erros de uma troca são
+registrados e não impedem rodadas posteriores.
+
+`seconds_until_all_known` mede a primeira descoberta de todos os donos; não
+comprova que as versões ou impressões posteriores já convergiram. As métricas
+experimentais de convergência continuam usando os eventos `record_learned` por
+impressão e a igualdade do histórico em todas as réplicas.
 
 **Segurança:** um registro conhecido não muda nem é removido; mensagens
 duplicadas não criam outra impressão nem outra entrada no histórico. A
@@ -122,10 +139,12 @@ ficar sem histórico replicado se seu computador cair antes de divulgar a
 confirmação. Não há atomicidade entre efeito físico e publicação distribuída.
 Não se afirma consistência forte ou snapshot simultâneo das réplicas.
 
-**Custo:** uma rodada por computador envia uma RPC com o histórico completo e
-recebe outro histórico. O número de mensagens por rodada é O(N); o volume por
-rodada é O(NH), para histórico de tamanho H. O histórico cresce sem compactação;
-não se promete custo logarítmico de bytes. Delta gossip é uma melhoria futura.
+**Custo:** cada computador envia até F RPCs por rodada, para fanout efetivo F
+limitado a N-1. Uma rodada de todos os computadores usa O(NF) mensagens e até
+O(NFS) bytes, sendo S o tamanho serializado do estado completo, incluindo
+histórico, dados de exemplo e metadados. As respostas podem ser menores ao
+omitir versões já conhecidas. Ainda não há deltas por registro, paginação ou
+compactação do histórico; não se promete custo logarítmico de bytes.
 
 ## Observação e ensaios
 

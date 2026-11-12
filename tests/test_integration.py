@@ -22,6 +22,8 @@ class IntegrationTest(unittest.IsolatedAsyncioTestCase):
         await self.cluster.completed(6)
         states = await self.cluster.converged([job["job_id"] for job in jobs])
         assert_safety(states)
+        for node in self.cluster.computers:
+            self.assertEqual(states[node]["gossip"]["interval_s"], self.cluster.gossip_interval)
         for name in ("printer1", "printer2"):
             record = states[name]["jobs"][0]
             again = await self.cluster.request(name, "/print", record)
