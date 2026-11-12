@@ -245,9 +245,8 @@ class Gossip:
 
     def state(self):
         return {
-            "fanout": self.fanout,
-            "interval_s": self.interval_s,
-            "data_items": self.data_items,
+            # "fanout": self.fanout,
+            # "interval_s": self.interval_s,
             "rounds": self.rounds,
             "requests_sent": self.requests_sent,
             "requests_failed": self.requests_failed,
