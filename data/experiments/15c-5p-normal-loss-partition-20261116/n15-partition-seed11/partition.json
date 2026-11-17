@@ -25,11 +25,11 @@
       "printer5"
     ],
     "ra": {
-      "clock": 652,
+      "clock": 475,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node1:8b588b5544444d5f92df96267056072f:2",
+          "request_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:2",
           "waiting": [
             "node10",
             "node11",
@@ -43,32 +43,14 @@
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 1
+          "deferred": 0
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node1:8b588b5544444d5f92df96267056072f:3",
-          "waiting": [
-            "node10",
-            "node11",
-            "node12",
-            "node13",
-            "node14",
-            "node2",
-            "node3",
-            "node4",
-            "node5",
-            "node6",
-            "node7",
-            "node9"
-          ],
-          "deferred": 2
-        },
-        "printer3": {
-          "status": "WANTED",
-          "request_id": "node1:8b588b5544444d5f92df96267056072f:4",
+          "request_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:3",
           "waiting": [
             "node10",
             "node11",
@@ -82,9 +64,31 @@
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 1
+          "deferred": 0
+        },
+        "printer3": {
+          "status": "WANTED",
+          "request_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:4",
+          "waiting": [
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 0
         },
         "printer4": {
           "status": "RELEASED",
@@ -101,22 +105,22 @@
       }
     },
     "gossip": {
-      "rounds": 28,
-      "requests_sent": 28,
-      "requests_failed": 0,
-      "seconds_until_all_known": 0.355,
+      "rounds": 32,
+      "requests_sent": 32,
+      "requests_failed": 2,
+      "seconds_until_all_known": 0.541,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -131,15 +135,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -301,18 +305,18 @@
     },
     "jobs": [
       {
-        "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+        "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
         "computer": "node1",
         "printer": "printer1",
         "document": "warmup.pdf",
         "pages": 1,
         "status": "completed",
-        "request_id": "node1:8b588b5544444d5f92df96267056072f:1",
-        "acquire_ms": 53.56981698423624,
-        "total_ms": 123.83475998649374
+        "request_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
+        "acquire_ms": 48.93177101621404,
+        "total_ms": 118.67114901542664
       },
       {
-        "job_id": "node1:8b588b5544444d5f92df96267056072f:2",
+        "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:2",
         "computer": "node1",
         "printer": "printer1",
         "document": "node1-0.pdf",
@@ -320,7 +324,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node1:8b588b5544444d5f92df96267056072f:3",
+        "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:3",
         "computer": "node1",
         "printer": "printer2",
         "document": "node1-1.pdf",
@@ -328,7 +332,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node1:8b588b5544444d5f92df96267056072f:4",
+        "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:4",
         "computer": "node1",
         "printer": "printer3",
         "document": "node1-2.pdf",
@@ -337,21 +341,29 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 28,
-      "gossip_bytes": 39923,
-      "gossip_response_bytes": 1365,
-      "ra_request_attempts": 338,
-      "ra_request_bytes": 55692,
-      "ra_request_response_bytes": 3612,
-      "ra_request_dropped": 25,
-      "ra_reply_attempts": 39,
-      "ra_reply_bytes": 5704,
-      "ra_reply_response_bytes": 468
+      "gossip_attempts": 32,
+      "gossip_bytes": 44152,
+      "gossip_response_bytes": 1175,
+      "ra_request_attempts": 420,
+      "ra_request_bytes": 69216,
+      "ra_request_response_bytes": 2256,
+      "ra_request_dropped": 232,
+      "ra_reply_attempts": 18,
+      "ra_reply_bytes": 2640,
+      "ra_reply_response_bytes": 216,
+      "gossip_dropped": 2
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -383,38 +395,49 @@
       "printer5"
     ],
     "ra": {
-      "clock": 667,
+      "clock": 628,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node10:e287669b20584f4c8042808ae9bd6594:1",
+          "request_id": "node10:560ab2f330784f1da0446d94cf638c64:1",
           "waiting": [
-            "node9"
-          ],
-          "deferred": 13
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node10:e287669b20584f4c8042808ae9bd6594:2",
-          "waiting": [
-            "node3",
-            "node4",
-            "node7",
-            "node9"
-          ],
-          "deferred": 10
-        },
-        "printer3": {
-          "status": "WANTED",
-          "request_id": "node10:e287669b20584f4c8042808ae9bd6594:3",
-          "waiting": [
-            "node11",
             "node2",
             "node3",
             "node4",
             "node5",
             "node6",
             "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 6
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node10:560ab2f330784f1da0446d94cf638c64:2",
+          "waiting": [
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 6
+        },
+        "printer3": {
+          "status": "WANTED",
+          "request_id": "node10:560ab2f330784f1da0446d94cf638c64:3",
+          "waiting": [
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
             "node9"
           ],
           "deferred": 6
@@ -434,22 +457,22 @@
       }
     },
     "gossip": {
-      "rounds": 33,
-      "requests_sent": 33,
-      "requests_failed": 4,
-      "seconds_until_all_known": 0.733,
+      "rounds": 37,
+      "requests_sent": 37,
+      "requests_failed": 9,
+      "seconds_until_all_known": 0.898,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -464,15 +487,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -634,7 +657,7 @@
     },
     "jobs": [
       {
-        "job_id": "node10:e287669b20584f4c8042808ae9bd6594:1",
+        "job_id": "node10:560ab2f330784f1da0446d94cf638c64:1",
         "computer": "node10",
         "printer": "printer1",
         "document": "node10-0.pdf",
@@ -642,7 +665,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node10:e287669b20584f4c8042808ae9bd6594:2",
+        "job_id": "node10:560ab2f330784f1da0446d94cf638c64:2",
         "computer": "node10",
         "printer": "printer2",
         "document": "node10-1.pdf",
@@ -650,7 +673,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node10:e287669b20584f4c8042808ae9bd6594:3",
+        "job_id": "node10:560ab2f330784f1da0446d94cf638c64:3",
         "computer": "node10",
         "printer": "printer3",
         "document": "node10-2.pdf",
@@ -659,22 +682,30 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 33,
-      "gossip_bytes": 41938,
-      "gossip_failures": 4,
-      "gossip_response_bytes": 1078,
-      "ra_reply_attempts": 11,
-      "ra_reply_bytes": 1616,
-      "ra_reply_response_bytes": 132,
-      "ra_request_attempts": 144,
-      "ra_request_bytes": 23976,
-      "ra_request_dropped": 27,
-      "ra_request_response_bytes": 1404
+      "gossip_attempts": 37,
+      "gossip_bytes": 44885,
+      "gossip_failures": 7,
+      "gossip_response_bytes": 785,
+      "ra_reply_attempts": 1,
+      "ra_reply_bytes": 145,
+      "ra_reply_response_bytes": 12,
+      "ra_request_attempts": 318,
+      "ra_request_bytes": 52940,
+      "ra_request_dropped": 296,
+      "ra_request_response_bytes": 264,
+      "gossip_dropped": 2
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -706,39 +737,58 @@
       "printer5"
     ],
     "ra": {
-      "clock": 668,
+      "clock": 622,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:1",
+          "request_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:1",
           "waiting": [
             "node10",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 12
+          "deferred": 5
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:2",
+          "request_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:2",
           "waiting": [
             "node10",
+            "node13",
+            "node14",
+            "node2",
             "node3",
             "node4",
+            "node5",
+            "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 9
+          "deferred": 3
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:3",
+          "request_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:3",
           "waiting": [
+            "node10",
+            "node14",
+            "node2",
             "node3",
             "node4",
+            "node5",
+            "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 10
+          "deferred": 4
         },
         "printer4": {
           "status": "RELEASED",
@@ -755,22 +805,22 @@
       }
     },
     "gossip": {
-      "rounds": 31,
-      "requests_sent": 31,
+      "rounds": 29,
+      "requests_sent": 29,
       "requests_failed": 4,
-      "seconds_until_all_known": 0.539,
+      "seconds_until_all_known": 0.233,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -785,15 +835,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -955,7 +1005,7 @@
     },
     "jobs": [
       {
-        "job_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:1",
+        "job_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:1",
         "computer": "node11",
         "printer": "printer1",
         "document": "node11-0.pdf",
@@ -963,7 +1013,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:2",
+        "job_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:2",
         "computer": "node11",
         "printer": "printer2",
         "document": "node11-1.pdf",
@@ -971,7 +1021,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node11:f81b4bc544ea47eb80c957f6b87548b0:3",
+        "job_id": "node11:b366331c4e5f412695d9e5bec72ea4ad:3",
         "computer": "node11",
         "printer": "printer3",
         "document": "node11-2.pdf",
@@ -980,23 +1030,30 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 31,
-      "gossip_bytes": 40024,
-      "gossip_failures": 3,
-      "gossip_response_bytes": 1252,
-      "ra_reply_attempts": 10,
-      "ra_reply_bytes": 1469,
-      "ra_reply_response_bytes": 120,
-      "ra_request_attempts": 132,
-      "ra_request_bytes": 21967,
-      "ra_request_dropped": 25,
-      "ra_request_response_bytes": 1284,
-      "gossip_dropped": 1
+      "gossip_attempts": 29,
+      "gossip_bytes": 41005,
+      "gossip_failures": 1,
+      "gossip_response_bytes": 864,
+      "ra_reply_attempts": 7,
+      "ra_reply_bytes": 1030,
+      "ra_reply_response_bytes": 84,
+      "ra_request_attempts": 336,
+      "ra_request_bytes": 55950,
+      "ra_request_dropped": 256,
+      "ra_request_response_bytes": 960,
+      "gossip_dropped": 3
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -1028,36 +1085,11 @@
       "printer5"
     ],
     "ra": {
-      "clock": 676,
+      "clock": 635,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node12:c92c430240714d64b1c8bdab64ebcd34:1",
-          "waiting": [
-            "node10",
-            "node11",
-            "node9"
-          ],
-          "deferred": 11
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node12:c92c430240714d64b1c8bdab64ebcd34:2",
-          "waiting": [
-            "node10",
-            "node11",
-            "node2",
-            "node3",
-            "node4",
-            "node5",
-            "node7",
-            "node9"
-          ],
-          "deferred": 6
-        },
-        "printer3": {
-          "status": "WANTED",
-          "request_id": "node12:c92c430240714d64b1c8bdab64ebcd34:3",
+          "request_id": "node12:9e98d053c3e9491fb72f224053eee948:1",
           "waiting": [
             "node10",
             "node11",
@@ -1067,9 +1099,49 @@
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 5
+          "deferred": 4
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node12:9e98d053c3e9491fb72f224053eee948:2",
+          "waiting": [
+            "node10",
+            "node11",
+            "node13",
+            "node14",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 2
+        },
+        "printer3": {
+          "status": "WANTED",
+          "request_id": "node12:9e98d053c3e9491fb72f224053eee948:3",
+          "waiting": [
+            "node10",
+            "node11",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 1
         },
         "printer4": {
           "status": "RELEASED",
@@ -1086,22 +1158,22 @@
       }
     },
     "gossip": {
-      "rounds": 34,
-      "requests_sent": 34,
-      "requests_failed": 5,
-      "seconds_until_all_known": 0.777,
+      "rounds": 33,
+      "requests_sent": 33,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.64,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -1116,15 +1188,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -1286,7 +1358,7 @@
     },
     "jobs": [
       {
-        "job_id": "node12:c92c430240714d64b1c8bdab64ebcd34:1",
+        "job_id": "node12:9e98d053c3e9491fb72f224053eee948:1",
         "computer": "node12",
         "printer": "printer1",
         "document": "node12-0.pdf",
@@ -1294,7 +1366,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node12:c92c430240714d64b1c8bdab64ebcd34:2",
+        "job_id": "node12:9e98d053c3e9491fb72f224053eee948:2",
         "computer": "node12",
         "printer": "printer2",
         "document": "node12-1.pdf",
@@ -1302,7 +1374,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node12:c92c430240714d64b1c8bdab64ebcd34:3",
+        "job_id": "node12:9e98d053c3e9491fb72f224053eee948:3",
         "computer": "node12",
         "printer": "printer3",
         "document": "node12-2.pdf",
@@ -1311,22 +1383,30 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 34,
-      "gossip_bytes": 41747,
-      "gossip_failures": 5,
-      "gossip_response_bytes": 875,
-      "ra_reply_attempts": 18,
-      "ra_reply_bytes": 2649,
-      "ra_reply_response_bytes": 216,
-      "ra_request_attempts": 201,
-      "ra_request_bytes": 33481,
-      "ra_request_dropped": 27,
-      "ra_request_response_bytes": 2052
+      "gossip_attempts": 33,
+      "gossip_bytes": 43406,
+      "gossip_failures": 1,
+      "gossip_response_bytes": 1301,
+      "ra_reply_attempts": 14,
+      "ra_reply_bytes": 2064,
+      "ra_reply_response_bytes": 168,
+      "ra_request_attempts": 404,
+      "ra_request_bytes": 67288,
+      "ra_request_dropped": 272,
+      "ra_request_response_bytes": 1488,
+      "gossip_dropped": 2
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -1358,54 +1438,60 @@
       "printer5"
     ],
     "ra": {
-      "clock": 675,
+      "clock": 624,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node13:1eceb346b9eb4f15b8857666852b21a2:1",
+          "request_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:1",
           "waiting": [
             "node10",
             "node11",
             "node12",
-            "node9"
-          ],
-          "deferred": 10
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node13:1eceb346b9eb4f15b8857666852b21a2:2",
-          "waiting": [
-            "node10",
-            "node11",
-            "node12",
-            "node14",
-            "node2",
-            "node3",
-            "node4",
-            "node5",
-            "node7",
-            "node9"
-          ],
-          "deferred": 4
-        },
-        "printer3": {
-          "status": "WANTED",
-          "request_id": "node13:1eceb346b9eb4f15b8857666852b21a2:3",
-          "waiting": [
-            "node10",
-            "node11",
-            "node12",
-            "node14",
-            "node15",
             "node2",
             "node3",
             "node4",
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 2
+          "deferred": 3
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:2",
+          "waiting": [
+            "node10",
+            "node14",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 4
+        },
+        "printer3": {
+          "status": "WANTED",
+          "request_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:3",
+          "waiting": [
+            "node10",
+            "node11",
+            "node14",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 3
         },
         "printer4": {
           "status": "RELEASED",
@@ -1422,22 +1508,22 @@
       }
     },
     "gossip": {
-      "rounds": 32,
-      "requests_sent": 32,
-      "requests_failed": 4,
-      "seconds_until_all_known": 0.701,
+      "rounds": 29,
+      "requests_sent": 29,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.191,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -1452,15 +1538,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -1622,7 +1708,7 @@
     },
     "jobs": [
       {
-        "job_id": "node13:1eceb346b9eb4f15b8857666852b21a2:1",
+        "job_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:1",
         "computer": "node13",
         "printer": "printer1",
         "document": "node13-0.pdf",
@@ -1630,7 +1716,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node13:1eceb346b9eb4f15b8857666852b21a2:2",
+        "job_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:2",
         "computer": "node13",
         "printer": "printer2",
         "document": "node13-1.pdf",
@@ -1638,7 +1724,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node13:1eceb346b9eb4f15b8857666852b21a2:3",
+        "job_id": "node13:89d39c5d1bca4a8d86e142f5587a43e8:3",
         "computer": "node13",
         "printer": "printer3",
         "document": "node13-2.pdf",
@@ -1647,23 +1733,29 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 32,
-      "gossip_bytes": 41404,
-      "gossip_response_bytes": 1271,
-      "gossip_failures": 3,
-      "ra_reply_attempts": 26,
-      "ra_reply_bytes": 3831,
-      "ra_reply_response_bytes": 312,
-      "ra_request_attempts": 234,
-      "ra_request_bytes": 38986,
-      "ra_request_dropped": 25,
-      "ra_request_response_bytes": 2508,
-      "gossip_dropped": 1
+      "gossip_attempts": 29,
+      "gossip_bytes": 41374,
+      "gossip_response_bytes": 1746,
+      "ra_reply_attempts": 12,
+      "ra_reply_bytes": 1769,
+      "ra_reply_response_bytes": 144,
+      "gossip_dropped": 3,
+      "ra_request_attempts": 352,
+      "ra_request_bytes": 58606,
+      "ra_request_dropped": 256,
+      "ra_request_response_bytes": 1152
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -1695,52 +1787,58 @@
       "printer5"
     ],
     "ra": {
-      "clock": 678,
+      "clock": 631,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node14:037d91f461a3462ab055d570e40ba15b:1",
+          "request_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:1",
           "waiting": [
             "node10",
             "node11",
             "node12",
             "node13",
-            "node9"
-          ],
-          "deferred": 9
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node14:037d91f461a3462ab055d570e40ba15b:2",
-          "waiting": [
-            "node10",
-            "node11",
-            "node12",
-            "node2",
-            "node3",
-            "node4",
-            "node5",
-            "node7",
-            "node9"
-          ],
-          "deferred": 5
-        },
-        "printer3": {
-          "status": "WANTED",
-          "request_id": "node14:037d91f461a3462ab055d570e40ba15b:3",
-          "waiting": [
-            "node10",
-            "node11",
-            "node12",
             "node2",
             "node3",
             "node4",
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 4
+          "deferred": 2
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:2",
+          "waiting": [
+            "node10",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 5
+        },
+        "printer3": {
+          "status": "WANTED",
+          "request_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:3",
+          "waiting": [
+            "node10",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 5
         },
         "printer4": {
           "status": "RELEASED",
@@ -1757,22 +1855,22 @@
       }
     },
     "gossip": {
-      "rounds": 26,
-      "requests_sent": 26,
-      "requests_failed": 1,
-      "seconds_until_all_known": 0.243,
+      "rounds": 29,
+      "requests_sent": 29,
+      "requests_failed": 4,
+      "seconds_until_all_known": 0.195,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -1787,15 +1885,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -1957,7 +2055,7 @@
     },
     "jobs": [
       {
-        "job_id": "node14:037d91f461a3462ab055d570e40ba15b:1",
+        "job_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:1",
         "computer": "node14",
         "printer": "printer1",
         "document": "node14-0.pdf",
@@ -1965,7 +2063,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node14:037d91f461a3462ab055d570e40ba15b:2",
+        "job_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:2",
         "computer": "node14",
         "printer": "printer2",
         "document": "node14-1.pdf",
@@ -1973,7 +2071,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node14:037d91f461a3462ab055d570e40ba15b:3",
+        "job_id": "node14:f7e18ca76d6b4d2283c377eb5eb03188:3",
         "computer": "node14",
         "printer": "printer3",
         "document": "node14-2.pdf",
@@ -1982,22 +2080,29 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 26,
-      "gossip_bytes": 37084,
-      "gossip_response_bytes": 1440,
-      "ra_reply_attempts": 23,
-      "ra_reply_bytes": 3387,
-      "ra_reply_response_bytes": 276,
-      "ra_request_attempts": 220,
-      "ra_request_bytes": 36643,
-      "ra_request_dropped": 25,
-      "ra_request_response_bytes": 2232,
-      "gossip_dropped": 1
+      "gossip_attempts": 29,
+      "gossip_bytes": 41094,
+      "gossip_response_bytes": 1581,
+      "ra_reply_attempts": 7,
+      "ra_reply_bytes": 1029,
+      "ra_reply_response_bytes": 84,
+      "ra_request_attempts": 361,
+      "ra_request_bytes": 60098,
+      "ra_request_dropped": 272,
+      "ra_request_response_bytes": 1020,
+      "gossip_dropped": 4
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -2029,26 +2134,12 @@
       "printer5"
     ],
     "ra": {
-      "clock": 667,
+      "clock": 628,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:1",
+          "request_id": "node15:5a2c1154e29f409298497626ba79494e:1",
           "waiting": [
-            "node10",
-            "node11",
-            "node12",
-            "node13",
-            "node14",
-            "node9"
-          ],
-          "deferred": 8
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:2",
-          "waiting": [
-            "node1",
             "node10",
             "node11",
             "node12",
@@ -2060,17 +2151,38 @@
             "node5",
             "node6",
             "node7",
+            "node8",
+            "node9"
+          ],
+          "deferred": 1
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node15:5a2c1154e29f409298497626ba79494e:2",
+          "waiting": [
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6",
+            "node7",
+            "node8",
             "node9"
           ],
           "deferred": 1
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:3",
+          "request_id": "node15:5a2c1154e29f409298497626ba79494e:3",
           "waiting": [
             "node10",
             "node11",
-            "node12",
+            "node13",
             "node14",
             "node2",
             "node3",
@@ -2078,9 +2190,10 @@
             "node5",
             "node6",
             "node7",
+            "node8",
             "node9"
           ],
-          "deferred": 3
+          "deferred": 2
         },
         "printer4": {
           "status": "RELEASED",
@@ -2097,22 +2210,22 @@
       }
     },
     "gossip": {
-      "rounds": 27,
-      "requests_sent": 27,
-      "requests_failed": 0,
-      "seconds_until_all_known": 0.088,
+      "rounds": 33,
+      "requests_sent": 33,
+      "requests_failed": 2,
+      "seconds_until_all_known": 0.613,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -2127,15 +2240,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -2297,7 +2410,7 @@
     },
     "jobs": [
       {
-        "job_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:1",
+        "job_id": "node15:5a2c1154e29f409298497626ba79494e:1",
         "computer": "node15",
         "printer": "printer1",
         "document": "node15-0.pdf",
@@ -2305,7 +2418,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:2",
+        "job_id": "node15:5a2c1154e29f409298497626ba79494e:2",
         "computer": "node15",
         "printer": "printer2",
         "document": "node15-1.pdf",
@@ -2313,7 +2426,7 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node15:a1d70f71b30e4d1c87c941ce61f97a23:3",
+        "job_id": "node15:5a2c1154e29f409298497626ba79494e:3",
         "computer": "node15",
         "printer": "printer3",
         "document": "node15-2.pdf",
@@ -2322,21 +2435,30 @@
       }
     ],
     "metrics": {
-      "gossip_attempts": 27,
-      "gossip_bytes": 38985,
-      "gossip_response_bytes": 1330,
-      "ra_reply_attempts": 29,
-      "ra_reply_bytes": 4272,
-      "ra_reply_response_bytes": 348,
-      "ra_request_attempts": 238,
-      "ra_request_bytes": 39704,
-      "ra_request_dropped": 23,
-      "ra_request_response_bytes": 2580
+      "gossip_attempts": 33,
+      "gossip_bytes": 43923,
+      "gossip_failures": 1,
+      "gossip_response_bytes": 1175,
+      "ra_reply_attempts": 15,
+      "ra_reply_bytes": 2213,
+      "ra_reply_response_bytes": 180,
+      "ra_request_attempts": 411,
+      "ra_request_bytes": 68582,
+      "ra_request_dropped": 256,
+      "ra_request_response_bytes": 1836,
+      "gossip_dropped": 1
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
+        "node2",
+        "node3",
+        "node4",
+        "node5",
+        "node6",
+        "node7",
+        "node8",
         "node9"
       ],
       "types": []
@@ -2368,47 +2490,49 @@
       "printer5"
     ],
     "ra": {
-      "clock": 686,
+      "clock": 646,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:1",
+          "request_id": "node2:ba2d8f41baa84125917b36de3a5065dc:1",
           "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
             "node13",
             "node14",
-            "node15",
-            "node9"
+            "node15"
           ],
           "deferred": 7
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:2",
+          "request_id": "node2:ba2d8f41baa84125917b36de3a5065dc:3",
           "waiting": [
+            "node1",
             "node10",
             "node11",
-            "node3",
-            "node4",
-            "node7",
-            "node9"
+            "node12",
+            "node13",
+            "node14",
+            "node15"
           ],
-          "deferred": 8
+          "deferred": 7
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:3",
+          "request_id": "node2:ba2d8f41baa84125917b36de3a5065dc:2",
           "waiting": [
+            "node1",
+            "node10",
             "node11",
-            "node3",
-            "node4",
-            "node5",
-            "node7",
-            "node9"
+            "node12",
+            "node13",
+            "node14",
+            "node15"
           ],
-          "deferred": 8
+          "deferred": 7
         },
         "printer4": {
           "status": "RELEASED",
@@ -2425,22 +2549,22 @@
       }
     },
     "gossip": {
-      "rounds": 31,
-      "requests_sent": 31,
-      "requests_failed": 3,
-      "seconds_until_all_known": 0.507,
+      "rounds": 34,
+      "requests_sent": 34,
+      "requests_failed": 7,
+      "seconds_until_all_known": 0.647,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -2455,15 +2579,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -2625,7 +2749,7 @@
     },
     "jobs": [
       {
-        "job_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:1",
+        "job_id": "node2:ba2d8f41baa84125917b36de3a5065dc:1",
         "computer": "node2",
         "printer": "printer1",
         "document": "node2-0.pdf",
@@ -2633,40 +2757,47 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:2",
-        "computer": "node2",
-        "printer": "printer2",
-        "document": "node2-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node2:c272eb6c40ee4ba9a2aca3e6cdbd8917:3",
+        "job_id": "node2:ba2d8f41baa84125917b36de3a5065dc:2",
         "computer": "node2",
         "printer": "printer3",
         "document": "node2-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node2:ba2d8f41baa84125917b36de3a5065dc:3",
+        "computer": "node2",
+        "printer": "printer2",
+        "document": "node2-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 31,
-      "gossip_bytes": 43041,
-      "gossip_failures": 3,
-      "gossip_response_bytes": 834,
-      "ra_reply_attempts": 18,
-      "ra_reply_bytes": 2632,
-      "ra_reply_response_bytes": 216,
-      "ra_request_attempts": 201,
-      "ra_request_bytes": 33123,
-      "ra_request_dropped": 27,
-      "ra_request_response_bytes": 2016
+      "gossip_attempts": 34,
+      "gossip_bytes": 44114,
+      "gossip_failures": 4,
+      "gossip_response_bytes": 847,
+      "ra_reply_attempts": 1,
+      "ra_reply_bytes": 145,
+      "ra_reply_response_bytes": 12,
+      "ra_request_attempts": 283,
+      "ra_request_bytes": 46643,
+      "ra_request_dropped": 252,
+      "ra_request_response_bytes": 372,
+      "gossip_dropped": 3
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -2697,12 +2828,28 @@
       "printer5"
     ],
     "ra": {
-      "clock": 691,
+      "clock": 627,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:1",
+          "request_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:1",
           "waiting": [
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2"
+          ],
+          "deferred": 6
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:3",
+          "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
@@ -2710,27 +2857,25 @@
             "node14",
             "node15",
             "node2",
-            "node9"
+            "node5"
           ],
-          "deferred": 6
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:2",
-          "waiting": [
-            "node4",
-            "node9"
-          ],
-          "deferred": 12
+          "deferred": 5
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:3",
+          "request_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:2",
           "waiting": [
-            "node4",
-            "node9"
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node5"
           ],
-          "deferred": 12
+          "deferred": 5
         },
         "printer4": {
           "status": "RELEASED",
@@ -2747,22 +2892,22 @@
       }
     },
     "gossip": {
-      "rounds": 29,
-      "requests_sent": 29,
-      "requests_failed": 1,
-      "seconds_until_all_known": 0.372,
+      "rounds": 31,
+      "requests_sent": 31,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.377,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -2777,15 +2922,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -2947,7 +3092,7 @@
     },
     "jobs": [
       {
-        "job_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:1",
+        "job_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:1",
         "computer": "node3",
         "printer": "printer1",
         "document": "node3-0.pdf",
@@ -2955,40 +3100,46 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:2",
-        "computer": "node3",
-        "printer": "printer2",
-        "document": "node3-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node3:02c5da0b1ea849ab8e1d93a3bb7a117f:3",
+        "job_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:2",
         "computer": "node3",
         "printer": "printer3",
         "document": "node3-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node3:948c06ea3e984a5f92f8ccf76665dbb7:3",
+        "computer": "node3",
+        "printer": "printer2",
+        "document": "node3-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 29,
-      "gossip_bytes": 41083,
-      "gossip_response_bytes": 1765,
-      "ra_reply_attempts": 10,
-      "ra_reply_bytes": 1459,
-      "ra_reply_response_bytes": 120,
-      "ra_request_attempts": 144,
-      "ra_request_bytes": 23718,
-      "ra_request_dropped": 26,
-      "ra_request_response_bytes": 1416,
-      "gossip_dropped": 1
+      "gossip_attempts": 31,
+      "gossip_bytes": 43077,
+      "gossip_response_bytes": 1707,
+      "ra_reply_attempts": 6,
+      "ra_reply_bytes": 872,
+      "ra_reply_response_bytes": 72,
+      "ra_request_attempts": 302,
+      "ra_request_bytes": 49777,
+      "ra_request_dropped": 224,
+      "ra_request_response_bytes": 936,
+      "gossip_dropped": 3
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -3019,12 +3170,29 @@
       "printer5"
     ],
     "ra": {
-      "clock": 687,
+      "clock": 629,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node4:3124f6a8563d45108494db26da7cf9a6:1",
+          "request_id": "node4:6dd668ed59f647bb90939f1632b9665e:1",
           "waiting": [
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node3"
+          ],
+          "deferred": 5
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node4:6dd668ed59f647bb90939f1632b9665e:3",
+          "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
@@ -3033,25 +3201,26 @@
             "node15",
             "node2",
             "node3",
-            "node9"
+            "node5"
           ],
-          "deferred": 5
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node4:3124f6a8563d45108494db26da7cf9a6:2",
-          "waiting": [
-            "node9"
-          ],
-          "deferred": 13
+          "deferred": 4
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node4:3124f6a8563d45108494db26da7cf9a6:3",
+          "request_id": "node4:6dd668ed59f647bb90939f1632b9665e:2",
           "waiting": [
-            "node9"
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node3",
+            "node5"
           ],
-          "deferred": 13
+          "deferred": 4
         },
         "printer4": {
           "status": "RELEASED",
@@ -3068,22 +3237,22 @@
       }
     },
     "gossip": {
-      "rounds": 31,
-      "requests_sent": 31,
-      "requests_failed": 2,
-      "seconds_until_all_known": 0.568,
+      "rounds": 34,
+      "requests_sent": 34,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.691,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -3098,15 +3267,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -3268,7 +3437,7 @@
     },
     "jobs": [
       {
-        "job_id": "node4:3124f6a8563d45108494db26da7cf9a6:1",
+        "job_id": "node4:6dd668ed59f647bb90939f1632b9665e:1",
         "computer": "node4",
         "printer": "printer1",
         "document": "node4-0.pdf",
@@ -3276,40 +3445,47 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node4:3124f6a8563d45108494db26da7cf9a6:2",
-        "computer": "node4",
-        "printer": "printer2",
-        "document": "node4-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node4:3124f6a8563d45108494db26da7cf9a6:3",
+        "job_id": "node4:6dd668ed59f647bb90939f1632b9665e:2",
         "computer": "node4",
         "printer": "printer3",
         "document": "node4-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node4:6dd668ed59f647bb90939f1632b9665e:3",
+        "computer": "node4",
+        "printer": "printer2",
+        "document": "node4-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 31,
-      "gossip_bytes": 40846,
-      "gossip_failures": 2,
-      "gossip_response_bytes": 1434,
+      "gossip_attempts": 34,
+      "gossip_bytes": 44078,
+      "gossip_failures": 1,
+      "gossip_response_bytes": 1308,
       "ra_reply_attempts": 9,
       "ra_reply_bytes": 1311,
       "ra_reply_response_bytes": 108,
-      "ra_request_attempts": 142,
-      "ra_request_bytes": 23388,
-      "ra_request_dropped": 29,
-      "ra_request_response_bytes": 1356
+      "ra_request_attempts": 300,
+      "ra_request_bytes": 49452,
+      "ra_request_dropped": 203,
+      "ra_request_response_bytes": 1164,
+      "gossip_dropped": 2
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -3340,12 +3516,13 @@
       "printer5"
     ],
     "ra": {
-      "clock": 700,
+      "clock": 633,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:1",
+          "request_id": "node5:ea8a623215cc4b58b35e716346dc249a:1",
           "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
@@ -3354,36 +3531,39 @@
             "node15",
             "node2",
             "node3",
-            "node4",
-            "node9"
+            "node4"
           ],
           "deferred": 4
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:2",
+          "request_id": "node5:ea8a623215cc4b58b35e716346dc249a:3",
           "waiting": [
+            "node1",
             "node10",
             "node11",
-            "node2",
-            "node3",
-            "node4",
-            "node7",
-            "node9"
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2"
           ],
-          "deferred": 7
+          "deferred": 6
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:3",
+          "request_id": "node5:ea8a623215cc4b58b35e716346dc249a:2",
           "waiting": [
+            "node1",
+            "node10",
             "node11",
-            "node3",
-            "node4",
-            "node7",
-            "node9"
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2"
           ],
-          "deferred": 9
+          "deferred": 6
         },
         "printer4": {
           "status": "RELEASED",
@@ -3400,22 +3580,22 @@
       }
     },
     "gossip": {
-      "rounds": 29,
-      "requests_sent": 29,
-      "requests_failed": 0,
-      "seconds_until_all_known": 0.363,
+      "rounds": 33,
+      "requests_sent": 33,
+      "requests_failed": 2,
+      "seconds_until_all_known": 0.629,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -3430,15 +3610,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -3600,7 +3780,7 @@
     },
     "jobs": [
       {
-        "job_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:1",
+        "job_id": "node5:ea8a623215cc4b58b35e716346dc249a:1",
         "computer": "node5",
         "printer": "printer1",
         "document": "node5-0.pdf",
@@ -3608,39 +3788,47 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:2",
-        "computer": "node5",
-        "printer": "printer2",
-        "document": "node5-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node5:fced6e97d5fe4ba597cb5f2930e821f6:3",
+        "job_id": "node5:ea8a623215cc4b58b35e716346dc249a:2",
         "computer": "node5",
         "printer": "printer3",
         "document": "node5-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node5:ea8a623215cc4b58b35e716346dc249a:3",
+        "computer": "node5",
+        "printer": "printer2",
+        "document": "node5-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 29,
-      "gossip_bytes": 40460,
-      "gossip_response_bytes": 1727,
-      "ra_reply_attempts": 20,
-      "ra_reply_bytes": 2922,
-      "ra_reply_response_bytes": 240,
-      "ra_request_attempts": 223,
-      "ra_request_bytes": 36753,
-      "ra_request_dropped": 27,
-      "ra_request_response_bytes": 2232
+      "gossip_attempts": 33,
+      "gossip_bytes": 44456,
+      "gossip_response_bytes": 1315,
+      "gossip_failures": 1,
+      "ra_reply_attempts": 6,
+      "ra_reply_bytes": 871,
+      "ra_reply_response_bytes": 72,
+      "ra_request_attempts": 302,
+      "ra_request_bytes": 49784,
+      "ra_request_dropped": 224,
+      "ra_request_response_bytes": 936,
+      "gossip_dropped": 1
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -3671,12 +3859,13 @@
       "printer5"
     ],
     "ra": {
-      "clock": 686,
+      "clock": 622,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node6:583fbeb851b443ca99056b99c9b051c5:1",
+          "request_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:1",
           "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
@@ -3686,42 +3875,45 @@
             "node2",
             "node3",
             "node4",
-            "node5",
-            "node9"
+            "node5"
           ],
           "deferred": 3
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node6:583fbeb851b443ca99056b99c9b051c5:2",
+          "request_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:3",
           "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
             "node13",
             "node14",
+            "node15",
             "node2",
             "node3",
             "node4",
-            "node5",
-            "node7",
-            "node9"
+            "node5"
           ],
           "deferred": 3
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node6:583fbeb851b443ca99056b99c9b051c5:3",
+          "request_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:2",
           "waiting": [
+            "node1",
+            "node10",
             "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
             "node2",
             "node3",
             "node4",
-            "node5",
-            "node7",
-            "node9"
+            "node5"
           ],
-          "deferred": 7
+          "deferred": 3
         },
         "printer4": {
           "status": "RELEASED",
@@ -3738,22 +3930,22 @@
       }
     },
     "gossip": {
-      "rounds": 37,
-      "requests_sent": 36,
-      "requests_failed": 6,
-      "seconds_until_all_known": 1.044,
+      "rounds": 35,
+      "requests_sent": 35,
+      "requests_failed": 5,
+      "seconds_until_all_known": 0.709,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -3768,15 +3960,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -3938,7 +4130,7 @@
     },
     "jobs": [
       {
-        "job_id": "node6:583fbeb851b443ca99056b99c9b051c5:1",
+        "job_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:1",
         "computer": "node6",
         "printer": "printer1",
         "document": "node6-0.pdf",
@@ -3946,40 +4138,47 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node6:583fbeb851b443ca99056b99c9b051c5:2",
-        "computer": "node6",
-        "printer": "printer2",
-        "document": "node6-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node6:583fbeb851b443ca99056b99c9b051c5:3",
+        "job_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:2",
         "computer": "node6",
         "printer": "printer3",
         "document": "node6-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node6:00bbcbec6fcb40528c7ff35fd797786a:3",
+        "computer": "node6",
+        "printer": "printer2",
+        "document": "node6-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 36,
-      "gossip_bytes": 42346,
-      "gossip_failures": 6,
-      "gossip_response_bytes": 1143,
-      "ra_reply_attempts": 28,
-      "ra_reply_bytes": 4094,
-      "ra_reply_response_bytes": 336,
-      "ra_request_attempts": 248,
-      "ra_request_bytes": 40878,
-      "ra_request_dropped": 24,
-      "ra_request_response_bytes": 2688
+      "gossip_attempts": 35,
+      "gossip_bytes": 45566,
+      "gossip_failures": 3,
+      "gossip_response_bytes": 740,
+      "ra_reply_attempts": 16,
+      "ra_reply_bytes": 2331,
+      "ra_reply_response_bytes": 192,
+      "ra_request_attempts": 322,
+      "ra_request_bytes": 53076,
+      "ra_request_dropped": 196,
+      "ra_request_response_bytes": 1416,
+      "gossip_dropped": 2
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -4010,12 +4209,32 @@
       "printer5"
     ],
     "ra": {
-      "clock": 707,
+      "clock": 600,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node7:c5eaaf230d6144b29b217da9cbd54916:1",
+          "request_id": "node7:03f45069cfb8444db133d542b493c1ce:1",
           "waiting": [
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
+            "node3",
+            "node4",
+            "node5",
+            "node6"
+          ],
+          "deferred": 2
+        },
+        "printer2": {
+          "status": "WANTED",
+          "request_id": "node7:03f45069cfb8444db133d542b493c1ce:3",
+          "waiting": [
+            "node1",
             "node10",
             "node11",
             "node12",
@@ -4029,27 +4248,27 @@
             "node6",
             "node9"
           ],
-          "deferred": 2
-        },
-        "printer2": {
-          "status": "WANTED",
-          "request_id": "node7:c5eaaf230d6144b29b217da9cbd54916:2",
-          "waiting": [
-            "node3",
-            "node4",
-            "node9"
-          ],
-          "deferred": 11
+          "deferred": 1
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node7:c5eaaf230d6144b29b217da9cbd54916:3",
+          "request_id": "node7:03f45069cfb8444db133d542b493c1ce:2",
           "waiting": [
+            "node1",
+            "node10",
+            "node11",
+            "node12",
+            "node13",
+            "node14",
+            "node15",
+            "node2",
             "node3",
             "node4",
+            "node5",
+            "node6",
             "node9"
           ],
-          "deferred": 11
+          "deferred": 1
         },
         "printer4": {
           "status": "RELEASED",
@@ -4066,22 +4285,22 @@
       }
     },
     "gossip": {
-      "rounds": 36,
-      "requests_sent": 36,
-      "requests_failed": 7,
-      "seconds_until_all_known": 0.995,
+      "rounds": 32,
+      "requests_sent": 32,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.542,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -4096,15 +4315,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -4266,7 +4485,7 @@
     },
     "jobs": [
       {
-        "job_id": "node7:c5eaaf230d6144b29b217da9cbd54916:1",
+        "job_id": "node7:03f45069cfb8444db133d542b493c1ce:1",
         "computer": "node7",
         "printer": "printer1",
         "document": "node7-0.pdf",
@@ -4274,40 +4493,46 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node7:c5eaaf230d6144b29b217da9cbd54916:2",
-        "computer": "node7",
-        "printer": "printer2",
-        "document": "node7-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node7:c5eaaf230d6144b29b217da9cbd54916:3",
+        "job_id": "node7:03f45069cfb8444db133d542b493c1ce:2",
         "computer": "node7",
         "printer": "printer3",
         "document": "node7-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node7:03f45069cfb8444db133d542b493c1ce:3",
+        "computer": "node7",
+        "printer": "printer2",
+        "document": "node7-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 36,
-      "gossip_bytes": 41788,
-      "gossip_failures": 7,
-      "gossip_response_bytes": 1154,
-      "ra_reply_attempts": 20,
-      "ra_reply_bytes": 2920,
-      "ra_reply_response_bytes": 240,
-      "ra_request_attempts": 179,
-      "ra_request_bytes": 29493,
-      "ra_request_dropped": 24,
-      "ra_request_response_bytes": 1680
+      "gossip_attempts": 32,
+      "gossip_bytes": 43523,
+      "gossip_response_bytes": 941,
+      "ra_reply_attempts": 21,
+      "ra_reply_bytes": 3060,
+      "ra_reply_response_bytes": 252,
+      "ra_request_attempts": 320,
+      "ra_request_bytes": 52748,
+      "ra_request_dropped": 175,
+      "ra_request_response_bytes": 1668,
+      "gossip_dropped": 3
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -4338,11 +4563,11 @@
       "printer5"
     ],
     "ra": {
-      "clock": 514,
+      "clock": 615,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:1",
+          "request_id": "node8:a464daac210045e9a4499ce4d587a2d3:1",
           "waiting": [
             "node1",
             "node10",
@@ -4356,14 +4581,13 @@
             "node4",
             "node5",
             "node6",
-            "node7",
-            "node9"
+            "node7"
           ],
-          "deferred": 0
+          "deferred": 1
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:2",
+          "request_id": "node8:a464daac210045e9a4499ce4d587a2d3:3",
           "waiting": [
             "node1",
             "node10",
@@ -4384,7 +4608,7 @@
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:3",
+          "request_id": "node8:a464daac210045e9a4499ce4d587a2d3:2",
           "waiting": [
             "node1",
             "node10",
@@ -4420,20 +4644,20 @@
     "gossip": {
       "rounds": 28,
       "requests_sent": 28,
-      "requests_failed": 0,
-      "seconds_until_all_known": 0.36,
+      "requests_failed": 3,
+      "seconds_until_all_known": 0.083,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -4448,15 +4672,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -4618,7 +4842,7 @@
     },
     "jobs": [
       {
-        "job_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:1",
+        "job_id": "node8:a464daac210045e9a4499ce4d587a2d3:1",
         "computer": "node8",
         "printer": "printer1",
         "document": "node8-0.pdf",
@@ -4626,39 +4850,46 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:2",
+        "job_id": "node8:a464daac210045e9a4499ce4d587a2d3:2",
         "computer": "node8",
-        "printer": "printer2",
-        "document": "node8-1.pdf",
+        "printer": "printer3",
+        "document": "node8-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
       },
       {
-        "job_id": "node8:c0b4257d007e4bc4a650b2aa4648e529:3",
+        "job_id": "node8:a464daac210045e9a4499ce4d587a2d3:3",
         "computer": "node8",
-        "printer": "printer3",
-        "document": "node8-2.pdf",
+        "printer": "printer2",
+        "document": "node8-1.pdf",
         "pages": 1,
         "status": "waiting_permission"
       }
     ],
     "metrics": {
       "gossip_attempts": 28,
-      "gossip_bytes": 39815,
-      "gossip_response_bytes": 1433,
-      "ra_reply_attempts": 42,
-      "ra_reply_bytes": 6149,
-      "ra_reply_response_bytes": 504,
-      "ra_request_attempts": 322,
-      "ra_request_bytes": 53088,
-      "ra_request_dropped": 23,
-      "ra_request_response_bytes": 3588
+      "gossip_bytes": 40329,
+      "gossip_response_bytes": 1509,
+      "ra_reply_attempts": 21,
+      "ra_reply_bytes": 3059,
+      "ra_reply_response_bytes": 252,
+      "ra_request_attempts": 383,
+      "ra_request_bytes": 63140,
+      "ra_request_dropped": 196,
+      "ra_request_response_bytes": 2088,
+      "gossip_dropped": 3
     },
     "fault": {
       "delay_ms": 0,
       "loss": 0.0,
       "blocked_peers": [
-        "node9"
+        "node1",
+        "node10",
+        "node11",
+        "node12",
+        "node13",
+        "node14",
+        "node15"
       ],
       "types": []
     }
@@ -4689,11 +4920,11 @@
       "printer5"
     ],
     "ra": {
-      "clock": 608,
+      "clock": 613,
       "resources": {
         "printer1": {
           "status": "WANTED",
-          "request_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:1",
+          "request_id": "node9:db4786b264c9488ea4f6402f647e2244:1",
           "waiting": [
             "node1",
             "node10",
@@ -4714,7 +4945,7 @@
         },
         "printer2": {
           "status": "WANTED",
-          "request_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:2",
+          "request_id": "node9:db4786b264c9488ea4f6402f647e2244:3",
           "waiting": [
             "node1",
             "node10",
@@ -4727,15 +4958,13 @@
             "node3",
             "node4",
             "node5",
-            "node6",
-            "node7",
-            "node8"
+            "node6"
           ],
-          "deferred": 0
+          "deferred": 2
         },
         "printer3": {
           "status": "WANTED",
-          "request_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:3",
+          "request_id": "node9:db4786b264c9488ea4f6402f647e2244:2",
           "waiting": [
             "node1",
             "node10",
@@ -4748,11 +4977,9 @@
             "node3",
             "node4",
             "node5",
-            "node6",
-            "node7",
-            "node8"
+            "node6"
           ],
-          "deferred": 0
+          "deferred": 2
         },
         "printer4": {
           "status": "RELEASED",
@@ -4769,22 +4996,22 @@
       }
     },
     "gossip": {
-      "rounds": 32,
-      "requests_sent": 32,
-      "requests_failed": 8,
-      "seconds_until_all_known": 0.539,
+      "rounds": 41,
+      "requests_sent": 41,
+      "requests_failed": 13,
+      "seconds_until_all_known": 1.25,
       "record_count": 1,
       "records": [
         {
-          "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+          "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
           "computer": "node1",
           "printer": "printer1",
           "document": "warmup.pdf",
           "pages": 1,
-          "started_at": 1794878502.541833,
-          "completed_at": 1794878502.5934365,
-          "started_mono_ns": 404019014517916,
-          "completed_mono_ns": 404019066120319
+          "started_at": 1794881769.2364078,
+          "completed_at": 1794881769.2886827,
+          "started_mono_ns": 407285709092387,
+          "completed_mono_ns": 407285761367006
         }
       ],
       "store": {
@@ -4799,15 +5026,15 @@
           ],
           "records": [
             {
-              "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+              "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
               "computer": "node1",
               "printer": "printer1",
               "document": "warmup.pdf",
               "pages": 1,
-              "started_at": 1794878502.541833,
-              "completed_at": 1794878502.5934365,
-              "started_mono_ns": 404019014517916,
-              "completed_mono_ns": 404019066120319
+              "started_at": 1794881769.2364078,
+              "completed_at": 1794881769.2886827,
+              "started_mono_ns": 407285709092387,
+              "completed_mono_ns": 407285761367006
             }
           ]
         },
@@ -4969,7 +5196,7 @@
     },
     "jobs": [
       {
-        "job_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:1",
+        "job_id": "node9:db4786b264c9488ea4f6402f647e2244:1",
         "computer": "node9",
         "printer": "printer1",
         "document": "node9-0.pdf",
@@ -4977,34 +5204,35 @@
         "status": "waiting_permission"
       },
       {
-        "job_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:2",
-        "computer": "node9",
-        "printer": "printer2",
-        "document": "node9-1.pdf",
-        "pages": 1,
-        "status": "waiting_permission"
-      },
-      {
-        "job_id": "node9:b9c0ddb4e97a48988bd67cf3a7eaa615:3",
+        "job_id": "node9:db4786b264c9488ea4f6402f647e2244:2",
         "computer": "node9",
         "printer": "printer3",
         "document": "node9-2.pdf",
         "pages": 1,
         "status": "waiting_permission"
+      },
+      {
+        "job_id": "node9:db4786b264c9488ea4f6402f647e2244:3",
+        "computer": "node9",
+        "printer": "printer2",
+        "document": "node9-1.pdf",
+        "pages": 1,
+        "status": "waiting_permission"
       }
     ],
     "metrics": {
-      "gossip_attempts": 32,
-      "gossip_bytes": 43807,
-      "gossip_failures": 2,
-      "gossip_response_bytes": 432,
-      "ra_reply_attempts": 1,
-      "ra_reply_bytes": 145,
-      "ra_reply_response_bytes": 12,
-      "gossip_dropped": 6,
-      "ra_request_attempts": 588,
-      "ra_request_bytes": 96941,
-      "ra_request_dropped": 588
+      "gossip_attempts": 41,
+      "gossip_bytes": 45769,
+      "gossip_failures": 8,
+      "gossip_response_bytes": 1481,
+      "ra_reply_attempts": 18,
+      "ra_reply_bytes": 2620,
+      "ra_reply_response_bytes": 216,
+      "ra_request_attempts": 362,
+      "ra_request_bytes": 59674,
+      "ra_request_dropped": 196,
+      "ra_request_response_bytes": 1956,
+      "gossip_dropped": 5
     },
     "fault": {
       "delay_ms": 0,
@@ -5016,14 +5244,7 @@
         "node12",
         "node13",
         "node14",
-        "node15",
-        "node2",
-        "node3",
-        "node4",
-        "node5",
-        "node6",
-        "node7",
-        "node8"
+        "node15"
       ],
       "types": []
     }
@@ -5034,16 +5255,16 @@
     "overlap_attempts": 0,
     "jobs": [
       {
-        "job_id": "node1:8b588b5544444d5f92df96267056072f:1",
+        "job_id": "node1:b81a25fa4246452cb1151811c8f7aa0e:1",
         "computer": "node1",
         "printer": "printer1",
         "document": "warmup.pdf",
         "pages": 1,
         "status": "completed",
-        "started_at": 1794878502.541833,
-        "started_mono_ns": 404019014517916,
-        "completed_at": 1794878502.5934365,
-        "completed_mono_ns": 404019066120319
+        "started_at": 1794881769.2364078,
+        "started_mono_ns": 407285709092387,
+        "completed_at": 1794881769.2886827,
+        "completed_mono_ns": 407285761367006
       }
     ]
   },

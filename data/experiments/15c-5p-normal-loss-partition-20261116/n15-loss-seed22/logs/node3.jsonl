@@ -1,610 +1,474 @@
-{"event": "start", "model": "fixed-membership/crash-stop", "mono_ns": 403990111025339, "node": "node3", "peers": ["node1", "node10", "node11", "node12", "node13", "node14", "node15", "node2", "node4", "node5", "node6", "node7", "node8", "node9"], "printers": {"printer1": "http://printer1:8000", "printer2": "http://printer2:8000", "printer3": "http://printer3:8000", "printer4": "http://printer4:8000", "printer5": "http://printer5:8000"}, "seed": 22, "ts": 1794878473.638341}
-{"bytes": 163, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990111576358, "node": "node3", "peer": "node9", "ts": 1794878473.6388922}
-{"event": "learn", "mono_ns": 403990129177174, "node": "node3", "owner": "node9", "peer": "node9", "ts": 1794878473.656493, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990129242550, "node": "node3", "owner": "node11", "peer": "node9", "ts": 1794878473.6565588, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990129263320, "node": "node3", "owner": "node10", "peer": "node9", "ts": 1794878473.6565795, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990129279892, "node": "node3", "owner": "node12", "peer": "node9", "ts": 1794878473.6565962, "version": 1, "via": "pull"}
-{"bytes": 516, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990214892555, "node": "node3", "peer": "node12", "ts": 1794878473.7422082}
-{"event": "learn", "mono_ns": 403990218590113, "node": "node3", "owner": "node6", "peer": "node12", "ts": 1794878473.7459056, "version": 1, "via": "pull"}
-{"bytes": 601, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990305857270, "node": "node3", "peer": "node9", "ts": 1794878473.833173}
-{"event": "learn", "mono_ns": 403990307614595, "node": "node3", "owner": "node13", "peer": "node9", "ts": 1794878473.8349304, "version": 1, "via": "pull"}
-{"bytes": 690, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990391771007, "node": "node3", "peer": "node1", "ts": 1794878473.919087}
-{"bytes": 690, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990478615583, "node": "node3", "peer": "node10", "ts": 1794878474.0059307}
-{"event": "learn", "mono_ns": 403990483162081, "node": "node3", "owner": "node5", "peer": "node10", "ts": 1794878474.010478, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990483246401, "node": "node3", "owner": "node14", "peer": "node10", "ts": 1794878474.0105627, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990483283834, "node": "node3", "owner": "node4", "peer": "node10", "ts": 1794878474.0105999, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990483319726, "node": "node3", "owner": "node8", "peer": "node10", "ts": 1794878474.010636, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990483351682, "node": "node3", "owner": "node7", "peer": "node10", "ts": 1794878474.0106678, "version": 1, "via": "pull"}
-{"event": "learn", "mono_ns": 403990518257747, "node": "node3", "owner": "node15", "peer": "node4", "ts": 1794878474.0455737, "version": 1, "via": "push"}
-{"event": "learn", "mono_ns": 403990518316803, "node": "node3", "owner": "node2", "peer": "node4", "ts": 1794878474.045633, "version": 1, "via": "push"}
-{"event": "learn", "mono_ns": 403990518335495, "node": "node3", "owner": "node1", "peer": "node4", "ts": 1794878474.0456517, "version": 1, "via": "push"}
-{"elapsed_s": 0.408, "event": "complete", "mono_ns": 403990518361234, "node": "node3", "ts": 1794878474.0456777}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990565848557, "node": "node3", "peer": "node9", "ts": 1794878474.093164}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990654955815, "node": "node3", "peer": "node5", "ts": 1794878474.1822715}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990743677269, "node": "node3", "peer": "node11", "ts": 1794878474.2709935}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990834040841, "node": "node3", "peer": "node7", "ts": 1794878474.3613567}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403990921727118, "node": "node3", "peer": "node14", "ts": 1794878474.449043}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991013037097, "node": "node3", "peer": "node11", "ts": 1794878474.5403533}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991100134972, "node": "node3", "peer": "node10", "ts": 1794878474.6274507}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991186839023, "node": "node3", "peer": "node5", "ts": 1794878474.714155}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991275095578, "node": "node3", "peer": "node2", "ts": 1794878474.802411}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991367046756, "node": "node3", "peer": "node12", "ts": 1794878474.8943624}
-{"bytes": 145, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403991396915021, "node": "node3", "peer": "node1", "ts": 1794878474.9242306}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991452235929, "node": "node3", "peer": "node13", "ts": 1794878474.979552}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991538331611, "node": "node3", "peer": "node14", "ts": 1794878475.065647}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991623386137, "node": "node3", "peer": "node13", "ts": 1794878475.1507018}
-{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991710210755, "node": "node3", "peer": "node15", "ts": 1794878475.2375262}
-{"event": "record_learned", "job_id": "node1:4d51fa7165ce4821bc3c7469bb2bc7f6:1", "mono_ns": 403991732510578, "node": "node3", "origin": "node1", "ts": 1794878475.259826}
-{"event": "learn", "mono_ns": 403991732654479, "node": "node3", "owner": "node1", "peer": "node6", "ts": 1794878475.2599707, "version": 2, "via": "push"}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991800558969, "node": "node3", "peer": "node9", "ts": 1794878475.3278747}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991887398768, "node": "node3", "peer": "node6", "ts": 1794878475.4147143}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403991979971143, "node": "node3", "peer": "node7", "ts": 1794878475.5072865}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992066980394, "node": "node3", "peer": "node7", "ts": 1794878475.594296}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992154405091, "node": "node3", "peer": "node10", "ts": 1794878475.6817207}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992244487918, "node": "node3", "peer": "node14", "ts": 1794878475.7718036}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992333370317, "node": "node3", "peer": "node9", "ts": 1794878475.8606858}
-{"blocked_peers": [], "delay_ms": 10, "event": "fault_changed", "loss": 0.2, "mono_ns": 403992353544926, "node": "node3", "ts": 1794878475.8808606, "types": []}
-{"computer": "node3", "document": "node3-0.pdf", "event": "job_submitted", "job_id": "node3:4e961508d3f44378974508365bf615af:1", "mono_ns": 403992382822990, "node": "node3", "pages": 1, "printer": "printer1", "status": "queued", "ts": 1794878475.9101388}
-{"clock": 12, "event": "ra_request", "mono_ns": 403992384080582, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:1", "resource": "printer1", "ts": 1794878475.9113963}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992384634852, "node": "node3", "peer": "node1", "ts": 1794878475.9119508}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992384792370, "node": "node3", "peer": "node10", "ts": 1794878475.9121082}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992384900330, "node": "node3", "peer": "node11", "ts": 1794878475.9122164}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992385176234, "node": "node3", "peer": "node12", "ts": 1794878475.9124923}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992385476893, "node": "node3", "peer": "node13", "ts": 1794878475.912793}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992385625510, "node": "node3", "peer": "node14", "ts": 1794878475.9129415}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992385731960, "node": "node3", "peer": "node15", "ts": 1794878475.913048}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992385916623, "node": "node3", "peer": "node2", "ts": 1794878475.9132326}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992386074819, "node": "node3", "peer": "node4", "ts": 1794878475.9133906}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992386572737, "node": "node3", "peer": "node5", "ts": 1794878475.9138887}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992386682000, "node": "node3", "peer": "node6", "ts": 1794878475.9139981}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992386924895, "node": "node3", "peer": "node7", "ts": 1794878475.9142408}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992387050658, "node": "node3", "peer": "node8", "ts": 1794878475.9143665}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992387553125, "node": "node3", "peer": "node9", "ts": 1794878475.914869}
-{"computer": "node3", "document": "node3-2.pdf", "event": "job_submitted", "job_id": "node3:4e961508d3f44378974508365bf615af:2", "mono_ns": 403992413201232, "node": "node3", "pages": 1, "printer": "printer3", "status": "queued", "ts": 1794878475.940516}
-{"computer": "node3", "document": "node3-1.pdf", "event": "job_submitted", "job_id": "node3:4e961508d3f44378974508365bf615af:3", "mono_ns": 403992419306568, "node": "node3", "pages": 1, "printer": "printer2", "status": "queued", "ts": 1794878475.9466214}
-{"clock": 42, "event": "ra_request", "mono_ns": 403992430921745, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:2", "resource": "printer3", "ts": 1794878475.9582376}
-{"clock": 57, "event": "ra_request", "mono_ns": 403992431785146, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:3", "resource": "printer2", "ts": 1794878475.9591012}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434056104, "node": "node3", "peer": "node1", "ts": 1794878475.961372}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434204961, "node": "node3", "peer": "node10", "ts": 1794878475.961521}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434292703, "node": "node3", "peer": "node11", "ts": 1794878475.961609}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434366184, "node": "node3", "peer": "node12", "ts": 1794878475.9616823}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434562696, "node": "node3", "peer": "node13", "ts": 1794878475.9618788}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434675184, "node": "node3", "peer": "node14", "ts": 1794878475.961991}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434749513, "node": "node3", "peer": "node15", "ts": 1794878475.9620657}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434835302, "node": "node3", "peer": "node2", "ts": 1794878475.9621515}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992434948826, "node": "node3", "peer": "node4", "ts": 1794878475.962265}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435095097, "node": "node3", "peer": "node5", "ts": 1794878475.9624112}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435203024, "node": "node3", "peer": "node6", "ts": 1794878475.962519}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435366053, "node": "node3", "peer": "node7", "ts": 1794878475.962682}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435474376, "node": "node3", "peer": "node8", "ts": 1794878475.9627905}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435534748, "node": "node3", "peer": "node9", "ts": 1794878475.962851}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435721171, "node": "node3", "peer": "node1", "ts": 1794878475.9630373}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435844686, "node": "node3", "peer": "node10", "ts": 1794878475.9631605}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992435970145, "node": "node3", "peer": "node11", "ts": 1794878475.9632862}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436083788, "node": "node3", "peer": "node12", "ts": 1794878475.9634}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436159563, "node": "node3", "peer": "node13", "ts": 1794878475.9634757}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436292889, "node": "node3", "peer": "node14", "ts": 1794878475.963609}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436412823, "node": "node3", "peer": "node15", "ts": 1794878475.9637287}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436508096, "node": "node3", "peer": "node2", "ts": 1794878475.963824}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436782739, "node": "node3", "peer": "node4", "ts": 1794878475.964099}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992436974395, "node": "node3", "peer": "node5", "ts": 1794878475.9642906}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992437074993, "node": "node3", "peer": "node6", "ts": 1794878475.9643912}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992437132905, "node": "node3", "peer": "node7", "ts": 1794878475.964449}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992437258085, "node": "node3", "peer": "node8", "ts": 1794878475.964574}
-{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992437373707, "node": "node3", "peer": "node9", "ts": 1794878475.9646897}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992441566575, "node": "node3", "peer": "node10", "ts": 1794878475.968882}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992441774100, "node": "node3", "peer": "node12", "ts": 1794878475.9690895}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992441855427, "node": "node3", "peer": "node15", "ts": 1794878475.9691718}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992441910307, "node": "node3", "peer": "node13", "ts": 1794878475.9692266}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992442433968, "node": "node3", "peer": "node12", "ts": 1794878475.9697495}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992514501781, "node": "node3", "peer": "node1", "ts": 1794878476.041818}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992514863876, "node": "node3", "peer": "node10", "ts": 1794878476.0421798}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992514958429, "node": "node3", "peer": "node11", "ts": 1794878476.0422745}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515082330, "node": "node3", "peer": "node12", "ts": 1794878476.0423985}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515157690, "node": "node3", "peer": "node13", "ts": 1794878476.042474}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515220083, "node": "node3", "peer": "node14", "ts": 1794878476.0425365}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515254868, "node": "node3", "peer": "node15", "ts": 1794878476.0425713}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515285261, "node": "node3", "peer": "node2", "ts": 1794878476.0426018}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515310527, "node": "node3", "peer": "node4", "ts": 1794878476.0426269}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515355521, "node": "node3", "peer": "node7", "ts": 1794878476.042672}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515401583, "node": "node3", "peer": "node8", "ts": 1794878476.042718}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992515442194, "node": "node3", "peer": "node9", "ts": 1794878476.0427587}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516071310, "node": "node3", "peer": "node10", "ts": 1794878476.0433874}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516144746, "node": "node3", "peer": "node14", "ts": 1794878476.043461}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516190185, "node": "node3", "peer": "node1", "ts": 1794878476.0435064}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516226815, "node": "node3", "peer": "node14", "ts": 1794878476.043543}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516261619, "node": "node3", "peer": "node12", "ts": 1794878476.043578}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516295127, "node": "node3", "peer": "node11", "ts": 1794878476.0436113}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516340362, "node": "node3", "peer": "node5", "ts": 1794878476.0436566}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516372056, "node": "node3", "peer": "node14", "ts": 1794878476.0436885}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516406905, "node": "node3", "peer": "node11", "ts": 1794878476.0437233}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516475888, "node": "node3", "peer": "node5", "ts": 1794878476.043792}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516530088, "node": "node3", "peer": "node15", "ts": 1794878476.0438464}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516563596, "node": "node3", "peer": "node8", "ts": 1794878476.0438797}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516595866, "node": "node3", "peer": "node13", "ts": 1794878476.043912}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516628556, "node": "node3", "peer": "node6", "ts": 1794878476.043945}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516660356, "node": "node3", "peer": "node8", "ts": 1794878476.0439768}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516722002, "node": "node3", "peer": "node6", "ts": 1794878476.0440383}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516787473, "node": "node3", "peer": "node2", "ts": 1794878476.0441036}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516826392, "node": "node3", "peer": "node2", "ts": 1794878476.044143}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992516858443, "node": "node3", "peer": "node2", "ts": 1794878476.044175}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519193827, "node": "node3", "peer": "node1", "ts": 1794878476.0465095}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519298919, "node": "node3", "peer": "node13", "ts": 1794878476.0466151}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519352731, "node": "node3", "peer": "node14", "ts": 1794878476.046669}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519384918, "node": "node3", "peer": "node15", "ts": 1794878476.046701}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519419068, "node": "node3", "peer": "node2", "ts": 1794878476.0467353}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519449308, "node": "node3", "peer": "node4", "ts": 1794878476.0467656}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519480277, "node": "node3", "peer": "node5", "ts": 1794878476.0467966}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519509310, "node": "node3", "peer": "node6", "ts": 1794878476.0468256}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519535545, "node": "node3", "peer": "node7", "ts": 1794878476.0468519}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519558315, "node": "node3", "peer": "node8", "ts": 1794878476.0468745}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992519583292, "node": "node3", "peer": "node9", "ts": 1794878476.0468998}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992545894230, "node": "node3", "peer": "node1", "ts": 1794878476.07321}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546104127, "node": "node3", "peer": "node10", "ts": 1794878476.07342}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546205329, "node": "node3", "peer": "node11", "ts": 1794878476.0735216}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546278652, "node": "node3", "peer": "node12", "ts": 1794878476.0735948}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546339000, "node": "node3", "peer": "node13", "ts": 1794878476.0736551}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546394942, "node": "node3", "peer": "node14", "ts": 1794878476.0737112}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546450741, "node": "node3", "peer": "node15", "ts": 1794878476.073767}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546508524, "node": "node3", "peer": "node2", "ts": 1794878476.073825}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546564572, "node": "node3", "peer": "node4", "ts": 1794878476.073881}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546617927, "node": "node3", "peer": "node5", "ts": 1794878476.073934}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546674430, "node": "node3", "peer": "node6", "ts": 1794878476.0739906}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546731101, "node": "node3", "peer": "node7", "ts": 1794878476.0740473}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546786879, "node": "node3", "peer": "node8", "ts": 1794878476.074103}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992546854434, "node": "node3", "peer": "node9", "ts": 1794878476.0741706}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992556227761, "node": "node3", "peer": "node12", "ts": 1794878476.0835435}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992580903447, "node": "node3", "peer": "node14", "ts": 1794878476.1082191}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992581062304, "node": "node3", "peer": "node15", "ts": 1794878476.1083784}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992581145251, "node": "node3", "peer": "node12", "ts": 1794878476.1084614}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992581211152, "node": "node3", "peer": "node15", "ts": 1794878476.1085274}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403992581273279, "node": "node3", "peer": "node8", "ts": 1794878476.1085896}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992581937955, "node": "node3", "peer": "node10", "ts": 1794878476.1092541}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582043096, "node": "node3", "peer": "node11", "ts": 1794878476.1093593}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582099382, "node": "node3", "peer": "node12", "ts": 1794878476.1094158}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582154417, "node": "node3", "peer": "node13", "ts": 1794878476.1094706}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582198938, "node": "node3", "peer": "node14", "ts": 1794878476.1095152}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582246358, "node": "node3", "peer": "node15", "ts": 1794878476.1095626}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582293605, "node": "node3", "peer": "node2", "ts": 1794878476.10961}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582342031, "node": "node3", "peer": "node7", "ts": 1794878476.1096585}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582388375, "node": "node3", "peer": "node9", "ts": 1794878476.1097047}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582436964, "node": "node3", "peer": "node1", "ts": 1794878476.1097531}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582493175, "node": "node3", "peer": "node14", "ts": 1794878476.1098094}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582540368, "node": "node3", "peer": "node15", "ts": 1794878476.1098566}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582587596, "node": "node3", "peer": "node2", "ts": 1794878476.1099038}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582633250, "node": "node3", "peer": "node5", "ts": 1794878476.1099494}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582679306, "node": "node3", "peer": "node6", "ts": 1794878476.1099956}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582722920, "node": "node3", "peer": "node7", "ts": 1794878476.110039}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582770587, "node": "node3", "peer": "node8", "ts": 1794878476.110087}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992582821793, "node": "node3", "peer": "node9", "ts": 1794878476.1101382}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642026263, "node": "node3", "peer": "node1", "ts": 1794878476.1693423}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642131005, "node": "node3", "peer": "node10", "ts": 1794878476.1694472}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642208048, "node": "node3", "peer": "node11", "ts": 1794878476.1695242}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642270161, "node": "node3", "peer": "node12", "ts": 1794878476.1695864}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642334697, "node": "node3", "peer": "node13", "ts": 1794878476.169651}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642387497, "node": "node3", "peer": "node14", "ts": 1794878476.169704}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642433557, "node": "node3", "peer": "node15", "ts": 1794878476.16975}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642480049, "node": "node3", "peer": "node2", "ts": 1794878476.1697965}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642525286, "node": "node3", "peer": "node5", "ts": 1794878476.1698418}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642571147, "node": "node3", "peer": "node6", "ts": 1794878476.1698875}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642616898, "node": "node3", "peer": "node7", "ts": 1794878476.1699333}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992642663813, "node": "node3", "peer": "node8", "ts": 1794878476.16998}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661353682, "node": "node3", "peer": "node10", "ts": 1794878476.1886694}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661568632, "node": "node3", "peer": "node11", "ts": 1794878476.1888847}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661650022, "node": "node3", "peer": "node12", "ts": 1794878476.188966}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661755087, "node": "node3", "peer": "node13", "ts": 1794878476.1890712}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661819812, "node": "node3", "peer": "node14", "ts": 1794878476.189136}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661876090, "node": "node3", "peer": "node15", "ts": 1794878476.1891923}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992661926887, "node": "node3", "peer": "node2", "ts": 1794878476.189243}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992662854789, "node": "node3", "peer": "node6", "ts": 1794878476.1901708}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992671521009, "node": "node3", "peer": "node14", "ts": 1794878476.1988368}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992671985708, "node": "node3", "peer": "node15", "ts": 1794878476.1993017}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992672436855, "node": "node3", "peer": "node2", "ts": 1794878476.1997523}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992672548941, "node": "node3", "peer": "node5", "ts": 1794878476.199865}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992673088559, "node": "node3", "peer": "node6", "ts": 1794878476.2004046}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992673133521, "node": "node3", "peer": "node7", "ts": 1794878476.2004497}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992673160671, "node": "node3", "peer": "node8", "ts": 1794878476.200477}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692355488, "node": "node3", "peer": "node1", "ts": 1794878476.219671}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692532867, "node": "node3", "peer": "node10", "ts": 1794878476.2198489}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692596536, "node": "node3", "peer": "node11", "ts": 1794878476.2199128}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692648773, "node": "node3", "peer": "node12", "ts": 1794878476.2199652}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692684809, "node": "node3", "peer": "node13", "ts": 1794878476.220001}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692718497, "node": "node3", "peer": "node14", "ts": 1794878476.2200348}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692749528, "node": "node3", "peer": "node15", "ts": 1794878476.2200658}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692779936, "node": "node3", "peer": "node2", "ts": 1794878476.2200963}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692814337, "node": "node3", "peer": "node5", "ts": 1794878476.2201304}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692845995, "node": "node3", "peer": "node6", "ts": 1794878476.2201624}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692878378, "node": "node3", "peer": "node7", "ts": 1794878476.2201948}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992692909961, "node": "node3", "peer": "node8", "ts": 1794878476.2202263}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717643017, "node": "node3", "peer": "node10", "ts": 1794878476.2449589}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717810108, "node": "node3", "peer": "node11", "ts": 1794878476.2451265}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717860277, "node": "node3", "peer": "node12", "ts": 1794878476.2451766}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717892581, "node": "node3", "peer": "node13", "ts": 1794878476.2452087}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717918957, "node": "node3", "peer": "node14", "ts": 1794878476.2452352}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717937589, "node": "node3", "peer": "node15", "ts": 1794878476.2452538}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992717955596, "node": "node3", "peer": "node2", "ts": 1794878476.2452722}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721110590, "node": "node3", "peer": "node14", "ts": 1794878476.2484267}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721228021, "node": "node3", "peer": "node15", "ts": 1794878476.2485442}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721279002, "node": "node3", "peer": "node2", "ts": 1794878476.2485952}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721314205, "node": "node3", "peer": "node5", "ts": 1794878476.2486305}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721355334, "node": "node3", "peer": "node6", "ts": 1794878476.2486718}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721393293, "node": "node3", "peer": "node7", "ts": 1794878476.2487097}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992721427242, "node": "node3", "peer": "node8", "ts": 1794878476.2487435}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744768572, "node": "node3", "peer": "node1", "ts": 1794878476.2720847}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744840881, "node": "node3", "peer": "node10", "ts": 1794878476.2721572}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744869682, "node": "node3", "peer": "node11", "ts": 1794878476.272186}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744891853, "node": "node3", "peer": "node12", "ts": 1794878476.2722082}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744919402, "node": "node3", "peer": "node13", "ts": 1794878476.2722359}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744938371, "node": "node3", "peer": "node14", "ts": 1794878476.2722547}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744954898, "node": "node3", "peer": "node15", "ts": 1794878476.2722714}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744972294, "node": "node3", "peer": "node2", "ts": 1794878476.2722888}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992744993500, "node": "node3", "peer": "node5", "ts": 1794878476.2723098}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992745017783, "node": "node3", "peer": "node6", "ts": 1794878476.272334}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992745033887, "node": "node3", "peer": "node8", "ts": 1794878476.2723503}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992763854935, "node": "node3", "peer": "node6", "ts": 1794878476.2911706}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765541832, "node": "node3", "peer": "node10", "ts": 1794878476.292858}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765712191, "node": "node3", "peer": "node11", "ts": 1794878476.2930284}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765756988, "node": "node3", "peer": "node12", "ts": 1794878476.2930734}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765794967, "node": "node3", "peer": "node13", "ts": 1794878476.2931113}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765825560, "node": "node3", "peer": "node14", "ts": 1794878476.293142}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765853528, "node": "node3", "peer": "node15", "ts": 1794878476.29317}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992765889987, "node": "node3", "peer": "node2", "ts": 1794878476.2932062}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992767127784, "node": "node3", "peer": "node14", "ts": 1794878476.2944436}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992767937206, "node": "node3", "peer": "node15", "ts": 1794878476.295253}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992768030066, "node": "node3", "peer": "node2", "ts": 1794878476.2953465}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992768078290, "node": "node3", "peer": "node5", "ts": 1794878476.2953947}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992768114923, "node": "node3", "peer": "node6", "ts": 1794878476.2954311}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992768143865, "node": "node3", "peer": "node8", "ts": 1794878476.29546}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795301062, "node": "node3", "peer": "node1", "ts": 1794878476.322617}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795394863, "node": "node3", "peer": "node10", "ts": 1794878476.322711}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795434051, "node": "node3", "peer": "node12", "ts": 1794878476.32275}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795470370, "node": "node3", "peer": "node13", "ts": 1794878476.3227868}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795504631, "node": "node3", "peer": "node14", "ts": 1794878476.3228211}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795534932, "node": "node3", "peer": "node15", "ts": 1794878476.3228514}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795577050, "node": "node3", "peer": "node2", "ts": 1794878476.3228934}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795602811, "node": "node3", "peer": "node5", "ts": 1794878476.3229191}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795625363, "node": "node3", "peer": "node6", "ts": 1794878476.3229418}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992795652180, "node": "node3", "peer": "node8", "ts": 1794878476.3229685}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992812152067, "node": "node3", "peer": "node11", "ts": 1794878476.339468}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992812696901, "node": "node3", "peer": "node12", "ts": 1794878476.3400126}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992812859988, "node": "node3", "peer": "node13", "ts": 1794878476.340176}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992813032313, "node": "node3", "peer": "node14", "ts": 1794878476.3403485}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992813153728, "node": "node3", "peer": "node15", "ts": 1794878476.3404698}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992813326332, "node": "node3", "peer": "node2", "ts": 1794878476.3406422}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992813864394, "node": "node3", "peer": "node14", "ts": 1794878476.3411803}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992814105747, "node": "node3", "peer": "node15", "ts": 1794878476.3414218}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992814333188, "node": "node3", "peer": "node2", "ts": 1794878476.3416493}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992814512377, "node": "node3", "peer": "node5", "ts": 1794878476.3418283}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992814725896, "node": "node3", "peer": "node6", "ts": 1794878476.3420422}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992814954212, "node": "node3", "peer": "node8", "ts": 1794878476.3422704}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853155739, "node": "node3", "peer": "node1", "ts": 1794878476.3804715}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853309721, "node": "node3", "peer": "node10", "ts": 1794878476.3806257}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853403655, "node": "node3", "peer": "node12", "ts": 1794878476.3807197}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853483639, "node": "node3", "peer": "node13", "ts": 1794878476.3807998}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853557730, "node": "node3", "peer": "node14", "ts": 1794878476.380874}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853627719, "node": "node3", "peer": "node15", "ts": 1794878476.3809438}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853699250, "node": "node3", "peer": "node2", "ts": 1794878476.3810153}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853761998, "node": "node3", "peer": "node5", "ts": 1794878476.381078}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853832370, "node": "node3", "peer": "node6", "ts": 1794878476.3811486}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992853899929, "node": "node3", "peer": "node8", "ts": 1794878476.381216}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859326531, "node": "node3", "peer": "node12", "ts": 1794878476.3866425}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859458758, "node": "node3", "peer": "node13", "ts": 1794878476.3867748}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859530708, "node": "node3", "peer": "node14", "ts": 1794878476.3868468}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859606337, "node": "node3", "peer": "node15", "ts": 1794878476.3869226}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859670781, "node": "node3", "peer": "node2", "ts": 1794878476.386987}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859733104, "node": "node3", "peer": "node14", "ts": 1794878476.3870494}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859794127, "node": "node3", "peer": "node15", "ts": 1794878476.3871105}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859854187, "node": "node3", "peer": "node2", "ts": 1794878476.3871703}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859912942, "node": "node3", "peer": "node5", "ts": 1794878476.3872292}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992859964453, "node": "node3", "peer": "node6", "ts": 1794878476.3872807}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992860037496, "node": "node3", "peer": "node8", "ts": 1794878476.3873537}
-{"bytes": 1641, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992861399440, "node": "node3", "peer": "node8", "ts": 1794878476.3887153}
-{"event": "record_learned", "job_id": "node11:ddd358a198fe49638709e593df6d3baa:2", "mono_ns": 403992884623525, "node": "node3", "origin": "node11", "ts": 1794878476.4119396}
-{"event": "record_learned", "job_id": "node10:3602a7110d91453a8b387728970b4522:1", "mono_ns": 403992884665602, "node": "node3", "origin": "node10", "ts": 1794878476.4119818}
-{"event": "record_learned", "job_id": "node15:4c86d9ed33ae4fd9ba4ea4c6eb781007:2", "mono_ns": 403992884681266, "node": "node3", "origin": "node15", "ts": 1794878476.4119978}
-{"event": "learn", "mono_ns": 403992884691625, "node": "node3", "owner": "node11", "peer": "node8", "ts": 1794878476.412008, "version": 2, "via": "pull"}
-{"event": "learn", "mono_ns": 403992884704199, "node": "node3", "owner": "node10", "peer": "node8", "ts": 1794878476.4120204, "version": 2, "via": "pull"}
-{"event": "learn", "mono_ns": 403992884714234, "node": "node3", "owner": "node15", "peer": "node8", "ts": 1794878476.4120305, "version": 2, "via": "pull"}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915401269, "node": "node3", "peer": "node1", "ts": 1794878476.442717}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915513406, "node": "node3", "peer": "node12", "ts": 1794878476.4428296}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915581520, "node": "node3", "peer": "node13", "ts": 1794878476.4428976}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915634081, "node": "node3", "peer": "node14", "ts": 1794878476.4429502}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915689459, "node": "node3", "peer": "node15", "ts": 1794878476.4430058}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915742701, "node": "node3", "peer": "node2", "ts": 1794878476.443059}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915787259, "node": "node3", "peer": "node5", "ts": 1794878476.4431036}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915839886, "node": "node3", "peer": "node6", "ts": 1794878476.4431562}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992915901687, "node": "node3", "peer": "node8", "ts": 1794878476.443218}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916541424, "node": "node3", "peer": "node12", "ts": 1794878476.4438577}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916631875, "node": "node3", "peer": "node13", "ts": 1794878476.443948}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916695983, "node": "node3", "peer": "node14", "ts": 1794878476.4440124}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916746897, "node": "node3", "peer": "node15", "ts": 1794878476.4440632}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916796090, "node": "node3", "peer": "node2", "ts": 1794878476.4441123}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916846504, "node": "node3", "peer": "node14", "ts": 1794878476.4441628}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916895479, "node": "node3", "peer": "node15", "ts": 1794878476.4442117}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916944320, "node": "node3", "peer": "node2", "ts": 1794878476.4442606}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992916992183, "node": "node3", "peer": "node5", "ts": 1794878476.4443085}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992917060538, "node": "node3", "peer": "node6", "ts": 1794878476.4443765}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992917268091, "node": "node3", "peer": "node8", "ts": 1794878476.444584}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992971989928, "node": "node3", "peer": "node1", "ts": 1794878476.4993057}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972113881, "node": "node3", "peer": "node13", "ts": 1794878476.4994302}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972162890, "node": "node3", "peer": "node14", "ts": 1794878476.499479}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972209621, "node": "node3", "peer": "node15", "ts": 1794878476.4995258}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972251886, "node": "node3", "peer": "node2", "ts": 1794878476.4995682}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972289161, "node": "node3", "peer": "node5", "ts": 1794878476.4996054}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972320437, "node": "node3", "peer": "node6", "ts": 1794878476.4996367}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992972350878, "node": "node3", "peer": "node8", "ts": 1794878476.4996672}
-{"bytes": 2492, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403992973221498, "node": "node3", "peer": "node4", "ts": 1794878476.5005372}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992974302322, "node": "node3", "peer": "node12", "ts": 1794878476.5016181}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992974446302, "node": "node3", "peer": "node13", "ts": 1794878476.5017624}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992974541166, "node": "node3", "peer": "node14", "ts": 1794878476.5018573}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992974623254, "node": "node3", "peer": "node15", "ts": 1794878476.5019395}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992977187182, "node": "node3", "peer": "node2", "ts": 1794878476.5045028}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992980629413, "node": "node3", "peer": "node14", "ts": 1794878476.507945}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992980787704, "node": "node3", "peer": "node2", "ts": 1794878476.5081036}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992980945872, "node": "node3", "peer": "node6", "ts": 1794878476.508262}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403992981054765, "node": "node3", "peer": "node8", "ts": 1794878476.5083706}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993024391139, "node": "node3", "peer": "node1", "ts": 1794878476.5517066}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993024630304, "node": "node3", "peer": "node13", "ts": 1794878476.551946}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993024760457, "node": "node3", "peer": "node14", "ts": 1794878476.5520763}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993024885016, "node": "node3", "peer": "node15", "ts": 1794878476.552201}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993024990212, "node": "node3", "peer": "node2", "ts": 1794878476.5523062}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993025360461, "node": "node3", "peer": "node5", "ts": 1794878476.5526762}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993025582652, "node": "node3", "peer": "node6", "ts": 1794878476.5528984}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993025795244, "node": "node3", "peer": "node8", "ts": 1794878476.553111}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993033191618, "node": "node3", "peer": "node13", "ts": 1794878476.560507}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993033377812, "node": "node3", "peer": "node14", "ts": 1794878476.560694}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993033599896, "node": "node3", "peer": "node15", "ts": 1794878476.560916}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993033742913, "node": "node3", "peer": "node2", "ts": 1794878476.5610588}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993034272801, "node": "node3", "peer": "node14", "ts": 1794878476.5615888}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993034560410, "node": "node3", "peer": "node2", "ts": 1794878476.5618765}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993034848429, "node": "node3", "peer": "node6", "ts": 1794878476.5621645}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993035260348, "node": "node3", "peer": "node8", "ts": 1794878476.5625763}
-{"bytes": 2492, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993055944656, "node": "node3", "peer": "node2", "ts": 1794878476.5832598}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072276298, "node": "node3", "peer": "node1", "ts": 1794878476.5995922}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072374155, "node": "node3", "peer": "node13", "ts": 1794878476.5996904}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072419571, "node": "node3", "peer": "node14", "ts": 1794878476.5997357}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072457545, "node": "node3", "peer": "node15", "ts": 1794878476.599774}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072491909, "node": "node3", "peer": "node2", "ts": 1794878476.5998082}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072524588, "node": "node3", "peer": "node5", "ts": 1794878476.599841}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072566515, "node": "node3", "peer": "node6", "ts": 1794878476.5998828}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993072594692, "node": "node3", "peer": "node8", "ts": 1794878476.599911}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993080391821, "node": "node3", "peer": "node13", "ts": 1794878476.6077077}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993080515378, "node": "node3", "peer": "node14", "ts": 1794878476.6078315}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993080585392, "node": "node3", "peer": "node15", "ts": 1794878476.6079018}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993080683507, "node": "node3", "peer": "node2", "ts": 1794878476.6079998}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993082177603, "node": "node3", "peer": "node14", "ts": 1794878476.6094935}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993082260893, "node": "node3", "peer": "node2", "ts": 1794878476.609577}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993082325552, "node": "node3", "peer": "node8", "ts": 1794878476.6096418}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993136793991, "node": "node3", "peer": "node1", "ts": 1794878476.6641097}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993136965193, "node": "node3", "peer": "node14", "ts": 1794878476.6642814}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993137188783, "node": "node3", "peer": "node15", "ts": 1794878476.6645045}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993137386170, "node": "node3", "peer": "node2", "ts": 1794878476.664702}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993137452648, "node": "node3", "peer": "node5", "ts": 1794878476.6647687}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993137510006, "node": "node3", "peer": "node6", "ts": 1794878476.6648264}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993137562554, "node": "node3", "peer": "node8", "ts": 1794878476.6648788}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138251690, "node": "node3", "peer": "node13", "ts": 1794878476.6655674}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138404783, "node": "node3", "peer": "node14", "ts": 1794878476.665721}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138499883, "node": "node3", "peer": "node15", "ts": 1794878476.665816}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138589858, "node": "node3", "peer": "node2", "ts": 1794878476.665906}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138677825, "node": "node3", "peer": "node14", "ts": 1794878476.665994}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138761756, "node": "node3", "peer": "node2", "ts": 1794878476.6660779}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993138852893, "node": "node3", "peer": "node8", "ts": 1794878476.6661692}
-{"bytes": 2492, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993144041351, "node": "node3", "peer": "node11", "ts": 1794878476.671357}
-{"event": "record_learned", "job_id": "node11:ddd358a198fe49638709e593df6d3baa:1", "mono_ns": 403993166610913, "node": "node3", "origin": "node11", "ts": 1794878476.6939263}
-{"event": "learn", "mono_ns": 403993166780726, "node": "node3", "owner": "node11", "peer": "node4", "ts": 1794878476.6940966, "version": 3, "via": "push"}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993190615763, "node": "node3", "peer": "node1", "ts": 1794878476.7179317}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993190793536, "node": "node3", "peer": "node14", "ts": 1794878476.7181096}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993190873606, "node": "node3", "peer": "node15", "ts": 1794878476.7181897}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993190938447, "node": "node3", "peer": "node2", "ts": 1794878476.7182546}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993190996922, "node": "node3", "peer": "node5", "ts": 1794878476.7183132}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191063247, "node": "node3", "peer": "node6", "ts": 1794878476.7183795}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191127340, "node": "node3", "peer": "node8", "ts": 1794878476.7184436}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191362174, "node": "node3", "peer": "node14", "ts": 1794878476.7186785}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191454828, "node": "node3", "peer": "node15", "ts": 1794878476.718771}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191525798, "node": "node3", "peer": "node2", "ts": 1794878476.718842}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191686457, "node": "node3", "peer": "node14", "ts": 1794878476.7190027}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993191781545, "node": "node3", "peer": "node2", "ts": 1794878476.7190979}
-{"bytes": 2777, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993231783631, "node": "node3", "peer": "node1", "ts": 1794878476.7590992}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240527851, "node": "node3", "peer": "node15", "ts": 1794878476.7678437}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240637555, "node": "node3", "peer": "node2", "ts": 1794878476.7679536}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240723277, "node": "node3", "peer": "node14", "ts": 1794878476.7680395}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240783412, "node": "node3", "peer": "node2", "ts": 1794878476.7680995}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240830193, "node": "node3", "peer": "node1", "ts": 1794878476.7681465}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240873407, "node": "node3", "peer": "node14", "ts": 1794878476.7681897}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240918791, "node": "node3", "peer": "node15", "ts": 1794878476.768235}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993240968167, "node": "node3", "peer": "node2", "ts": 1794878476.7682843}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993241018830, "node": "node3", "peer": "node5", "ts": 1794878476.768335}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993241062579, "node": "node3", "peer": "node6", "ts": 1794878476.768379}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993241112802, "node": "node3", "peer": "node8", "ts": 1794878476.768429}
-{"event": "record_learned", "job_id": "node10:3602a7110d91453a8b387728970b4522:2", "mono_ns": 403993245145187, "node": "node3", "origin": "node10", "ts": 1794878476.772461}
-{"event": "record_learned", "job_id": "node12:3c8c00f93fd44db4976c1652f1b8c322:1", "mono_ns": 403993245221687, "node": "node3", "origin": "node12", "ts": 1794878476.772538}
-{"event": "record_learned", "job_id": "node12:3c8c00f93fd44db4976c1652f1b8c322:2", "mono_ns": 403993245253555, "node": "node3", "origin": "node12", "ts": 1794878476.77257}
-{"event": "record_learned", "job_id": "node5:75c51d3a3d2645509f53f1bdee6b07b6:2", "mono_ns": 403993245304383, "node": "node3", "origin": "node5", "ts": 1794878476.7726204}
-{"event": "learn", "mono_ns": 403993245331797, "node": "node3", "owner": "node10", "peer": "node1", "ts": 1794878476.7726476, "version": 3, "via": "pull"}
-{"event": "learn", "mono_ns": 403993245363134, "node": "node3", "owner": "node12", "peer": "node1", "ts": 1794878476.7726793, "version": 3, "via": "pull"}
-{"event": "learn", "mono_ns": 403993245390701, "node": "node3", "owner": "node5", "peer": "node1", "ts": 1794878476.772707, "version": 2, "via": "pull"}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291334100, "node": "node3", "peer": "node15", "ts": 1794878476.8186498}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291464523, "node": "node3", "peer": "node2", "ts": 1794878476.8187807}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291540584, "node": "node3", "peer": "node1", "ts": 1794878476.818857}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291590608, "node": "node3", "peer": "node14", "ts": 1794878476.8189068}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291635907, "node": "node3", "peer": "node15", "ts": 1794878476.818952}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291671408, "node": "node3", "peer": "node2", "ts": 1794878476.8189878}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291709806, "node": "node3", "peer": "node5", "ts": 1794878476.8190262}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993291749235, "node": "node3", "peer": "node6", "ts": 1794878476.8190656}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993292200588, "node": "node3", "peer": "node8", "ts": 1794878476.819516}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993294694846, "node": "node3", "peer": "node14", "ts": 1794878476.8220105}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993294890698, "node": "node3", "peer": "node2", "ts": 1794878476.8222067}
-{"bytes": 3912, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993331380748, "node": "node3", "peer": "node10", "ts": 1794878476.8586965}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993342892810, "node": "node3", "peer": "node15", "ts": 1794878476.8702087}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993343133504, "node": "node3", "peer": "node2", "ts": 1794878476.8704498}
-{"event": "record_learned", "job_id": "node14:b2d12aaa11f8467babb50f250f9f0ee2:1", "mono_ns": 403993345481810, "node": "node3", "origin": "node14", "ts": 1794878476.872798}
-{"event": "record_learned", "job_id": "node14:b2d12aaa11f8467babb50f250f9f0ee2:2", "mono_ns": 403993345557766, "node": "node3", "origin": "node14", "ts": 1794878476.872874}
-{"event": "record_learned", "job_id": "node15:4c86d9ed33ae4fd9ba4ea4c6eb781007:3", "mono_ns": 403993345578713, "node": "node3", "origin": "node15", "ts": 1794878476.872895}
-{"event": "learn", "mono_ns": 403993345594037, "node": "node3", "owner": "node14", "peer": "node10", "ts": 1794878476.8729103, "version": 3, "via": "pull"}
-{"event": "learn", "mono_ns": 403993345610717, "node": "node3", "owner": "node15", "peer": "node10", "ts": 1794878476.872927, "version": 3, "via": "pull"}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993348569246, "node": "node3", "peer": "node14", "ts": 1794878476.875885}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993348964753, "node": "node3", "peer": "node2", "ts": 1794878476.8762805}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993349866514, "node": "node3", "peer": "node1", "ts": 1794878476.8771825}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993350137547, "node": "node3", "peer": "node14", "ts": 1794878476.8774536}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993350221933, "node": "node3", "peer": "node2", "ts": 1794878476.8775382}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993350278107, "node": "node3", "peer": "node6", "ts": 1794878476.8775945}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993350339587, "node": "node3", "peer": "node8", "ts": 1794878476.8776557}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993385199461, "node": "node3", "peer": "node15", "ts": 1794878476.9125154}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993385336216, "node": "node3", "peer": "node2", "ts": 1794878476.9126523}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392182971, "node": "node3", "peer": "node2", "ts": 1794878476.919499}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392540488, "node": "node3", "peer": "node1", "ts": 1794878476.9198565}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392632569, "node": "node3", "peer": "node14", "ts": 1794878476.9199488}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392690499, "node": "node3", "peer": "node2", "ts": 1794878476.9200068}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392735225, "node": "node3", "peer": "node6", "ts": 1794878476.9200516}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993392783939, "node": "node3", "peer": "node8", "ts": 1794878476.9201002}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993429256592, "node": "node3", "peer": "node2", "ts": 1794878476.9565725}
-{"bytes": 4768, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993432485768, "node": "node3", "peer": "node10", "ts": 1794878476.9598014}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993435649013, "node": "node3", "peer": "node2", "ts": 1794878476.9629648}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993435918793, "node": "node3", "peer": "node1", "ts": 1794878476.963235}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993436064361, "node": "node3", "peer": "node14", "ts": 1794878476.9633806}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993436162265, "node": "node3", "peer": "node2", "ts": 1794878476.9634783}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993436225862, "node": "node3", "peer": "node6", "ts": 1794878476.963542}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993436278190, "node": "node3", "peer": "node8", "ts": 1794878476.9635944}
-{"event": "cs_enter", "mono_ns": 403993439896428, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:1", "resource": "printer1", "ts": 1794878476.9672122}
-{"event": "record_learned", "job_id": "node6:fff88c32f9b64fe39928f09368977756:2", "mono_ns": 403993456747746, "node": "node3", "origin": "node6", "ts": 1794878476.9840624}
-{"event": "record_learned", "job_id": "node13:d80520401d5a4cb198b14f95a58cb9c4:1", "mono_ns": 403993456869922, "node": "node3", "origin": "node13", "ts": 1794878476.9841862}
-{"event": "record_learned", "job_id": "node13:d80520401d5a4cb198b14f95a58cb9c4:2", "mono_ns": 403993456902138, "node": "node3", "origin": "node13", "ts": 1794878476.9842184}
-{"event": "record_learned", "job_id": "node8:65d49f1b22aa4b57ba62367dda0be4e7:2", "mono_ns": 403993456929609, "node": "node3", "origin": "node8", "ts": 1794878476.9842458}
-{"event": "learn", "mono_ns": 403993456959646, "node": "node3", "owner": "node6", "peer": "node4", "ts": 1794878476.984276, "version": 2, "via": "push"}
-{"event": "learn", "mono_ns": 403993457075831, "node": "node3", "owner": "node13", "peer": "node4", "ts": 1794878476.984392, "version": 3, "via": "push"}
-{"event": "learn", "mono_ns": 403993457128199, "node": "node3", "owner": "node8", "peer": "node4", "ts": 1794878476.9844444, "version": 2, "via": "push"}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993479435090, "node": "node3", "peer": "node2", "ts": 1794878477.0067515}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993479504168, "node": "node3", "peer": "node1", "ts": 1794878477.0068204}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993479537441, "node": "node3", "peer": "node14", "ts": 1794878477.0068538}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993479566221, "node": "node3", "peer": "node2", "ts": 1794878477.0068827}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993479594975, "node": "node3", "peer": "node8", "ts": 1794878477.0069113}
-{"event": "record_learned", "job_id": "node5:75c51d3a3d2645509f53f1bdee6b07b6:3", "mono_ns": 403993498383721, "node": "node3", "origin": "node5", "ts": 1794878477.0256991}
-{"event": "record_learned", "job_id": "node15:4c86d9ed33ae4fd9ba4ea4c6eb781007:1", "mono_ns": 403993498494808, "node": "node3", "origin": "node15", "ts": 1794878477.025811}
-{"event": "learn", "mono_ns": 403993498543095, "node": "node3", "owner": "node5", "peer": "node5", "ts": 1794878477.0258594, "version": 3, "via": "push"}
-{"event": "learn", "mono_ns": 403993498581116, "node": "node3", "owner": "node15", "peer": "node5", "ts": 1794878477.0258973, "version": 4, "via": "push"}
-{"event": "cs_enter", "mono_ns": 403993501782935, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:2", "resource": "printer3", "ts": 1794878477.0290987}
-{"event": "record_learned", "job_id": "node2:65de690a78c34816945cf595e243c196:1", "mono_ns": 403993504655283, "node": "node3", "origin": "node2", "ts": 1794878477.0319707}
-{"event": "learn", "mono_ns": 403993504825495, "node": "node3", "owner": "node2", "peer": "node12", "ts": 1794878477.032142, "version": 2, "via": "push"}
-{"event": "record_learned", "job_id": "node3:4e961508d3f44378974508365bf615af:1", "mono_ns": 403993511520127, "node": "node3", "origin": "node3", "ts": 1794878477.038836}
-{"acquire_ms": 1056.0507079935633, "computer": "node3", "document": "node3-0.pdf", "event": "job_completed", "job_id": "node3:4e961508d3f44378974508365bf615af:1", "mono_ns": 403993511624195, "node": "node3", "pages": 1, "printer": "printer1", "request_id": "node3:4e961508d3f44378974508365bf615af:1", "status": "completed", "total_ms": 1127.6054390473291, "ts": 1794878477.0389404}
-{"event": "cs_exit", "mono_ns": 403993511692213, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:1", "resource": "printer1", "ts": 1794878477.0390081}
-{"bytes": 7028, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993529649674, "node": "node3", "peer": "node15", "ts": 1794878477.0569656}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993533051492, "node": "node3", "peer": "node1", "ts": 1794878477.0603673}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993533174154, "node": "node3", "peer": "node14", "ts": 1794878477.0604901}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993533247481, "node": "node3", "peer": "node2", "ts": 1794878477.0605638}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993533305327, "node": "node3", "peer": "node8", "ts": 1794878477.0606213}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535382044, "node": "node3", "peer": "node1", "ts": 1794878477.0626976}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535475488, "node": "node3", "peer": "node5", "ts": 1794878477.0627916}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535522362, "node": "node3", "peer": "node6", "ts": 1794878477.0628388}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535568347, "node": "node3", "peer": "node4", "ts": 1794878477.0628846}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535605458, "node": "node3", "peer": "node9", "ts": 1794878477.0629218}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535639227, "node": "node3", "peer": "node8", "ts": 1794878477.0629556}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993535673915, "node": "node3", "peer": "node7", "ts": 1794878477.0629904}
-{"event": "record_learned", "job_id": "node6:fff88c32f9b64fe39928f09368977756:3", "mono_ns": 403993566303619, "node": "node3", "origin": "node6", "ts": 1794878477.0936189}
-{"event": "learn", "mono_ns": 403993566514462, "node": "node3", "owner": "node6", "peer": "node7", "ts": 1794878477.0938299, "version": 3, "via": "push"}
-{"event": "record_learned", "job_id": "node3:4e961508d3f44378974508365bf615af:2", "mono_ns": 403993574248172, "node": "node3", "origin": "node3", "ts": 1794878477.101564}
-{"acquire_ms": 1071.027375990525, "computer": "node3", "document": "node3-2.pdf", "event": "job_completed", "job_id": "node3:4e961508d3f44378974508365bf615af:2", "mono_ns": 403993574350072, "node": "node3", "pages": 1, "printer": "printer3", "request_id": "node3:4e961508d3f44378974508365bf615af:2", "status": "completed", "total_ms": 1143.475844990462, "ts": 1794878477.101666}
-{"event": "cs_exit", "mono_ns": 403993574423873, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:2", "resource": "printer3", "ts": 1794878477.1017401}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993592678105, "node": "node3", "peer": "node14", "ts": 1794878477.1199942}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993592770601, "node": "node3", "peer": "node2", "ts": 1794878477.1200867}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993592817451, "node": "node3", "peer": "node8", "ts": 1794878477.1201336}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993601605126, "node": "node3", "peer": "node9", "ts": 1794878477.1289208}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993602853374, "node": "node3", "peer": "node8", "ts": 1794878477.1301692}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603101091, "node": "node3", "peer": "node4", "ts": 1794878477.130417}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603240454, "node": "node3", "peer": "node1", "ts": 1794878477.1305563}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603358939, "node": "node3", "peer": "node12", "ts": 1794878477.1306748}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603482245, "node": "node3", "peer": "node11", "ts": 1794878477.130798}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603597560, "node": "node3", "peer": "node4", "ts": 1794878477.1309135}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603706030, "node": "node3", "peer": "node9", "ts": 1794878477.131022}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603802815, "node": "node3", "peer": "node13", "ts": 1794878477.1311188}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993603907555, "node": "node3", "peer": "node7", "ts": 1794878477.1312234}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993604015992, "node": "node3", "peer": "node10", "ts": 1794878477.1313322}
-{"bytes": 7592, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993632636123, "node": "node3", "peer": "node4", "ts": 1794878477.159952}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993644587364, "node": "node3", "peer": "node14", "ts": 1794878477.171903}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993644771214, "node": "node3", "peer": "node2", "ts": 1794878477.172087}
-{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993644866049, "node": "node3", "peer": "node8", "ts": 1794878477.1721823}
-{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993654534152, "node": "node3", "peer": "node9", "ts": 1794878477.1818492}
-{"event": "record_learned", "job_id": "node2:65de690a78c34816945cf595e243c196:2", "mono_ns": 403993670247112, "node": "node3", "origin": "node2", "ts": 1794878477.1975615}
-{"event": "learn", "mono_ns": 403993670513857, "node": "node3", "owner": "node2", "peer": "node2", "ts": 1794878477.1978297, "version": 3, "via": "push"}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993696541151, "node": "node3", "peer": "node14", "ts": 1794878477.2238567}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993696660358, "node": "node3", "peer": "node2", "ts": 1794878477.2239764}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993696719194, "node": "node3", "peer": "node8", "ts": 1794878477.2240353}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403993703095797, "node": "node3", "peer": "node9", "ts": 1794878477.2304118}
-{"bytes": 7875, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993716907715, "node": "node3", "peer": "node9", "ts": 1794878477.2442226}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993748042358, "node": "node3", "peer": "node14", "ts": 1794878477.2753584}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993748120599, "node": "node3", "peer": "node2", "ts": 1794878477.2754369}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993748151410, "node": "node3", "peer": "node8", "ts": 1794878477.2754679}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993790352949, "node": "node3", "peer": "node14", "ts": 1794878477.3176687}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993790545895, "node": "node3", "peer": "node2", "ts": 1794878477.3178618}
-{"bytes": 7875, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993816847322, "node": "node3", "peer": "node4", "ts": 1794878477.3441632}
-{"event": "record_learned", "job_id": "node4:f18a970aecb04b4fb5be367c49823688:1", "mono_ns": 403993829599980, "node": "node3", "origin": "node4", "ts": 1794878477.356916}
-{"event": "record_learned", "job_id": "node4:f18a970aecb04b4fb5be367c49823688:2", "mono_ns": 403993829643239, "node": "node3", "origin": "node4", "ts": 1794878477.3569596}
-{"event": "record_learned", "job_id": "node1:4d51fa7165ce4821bc3c7469bb2bc7f6:3", "mono_ns": 403993829663221, "node": "node3", "origin": "node1", "ts": 1794878477.3569794}
-{"event": "learn", "mono_ns": 403993829679049, "node": "node3", "owner": "node4", "peer": "node4", "ts": 1794878477.3569953, "version": 3, "via": "pull"}
-{"event": "learn", "mono_ns": 403993829695186, "node": "node3", "owner": "node1", "peer": "node4", "ts": 1794878477.3570116, "version": 3, "via": "pull"}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993833013531, "node": "node3", "peer": "node14", "ts": 1794878477.3603296}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993833091588, "node": "node3", "peer": "node2", "ts": 1794878477.3604078}
-{"event": "record_learned", "job_id": "node7:5e8c559e7cb34c8888fbeb5a0db3253c:2", "mono_ns": 403993869325879, "node": "node3", "origin": "node7", "ts": 1794878477.396641}
-{"event": "learn", "mono_ns": 403993869410116, "node": "node3", "owner": "node7", "peer": "node7", "ts": 1794878477.3967264, "version": 2, "via": "push"}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993879565109, "node": "node3", "peer": "node14", "ts": 1794878477.4068809}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993879781837, "node": "node3", "peer": "node2", "ts": 1794878477.4070976}
-{"bytes": 8998, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403993916977997, "node": "node3", "peer": "node5", "ts": 1794878477.444294}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993928969553, "node": "node3", "peer": "node2", "ts": 1794878477.4562855}
-{"event": "record_learned", "job_id": "node5:75c51d3a3d2645509f53f1bdee6b07b6:1", "mono_ns": 403993929461374, "node": "node3", "origin": "node5", "ts": 1794878477.4567776}
-{"event": "learn", "mono_ns": 403993929491972, "node": "node3", "owner": "node5", "peer": "node5", "ts": 1794878477.456808, "version": 4, "via": "pull"}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403993974704116, "node": "node3", "peer": "node2", "ts": 1794878477.50202}
-{"bytes": 9281, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994015882263, "node": "node3", "peer": "node15", "ts": 1794878477.543198}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403994022248834, "node": "node3", "peer": "node2", "ts": 1794878477.5495646}
-{"event": "record_learned", "job_id": "node6:fff88c32f9b64fe39928f09368977756:1", "mono_ns": 403994029403208, "node": "node3", "origin": "node6", "ts": 1794878477.5567188}
-{"event": "record_learned", "job_id": "node8:65d49f1b22aa4b57ba62367dda0be4e7:3", "mono_ns": 403994029486895, "node": "node3", "origin": "node8", "ts": 1794878477.556803}
-{"event": "learn", "mono_ns": 403994029518996, "node": "node3", "owner": "node6", "peer": "node15", "ts": 1794878477.5568352, "version": 4, "via": "pull"}
-{"event": "learn", "mono_ns": 403994029558652, "node": "node3", "owner": "node8", "peer": "node15", "ts": 1794878477.5568748, "version": 3, "via": "pull"}
-{"event": "record_learned", "job_id": "node14:b2d12aaa11f8467babb50f250f9f0ee2:3", "mono_ns": 403994031252518, "node": "node3", "origin": "node14", "ts": 1794878477.5585685}
-{"event": "learn", "mono_ns": 403994031305253, "node": "node3", "owner": "node14", "peer": "node14", "ts": 1794878477.5586214, "version": 4, "via": "push"}
-{"bytes": 166, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 403994065111031, "node": "node3", "peer": "node2", "ts": 1794878477.5924268}
-{"event": "record_learned", "job_id": "node7:5e8c559e7cb34c8888fbeb5a0db3253c:1", "mono_ns": 403994069879950, "node": "node3", "origin": "node7", "ts": 1794878477.5971956}
-{"event": "learn", "mono_ns": 403994069954618, "node": "node3", "owner": "node7", "peer": "node7", "ts": 1794878477.5972707, "version": 3, "via": "push"}
-{"event": "cs_enter", "mono_ns": 403994098341713, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:3", "resource": "printer2", "ts": 1794878477.6256573}
-{"bytes": 10416, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994116910606, "node": "node3", "peer": "node15", "ts": 1794878477.6442258}
-{"event": "record_learned", "job_id": "node3:4e961508d3f44378974508365bf615af:3", "mono_ns": 403994167450307, "node": "node3", "origin": "node3", "ts": 1794878477.6947663}
-{"acquire_ms": 1666.7375669931062, "computer": "node3", "document": "node3-1.pdf", "event": "job_completed", "job_id": "node3:4e961508d3f44378974508365bf615af:3", "mono_ns": 403994167532206, "node": "node3", "pages": 1, "printer": "printer2", "request_id": "node3:4e961508d3f44378974508365bf615af:3", "status": "completed", "total_ms": 1735.7795879943296, "ts": 1794878477.6948485}
-{"event": "cs_exit", "mono_ns": 403994167594744, "node": "node3", "request_id": "node3:4e961508d3f44378974508365bf615af:3", "resource": "printer2", "ts": 1794878477.694911}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403994189165289, "node": "node3", "peer": "node4", "ts": 1794878477.7164807}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403994189323253, "node": "node3", "peer": "node9", "ts": 1794878477.7166393}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403994189427391, "node": "node3", "peer": "node7", "ts": 1794878477.7167435}
-{"bytes": 10698, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994219816589, "node": "node3", "peer": "node11", "ts": 1794878477.7471313}
-{"event": "record_learned", "job_id": "node11:ddd358a198fe49638709e593df6d3baa:3", "mono_ns": 403994236289119, "node": "node3", "origin": "node11", "ts": 1794878477.7636042}
-{"event": "record_learned", "job_id": "node2:65de690a78c34816945cf595e243c196:3", "mono_ns": 403994236565345, "node": "node3", "origin": "node2", "ts": 1794878477.763881}
-{"event": "learn", "mono_ns": 403994236674769, "node": "node3", "owner": "node11", "peer": "node11", "ts": 1794878477.7639909, "version": 4, "via": "pull"}
-{"event": "learn", "mono_ns": 403994236763345, "node": "node3", "owner": "node2", "peer": "node11", "ts": 1794878477.764079, "version": 4, "via": "pull"}
-{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 403994241576656, "node": "node3", "peer": "node7", "ts": 1794878477.7688918}
-{"bytes": 11267, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994326550240, "node": "node3", "peer": "node13", "ts": 1794878477.853866}
-{"event": "record_learned", "job_id": "node10:3602a7110d91453a8b387728970b4522:3", "mono_ns": 403994341706305, "node": "node3", "origin": "node10", "ts": 1794878477.8690221}
-{"event": "record_learned", "job_id": "node9:15c51a337eaf4b5da54b2ab25fa59dfe:2", "mono_ns": 403994341793872, "node": "node3", "origin": "node9", "ts": 1794878477.86911}
-{"event": "record_learned", "job_id": "node8:65d49f1b22aa4b57ba62367dda0be4e7:1", "mono_ns": 403994341835206, "node": "node3", "origin": "node8", "ts": 1794878477.8691516}
-{"event": "learn", "mono_ns": 403994341871787, "node": "node3", "owner": "node10", "peer": "node13", "ts": 1794878477.8691878, "version": 4, "via": "pull"}
-{"event": "learn", "mono_ns": 403994341911294, "node": "node3", "owner": "node9", "peer": "node13", "ts": 1794878477.8692272, "version": 2, "via": "pull"}
-{"event": "learn", "mono_ns": 403994341944489, "node": "node3", "owner": "node8", "peer": "node13", "ts": 1794878477.8692605, "version": 4, "via": "pull"}
-{"event": "record_learned", "job_id": "node9:15c51a337eaf4b5da54b2ab25fa59dfe:1", "mono_ns": 403994426518835, "node": "node3", "origin": "node9", "ts": 1794878477.9538348}
-{"event": "record_learned", "job_id": "node12:3c8c00f93fd44db4976c1652f1b8c322:3", "mono_ns": 403994426576499, "node": "node3", "origin": "node12", "ts": 1794878477.953893}
-{"event": "record_learned", "job_id": "node7:5e8c559e7cb34c8888fbeb5a0db3253c:3", "mono_ns": 403994426593629, "node": "node3", "origin": "node7", "ts": 1794878477.95391}
-{"event": "learn", "mono_ns": 403994426606728, "node": "node3", "owner": "node9", "peer": "node9", "ts": 1794878477.953923, "version": 3, "via": "push"}
-{"event": "learn", "mono_ns": 403994426621148, "node": "node3", "owner": "node12", "peer": "node9", "ts": 1794878477.9539373, "version": 4, "via": "push"}
-{"event": "learn", "mono_ns": 403994426633825, "node": "node3", "owner": "node7", "peer": "node9", "ts": 1794878477.9539502, "version": 4, "via": "push"}
-{"bytes": 12968, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994427800874, "node": "node3", "peer": "node6", "ts": 1794878477.955117}
-{"event": "record_learned", "job_id": "node4:f18a970aecb04b4fb5be367c49823688:3", "mono_ns": 403994443672021, "node": "node3", "origin": "node4", "ts": 1794878477.970988}
-{"event": "learn", "mono_ns": 403994443775917, "node": "node3", "owner": "node4", "peer": "node6", "ts": 1794878477.971092, "version": 4, "via": "pull"}
-{"bytes": 13251, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994528505962, "node": "node3", "peer": "node5", "ts": 1794878478.0558221}
-{"event": "record_learned", "job_id": "node1:4d51fa7165ce4821bc3c7469bb2bc7f6:2", "mono_ns": 403994542153580, "node": "node3", "origin": "node1", "ts": 1794878478.0694697}
-{"event": "record_learned", "job_id": "node1:4d51fa7165ce4821bc3c7469bb2bc7f6:4", "mono_ns": 403994542243625, "node": "node3", "origin": "node1", "ts": 1794878478.0695598}
-{"event": "learn", "mono_ns": 403994542267846, "node": "node3", "owner": "node1", "peer": "node5", "ts": 1794878478.0695841, "version": 5, "via": "pull"}
-{"bytes": 13816, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994626403110, "node": "node3", "peer": "node6", "ts": 1794878478.1537182}
-{"bytes": 13816, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994712022932, "node": "node3", "peer": "node10", "ts": 1794878478.2393382}
-{"event": "record_learned", "job_id": "node13:d80520401d5a4cb198b14f95a58cb9c4:3", "mono_ns": 403994727932166, "node": "node3", "origin": "node13", "ts": 1794878478.2552478}
-{"event": "learn", "mono_ns": 403994728044763, "node": "node3", "owner": "node13", "peer": "node10", "ts": 1794878478.255361, "version": 4, "via": "pull"}
-{"bytes": 14101, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994815761981, "node": "node3", "peer": "node15", "ts": 1794878478.3430777}
-{"bytes": 14101, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403994900118152, "node": "node3", "peer": "node6", "ts": 1794878478.427434}
-{"event": "record_learned", "job_id": "node9:15c51a337eaf4b5da54b2ab25fa59dfe:3", "mono_ns": 403994913975951, "node": "node3", "origin": "node9", "ts": 1794878478.441292}
-{"event": "learn", "mono_ns": 403994914059156, "node": "node3", "owner": "node9", "peer": "node6", "ts": 1794878478.4413753, "version": 4, "via": "pull"}
-{"bytes": 14384, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403995000546667, "node": "node3", "peer": "node14", "ts": 1794878478.5278625}
-{"bytes": 14384, "event": "rpc_send", "message_type": "gossip", "mono_ns": 403995100444109, "node": "node3", "peer": "node14", "ts": 1794878478.6277602}
+{"event": "start", "model": "fixed-membership/crash-stop", "mono_ns": 407261152639420, "node": "node3", "peers": ["node1", "node10", "node11", "node12", "node13", "node14", "node15", "node2", "node4", "node5", "node6", "node7", "node8", "node9"], "printers": {"printer1": "http://printer1:8000", "printer2": "http://printer2:8000", "printer3": "http://printer3:8000", "printer4": "http://printer4:8000", "printer5": "http://printer5:8000"}, "seed": 22, "ts": 1794881744.6799548}
+{"bytes": 163, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261153107672, "node": "node3", "peer": "node9", "ts": 1794881744.6804235}
+{"event": "learn", "mono_ns": 407261172333911, "node": "node3", "owner": "node12", "peer": "node12", "ts": 1794881744.6996498, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261172672463, "node": "node3", "owner": "node5", "peer": "node12", "ts": 1794881744.6999884, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261172894191, "node": "node3", "owner": "node1", "peer": "node12", "ts": 1794881744.7002103, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261173085853, "node": "node3", "owner": "node9", "peer": "node12", "ts": 1794881744.700402, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261173208272, "node": "node3", "owner": "node14", "peer": "node12", "ts": 1794881744.7005246, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261247614188, "node": "node3", "owner": "node8", "peer": "node8", "ts": 1794881744.7749302, "version": 1, "via": "push"}
+{"bytes": 674, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261264554247, "node": "node3", "peer": "node12", "ts": 1794881744.7918699}
+{"bytes": 674, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261354372342, "node": "node3", "peer": "node9", "ts": 1794881744.8816884}
+{"event": "learn", "mono_ns": 407261355818329, "node": "node3", "owner": "node15", "peer": "node9", "ts": 1794881744.8831344, "version": 1, "via": "pull"}
+{"event": "learn", "mono_ns": 407261355873891, "node": "node3", "owner": "node11", "peer": "node9", "ts": 1794881744.88319, "version": 1, "via": "pull"}
+{"bytes": 853, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261440312963, "node": "node3", "peer": "node1", "ts": 1794881744.967629}
+{"event": "learn", "mono_ns": 407261442259296, "node": "node3", "owner": "node4", "peer": "node1", "ts": 1794881744.9695754, "version": 1, "via": "pull"}
+{"event": "learn", "mono_ns": 407261518255269, "node": "node3", "owner": "node6", "peer": "node6", "ts": 1794881745.045571, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261518336611, "node": "node3", "owner": "node13", "peer": "node6", "ts": 1794881745.0456526, "version": 1, "via": "push"}
+{"event": "learn", "mono_ns": 407261518380926, "node": "node3", "owner": "node10", "peer": "node6", "ts": 1794881745.045697, "version": 1, "via": "push"}
+{"bytes": 1198, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261527577317, "node": "node3", "peer": "node10", "ts": 1794881745.054893}
+{"event": "learn", "mono_ns": 407261530194505, "node": "node3", "owner": "node7", "peer": "node10", "ts": 1794881745.0575106, "version": 1, "via": "pull"}
+{"bytes": 1283, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261611869277, "node": "node3", "peer": "node9", "ts": 1794881745.139183}
+{"bytes": 1283, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261700256821, "node": "node3", "peer": "node5", "ts": 1794881745.2275727}
+{"event": "learn", "mono_ns": 407261702165599, "node": "node3", "owner": "node2", "peer": "node5", "ts": 1794881745.2294817, "version": 1, "via": "pull"}
+{"elapsed_s": 0.551, "event": "complete", "mono_ns": 407261702208093, "node": "node3", "ts": 1794881745.2295244}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261788297049, "node": "node3", "peer": "node11", "ts": 1794881745.315613}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261879381974, "node": "node3", "peer": "node7", "ts": 1794881745.406698}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407261966319246, "node": "node3", "peer": "node14", "ts": 1794881745.4936354}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262058081391, "node": "node3", "peer": "node11", "ts": 1794881745.5853965}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262148324023, "node": "node3", "peer": "node10", "ts": 1794881745.6756394}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262235289078, "node": "node3", "peer": "node5", "ts": 1794881745.7626047}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262323677399, "node": "node3", "peer": "node2", "ts": 1794881745.850993}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262415415408, "node": "node3", "peer": "node12", "ts": 1794881745.942731}
+{"bytes": 145, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407262464230682, "node": "node3", "peer": "node1", "ts": 1794881745.9915466}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262500193055, "node": "node3", "peer": "node13", "ts": 1794881746.027509}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262585888637, "node": "node3", "peer": "node14", "ts": 1794881746.1132045}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262671632863, "node": "node3", "peer": "node13", "ts": 1794881746.198948}
+{"bytes": 1363, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262761256244, "node": "node3", "peer": "node15", "ts": 1794881746.2885714}
+{"event": "record_learned", "job_id": "node1:1552920923b34d3cbd7340b65dd2efa5:1", "mono_ns": 407262764959787, "node": "node3", "origin": "node1", "ts": 1794881746.2922757}
+{"event": "learn", "mono_ns": 407262765034973, "node": "node3", "owner": "node1", "peer": "node15", "ts": 1794881746.2923512, "version": 2, "via": "pull"}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262850363012, "node": "node3", "peer": "node9", "ts": 1794881746.3776786}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407262937244943, "node": "node3", "peer": "node6", "ts": 1794881746.46456}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263030451812, "node": "node3", "peer": "node7", "ts": 1794881746.5577679}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263117510499, "node": "node3", "peer": "node7", "ts": 1794881746.6448257}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263204910988, "node": "node3", "peer": "node10", "ts": 1794881746.732226}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263297436476, "node": "node3", "peer": "node14", "ts": 1794881746.824752}
+{"blocked_peers": [], "delay_ms": 10, "event": "fault_changed", "loss": 0.2, "mono_ns": 407263367757813, "node": "node3", "ts": 1794881746.8950737, "types": []}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263386230738, "node": "node3", "peer": "node9", "ts": 1794881746.913546}
+{"computer": "node3", "document": "node3-0.pdf", "event": "job_submitted", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "mono_ns": 407263395445151, "node": "node3", "pages": 1, "printer": "printer1", "status": "queued", "ts": 1794881746.9227605}
+{"clock": 12, "event": "ra_request", "mono_ns": 407263398644758, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "resource": "printer1", "ts": 1794881746.9259605}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399127698, "node": "node3", "peer": "node1", "ts": 1794881746.9264436}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399259662, "node": "node3", "peer": "node10", "ts": 1794881746.9265757}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399359793, "node": "node3", "peer": "node11", "ts": 1794881746.926676}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399450732, "node": "node3", "peer": "node12", "ts": 1794881746.9267669}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399523338, "node": "node3", "peer": "node13", "ts": 1794881746.9268396}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399585873, "node": "node3", "peer": "node14", "ts": 1794881746.926902}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399652769, "node": "node3", "peer": "node15", "ts": 1794881746.9269688}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399722346, "node": "node3", "peer": "node2", "ts": 1794881746.9270384}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399779397, "node": "node3", "peer": "node4", "ts": 1794881746.9270957}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399844515, "node": "node3", "peer": "node5", "ts": 1794881746.9271605}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399911932, "node": "node3", "peer": "node6", "ts": 1794881746.9272282}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263399979721, "node": "node3", "peer": "node7", "ts": 1794881746.927296}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263400048011, "node": "node3", "peer": "node8", "ts": 1794881746.927364}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263400114472, "node": "node3", "peer": "node9", "ts": 1794881746.9274306}
+{"computer": "node3", "document": "node3-2.pdf", "event": "job_submitted", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "mono_ns": 407263421445512, "node": "node3", "pages": 1, "printer": "printer3", "status": "queued", "ts": 1794881746.948761}
+{"computer": "node3", "document": "node3-1.pdf", "event": "job_submitted", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "mono_ns": 407263422513067, "node": "node3", "pages": 1, "printer": "printer2", "status": "queued", "ts": 1794881746.9498281}
+{"clock": 29, "event": "ra_request", "mono_ns": 407263425152347, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "resource": "printer3", "ts": 1794881746.9524677}
+{"clock": 44, "event": "ra_request", "mono_ns": 407263426738206, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "resource": "printer2", "ts": 1794881746.9540532}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428024387, "node": "node3", "peer": "node1", "ts": 1794881746.9553401}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428173005, "node": "node3", "peer": "node10", "ts": 1794881746.955489}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428287036, "node": "node3", "peer": "node11", "ts": 1794881746.9556031}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428380845, "node": "node3", "peer": "node12", "ts": 1794881746.955697}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428463304, "node": "node3", "peer": "node13", "ts": 1794881746.9557796}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428539862, "node": "node3", "peer": "node14", "ts": 1794881746.955856}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428603298, "node": "node3", "peer": "node15", "ts": 1794881746.9559193}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428667606, "node": "node3", "peer": "node2", "ts": 1794881746.9559839}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428735001, "node": "node3", "peer": "node4", "ts": 1794881746.956051}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428806041, "node": "node3", "peer": "node5", "ts": 1794881746.9561222}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263428899109, "node": "node3", "peer": "node6", "ts": 1794881746.9562154}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263441363312, "node": "node3", "peer": "node7", "ts": 1794881746.9686787}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263441813729, "node": "node3", "peer": "node8", "ts": 1794881746.9691296}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263442601535, "node": "node3", "peer": "node9", "ts": 1794881746.9699173}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263442761433, "node": "node3", "peer": "node1", "ts": 1794881746.9700773}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263445735782, "node": "node3", "peer": "node10", "ts": 1794881746.9730508}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263445908972, "node": "node3", "peer": "node11", "ts": 1794881746.9732249}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263445998622, "node": "node3", "peer": "node12", "ts": 1794881746.9733148}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446077801, "node": "node3", "peer": "node13", "ts": 1794881746.973394}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446139621, "node": "node3", "peer": "node14", "ts": 1794881746.973456}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446197504, "node": "node3", "peer": "node15", "ts": 1794881746.9735138}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446263020, "node": "node3", "peer": "node2", "ts": 1794881746.9735792}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446319536, "node": "node3", "peer": "node4", "ts": 1794881746.973636}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446368102, "node": "node3", "peer": "node5", "ts": 1794881746.9736843}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446414125, "node": "node3", "peer": "node6", "ts": 1794881746.9737303}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446457251, "node": "node3", "peer": "node7", "ts": 1794881746.9737728}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446495480, "node": "node3", "peer": "node8", "ts": 1794881746.9738116}
+{"bytes": 164, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263446542061, "node": "node3", "peer": "node9", "ts": 1794881746.9738584}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263449606907, "node": "node3", "peer": "node10", "ts": 1794881746.976923}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263449794673, "node": "node3", "peer": "node15", "ts": 1794881746.9771109}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263449910597, "node": "node3", "peer": "node12", "ts": 1794881746.9772267}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263495915435, "node": "node3", "peer": "node12", "ts": 1794881747.0232315}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263526783490, "node": "node3", "peer": "node10", "ts": 1794881747.0540998}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263526877916, "node": "node3", "peer": "node13", "ts": 1794881747.0541942}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263526925175, "node": "node3", "peer": "node13", "ts": 1794881747.0542414}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263526959341, "node": "node3", "peer": "node2", "ts": 1794881747.0542755}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263526993565, "node": "node3", "peer": "node2", "ts": 1794881747.0543098}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527090539, "node": "node3", "peer": "node8", "ts": 1794881747.054407}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527144660, "node": "node3", "peer": "node12", "ts": 1794881747.054461}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527194515, "node": "node3", "peer": "node12", "ts": 1794881747.0545108}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527226048, "node": "node3", "peer": "node14", "ts": 1794881747.0545423}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527257946, "node": "node3", "peer": "node11", "ts": 1794881747.0545743}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263527287547, "node": "node3", "peer": "node11", "ts": 1794881747.0546038}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263548888845, "node": "node3", "peer": "node1", "ts": 1794881747.0762048}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549062754, "node": "node3", "peer": "node10", "ts": 1794881747.0763786}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549142358, "node": "node3", "peer": "node11", "ts": 1794881747.0764585}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549185657, "node": "node3", "peer": "node12", "ts": 1794881747.0765018}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549222517, "node": "node3", "peer": "node13", "ts": 1794881747.0765386}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549258311, "node": "node3", "peer": "node14", "ts": 1794881747.0765746}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549288160, "node": "node3", "peer": "node15", "ts": 1794881747.0766044}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549321251, "node": "node3", "peer": "node2", "ts": 1794881747.0766375}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549351668, "node": "node3", "peer": "node4", "ts": 1794881747.0766678}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549382825, "node": "node3", "peer": "node7", "ts": 1794881747.076699}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263549413293, "node": "node3", "peer": "node9", "ts": 1794881747.0767295}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263564860755, "node": "node3", "peer": "node1", "ts": 1794881747.0921767}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263564974656, "node": "node3", "peer": "node11", "ts": 1794881747.0922909}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565046003, "node": "node3", "peer": "node12", "ts": 1794881747.0923622}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565113510, "node": "node3", "peer": "node13", "ts": 1794881747.0924296}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565172877, "node": "node3", "peer": "node14", "ts": 1794881747.0924892}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565230811, "node": "node3", "peer": "node2", "ts": 1794881747.0925472}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565289053, "node": "node3", "peer": "node4", "ts": 1794881747.092605}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565339925, "node": "node3", "peer": "node6", "ts": 1794881747.0926561}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565395181, "node": "node3", "peer": "node8", "ts": 1794881747.0927114}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565462698, "node": "node3", "peer": "node9", "ts": 1794881747.092779}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565511101, "node": "node3", "peer": "node1", "ts": 1794881747.0928273}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565562788, "node": "node3", "peer": "node10", "ts": 1794881747.092879}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565611723, "node": "node3", "peer": "node11", "ts": 1794881747.092928}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565659607, "node": "node3", "peer": "node12", "ts": 1794881747.0929759}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565710456, "node": "node3", "peer": "node13", "ts": 1794881747.0930266}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565760494, "node": "node3", "peer": "node14", "ts": 1794881747.0930767}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565810583, "node": "node3", "peer": "node15", "ts": 1794881747.093127}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565860771, "node": "node3", "peer": "node2", "ts": 1794881747.093177}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565910580, "node": "node3", "peer": "node4", "ts": 1794881747.0932267}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263565961270, "node": "node3", "peer": "node5", "ts": 1794881747.0932775}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263569166153, "node": "node3", "peer": "node6", "ts": 1794881747.096482}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263569282782, "node": "node3", "peer": "node7", "ts": 1794881747.096599}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263569346712, "node": "node3", "peer": "node8", "ts": 1794881747.096663}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263569399634, "node": "node3", "peer": "node9", "ts": 1794881747.0967157}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263592921520, "node": "node3", "peer": "node2", "ts": 1794881747.1202374}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263593086712, "node": "node3", "peer": "node2", "ts": 1794881747.1204026}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263593184046, "node": "node3", "peer": "node13", "ts": 1794881747.1205003}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263606975962, "node": "node3", "peer": "node12", "ts": 1794881747.1342916}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263609916915, "node": "node3", "peer": "node1", "ts": 1794881747.1372328}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610103212, "node": "node3", "peer": "node10", "ts": 1794881747.1374192}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610206705, "node": "node3", "peer": "node11", "ts": 1794881747.1375227}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610274130, "node": "node3", "peer": "node12", "ts": 1794881747.1375902}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610327312, "node": "node3", "peer": "node13", "ts": 1794881747.1376436}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610392863, "node": "node3", "peer": "node14", "ts": 1794881747.1377091}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610454715, "node": "node3", "peer": "node15", "ts": 1794881747.137771}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610511832, "node": "node3", "peer": "node2", "ts": 1794881747.137828}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610587800, "node": "node3", "peer": "node4", "ts": 1794881747.1379042}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610647982, "node": "node3", "peer": "node7", "ts": 1794881747.137964}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263610704817, "node": "node3", "peer": "node9", "ts": 1794881747.1380212}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646713297, "node": "node3", "peer": "node11", "ts": 1794881747.1740296}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646781903, "node": "node3", "peer": "node12", "ts": 1794881747.1740983}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646810825, "node": "node3", "peer": "node13", "ts": 1794881747.174127}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646833910, "node": "node3", "peer": "node14", "ts": 1794881747.1741505}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646854018, "node": "node3", "peer": "node2", "ts": 1794881747.1741703}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263646873446, "node": "node3", "peer": "node9", "ts": 1794881747.1741898}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263656586530, "node": "node3", "peer": "node2", "ts": 1794881747.1839023}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263656683701, "node": "node3", "peer": "node11", "ts": 1794881747.184}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407263656725562, "node": "node3", "peer": "node13", "ts": 1794881747.184042}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678352953, "node": "node3", "peer": "node10", "ts": 1794881747.2056692}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678538867, "node": "node3", "peer": "node11", "ts": 1794881747.205855}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678634959, "node": "node3", "peer": "node12", "ts": 1794881747.205951}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678704174, "node": "node3", "peer": "node13", "ts": 1794881747.2060204}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678759863, "node": "node3", "peer": "node2", "ts": 1794881747.2060761}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678877395, "node": "node3", "peer": "node4", "ts": 1794881747.2061934}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263678976706, "node": "node3", "peer": "node6", "ts": 1794881747.206293}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263679263261, "node": "node3", "peer": "node8", "ts": 1794881747.2065794}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263680938123, "node": "node3", "peer": "node10", "ts": 1794881747.2082539}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681117624, "node": "node3", "peer": "node11", "ts": 1794881747.2084339}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681229779, "node": "node3", "peer": "node12", "ts": 1794881747.2085462}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681334138, "node": "node3", "peer": "node13", "ts": 1794881747.2086504}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681440600, "node": "node3", "peer": "node14", "ts": 1794881747.2087567}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681537636, "node": "node3", "peer": "node15", "ts": 1794881747.2088537}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681634556, "node": "node3", "peer": "node2", "ts": 1794881747.2089508}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263681749551, "node": "node3", "peer": "node9", "ts": 1794881747.2090657}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263702771243, "node": "node3", "peer": "node11", "ts": 1794881747.2300875}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263702960922, "node": "node3", "peer": "node12", "ts": 1794881747.2302666}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263703076442, "node": "node3", "peer": "node13", "ts": 1794881747.2303927}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263703121504, "node": "node3", "peer": "node2", "ts": 1794881747.230438}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263703159069, "node": "node3", "peer": "node9", "ts": 1794881747.2304754}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263718252161, "node": "node3", "peer": "node6", "ts": 1794881747.2455683}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263737816415, "node": "node3", "peer": "node10", "ts": 1794881747.2651322}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263737887765, "node": "node3", "peer": "node11", "ts": 1794881747.265204}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263737933090, "node": "node3", "peer": "node12", "ts": 1794881747.2652493}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263737969660, "node": "node3", "peer": "node13", "ts": 1794881747.2652862}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263738010646, "node": "node3", "peer": "node2", "ts": 1794881747.2653267}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263738046674, "node": "node3", "peer": "node8", "ts": 1794881747.265363}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739465883, "node": "node3", "peer": "node10", "ts": 1794881747.266782}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739551505, "node": "node3", "peer": "node11", "ts": 1794881747.2668676}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739597815, "node": "node3", "peer": "node12", "ts": 1794881747.2669141}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739636314, "node": "node3", "peer": "node13", "ts": 1794881747.2669528}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739673506, "node": "node3", "peer": "node14", "ts": 1794881747.2669897}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739707578, "node": "node3", "peer": "node15", "ts": 1794881747.2670238}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263739742180, "node": "node3", "peer": "node2", "ts": 1794881747.2670584}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263765191538, "node": "node3", "peer": "node11", "ts": 1794881747.2925074}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263765283616, "node": "node3", "peer": "node12", "ts": 1794881747.2926}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263765327768, "node": "node3", "peer": "node13", "ts": 1794881747.292644}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263765383957, "node": "node3", "peer": "node2", "ts": 1794881747.2927}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811197860, "node": "node3", "peer": "node10", "ts": 1794881747.3385136}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811377836, "node": "node3", "peer": "node11", "ts": 1794881747.3386939}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811453903, "node": "node3", "peer": "node12", "ts": 1794881747.33877}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811502852, "node": "node3", "peer": "node13", "ts": 1794881747.338819}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811543112, "node": "node3", "peer": "node2", "ts": 1794881747.3388593}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263811580446, "node": "node3", "peer": "node8", "ts": 1794881747.338897}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263815958909, "node": "node3", "peer": "node6", "ts": 1794881747.343275}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263817763748, "node": "node3", "peer": "node10", "ts": 1794881747.3450797}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263817843850, "node": "node3", "peer": "node11", "ts": 1794881747.34516}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263818099156, "node": "node3", "peer": "node12", "ts": 1794881747.3454154}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263818239945, "node": "node3", "peer": "node13", "ts": 1794881747.3455563}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263818331888, "node": "node3", "peer": "node14", "ts": 1794881747.345648}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263818430683, "node": "node3", "peer": "node15", "ts": 1794881747.345747}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263818534983, "node": "node3", "peer": "node2", "ts": 1794881747.3458512}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263819197088, "node": "node3", "peer": "node11", "ts": 1794881747.346513}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263819316348, "node": "node3", "peer": "node12", "ts": 1794881747.3466327}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263819408432, "node": "node3", "peer": "node13", "ts": 1794881747.3467245}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263819478399, "node": "node3", "peer": "node2", "ts": 1794881747.3467948}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263857473650, "node": "node3", "peer": "node11", "ts": 1794881747.3847897}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263857545124, "node": "node3", "peer": "node12", "ts": 1794881747.3848615}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263857579953, "node": "node3", "peer": "node13", "ts": 1794881747.3848963}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263857603144, "node": "node3", "peer": "node2", "ts": 1794881747.3849196}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263857626543, "node": "node3", "peer": "node8", "ts": 1794881747.3849428}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263869445634, "node": "node3", "peer": "node11", "ts": 1794881747.3967617}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263869641512, "node": "node3", "peer": "node12", "ts": 1794881747.3969574}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263869760492, "node": "node3", "peer": "node13", "ts": 1794881747.3970764}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263869865626, "node": "node3", "peer": "node14", "ts": 1794881747.3971817}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263869967232, "node": "node3", "peer": "node15", "ts": 1794881747.3972833}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263870089232, "node": "node3", "peer": "node2", "ts": 1794881747.3974051}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263872410368, "node": "node3", "peer": "node11", "ts": 1794881747.3997264}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263872531779, "node": "node3", "peer": "node12", "ts": 1794881747.3998477}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263872616049, "node": "node3", "peer": "node2", "ts": 1794881747.3999321}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263906771898, "node": "node3", "peer": "node11", "ts": 1794881747.4340873}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263906957061, "node": "node3", "peer": "node12", "ts": 1794881747.434273}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263907067317, "node": "node3", "peer": "node13", "ts": 1794881747.4343832}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263907162211, "node": "node3", "peer": "node2", "ts": 1794881747.434478}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263907258555, "node": "node3", "peer": "node8", "ts": 1794881747.4345746}
+{"bytes": 1643, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407263919189365, "node": "node3", "peer": "node8", "ts": 1794881747.4465053}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263922729694, "node": "node3", "peer": "node11", "ts": 1794881747.4500456}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263922827776, "node": "node3", "peer": "node12", "ts": 1794881747.450144}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263922897214, "node": "node3", "peer": "node2", "ts": 1794881747.4502134}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924298088, "node": "node3", "peer": "node11", "ts": 1794881747.4516141}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924403435, "node": "node3", "peer": "node12", "ts": 1794881747.4517198}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924446893, "node": "node3", "peer": "node13", "ts": 1794881747.4517632}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924477888, "node": "node3", "peer": "node14", "ts": 1794881747.4517941}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924505053, "node": "node3", "peer": "node15", "ts": 1794881747.4518213}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263924535168, "node": "node3", "peer": "node2", "ts": 1794881747.4518516}
+{"event": "record_learned", "job_id": "node8:85833a60a1144f4197dcaaeb486557d7:2", "mono_ns": 407263931942459, "node": "node3", "origin": "node8", "ts": 1794881747.459258}
+{"event": "learn", "mono_ns": 407263932039306, "node": "node3", "owner": "node8", "peer": "node8", "ts": 1794881747.4593554, "version": 2, "via": "pull"}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263951608027, "node": "node3", "peer": "node11", "ts": 1794881747.478924}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263951726442, "node": "node3", "peer": "node12", "ts": 1794881747.4790425}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263951799964, "node": "node3", "peer": "node13", "ts": 1794881747.479116}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263951865154, "node": "node3", "peer": "node2", "ts": 1794881747.4791813}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263951925915, "node": "node3", "peer": "node8", "ts": 1794881747.4792423}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263968909339, "node": "node3", "peer": "node11", "ts": 1794881747.4962256}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969073787, "node": "node3", "peer": "node12", "ts": 1794881747.4963899}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969231592, "node": "node3", "peer": "node11", "ts": 1794881747.4965477}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969285867, "node": "node3", "peer": "node12", "ts": 1794881747.4966016}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969321738, "node": "node3", "peer": "node13", "ts": 1794881747.496638}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969351995, "node": "node3", "peer": "node14", "ts": 1794881747.496668}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969375629, "node": "node3", "peer": "node15", "ts": 1794881747.496692}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263969404829, "node": "node3", "peer": "node2", "ts": 1794881747.4967208}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263998023355, "node": "node3", "peer": "node11", "ts": 1794881747.5253391}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263998172151, "node": "node3", "peer": "node12", "ts": 1794881747.525488}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263998347263, "node": "node3", "peer": "node13", "ts": 1794881747.5256631}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407263998470854, "node": "node3", "peer": "node2", "ts": 1794881747.5257869}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014309461, "node": "node3", "peer": "node11", "ts": 1794881747.5416253}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014423771, "node": "node3", "peer": "node12", "ts": 1794881747.54174}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014483741, "node": "node3", "peer": "node12", "ts": 1794881747.5418}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014531040, "node": "node3", "peer": "node13", "ts": 1794881747.5418472}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014576937, "node": "node3", "peer": "node14", "ts": 1794881747.541893}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014615546, "node": "node3", "peer": "node15", "ts": 1794881747.5419319}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264014656006, "node": "node3", "peer": "node2", "ts": 1794881747.5419722}
+{"bytes": 1924, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264021053692, "node": "node3", "peer": "node4", "ts": 1794881747.5483694}
+{"event": "record_learned", "job_id": "node10:e658a36094d04b29b29a7dba736ba3c7:1", "mono_ns": 407264043638445, "node": "node3", "origin": "node10", "ts": 1794881747.5709543}
+{"event": "record_learned", "job_id": "node10:e658a36094d04b29b29a7dba736ba3c7:2", "mono_ns": 407264043772997, "node": "node3", "origin": "node10", "ts": 1794881747.5710893}
+{"event": "record_learned", "job_id": "node2:6285275f2e8e4c749bd44904b16c7fcf:2", "mono_ns": 407264043815814, "node": "node3", "origin": "node2", "ts": 1794881747.571132}
+{"event": "learn", "mono_ns": 407264043852586, "node": "node3", "owner": "node10", "peer": "node4", "ts": 1794881747.5711687, "version": 3, "via": "pull"}
+{"event": "learn", "mono_ns": 407264043882561, "node": "node3", "owner": "node2", "peer": "node4", "ts": 1794881747.5711987, "version": 2, "via": "pull"}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264046438295, "node": "node3", "peer": "node11", "ts": 1794881747.5737543}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264046566458, "node": "node3", "peer": "node12", "ts": 1794881747.5738828}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264046619840, "node": "node3", "peer": "node13", "ts": 1794881747.5739362}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264046644694, "node": "node3", "peer": "node2", "ts": 1794881747.573961}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264069872486, "node": "node3", "peer": "node11", "ts": 1794881747.5971882}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264069986615, "node": "node3", "peer": "node12", "ts": 1794881747.5973027}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264070218559, "node": "node3", "peer": "node13", "ts": 1794881747.5975347}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264070283780, "node": "node3", "peer": "node14", "ts": 1794881747.5976}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264070354269, "node": "node3", "peer": "node15", "ts": 1794881747.5976703}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264070419368, "node": "node3", "peer": "node2", "ts": 1794881747.5977356}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264089716493, "node": "node3", "peer": "node11", "ts": 1794881747.617032}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264090149948, "node": "node3", "peer": "node12", "ts": 1794881747.617466}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264090527709, "node": "node3", "peer": "node2", "ts": 1794881747.6178432}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264116234079, "node": "node3", "peer": "node13", "ts": 1794881747.64355}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264116405216, "node": "node3", "peer": "node14", "ts": 1794881747.643721}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264116497259, "node": "node3", "peer": "node15", "ts": 1794881747.6438134}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264116566200, "node": "node3", "peer": "node2", "ts": 1794881747.6438823}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264116629077, "node": "node3", "peer": "node12", "ts": 1794881747.6439452}
+{"bytes": 2772, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264125652102, "node": "node3", "peer": "node2", "ts": 1794881747.652968}
+{"event": "record_learned", "job_id": "node11:946aaf0da4d2492b8434eb707ef637b5:1", "mono_ns": 407264130053718, "node": "node3", "origin": "node11", "ts": 1794881747.6573696}
+{"event": "record_learned", "job_id": "node11:946aaf0da4d2492b8434eb707ef637b5:2", "mono_ns": 407264130141242, "node": "node3", "origin": "node11", "ts": 1794881747.6574574}
+{"event": "record_learned", "job_id": "node13:88199ba44d924a74b81452f04bddb97a:2", "mono_ns": 407264130182436, "node": "node3", "origin": "node13", "ts": 1794881747.6574986}
+{"event": "learn", "mono_ns": 407264130214621, "node": "node3", "owner": "node11", "peer": "node11", "ts": 1794881747.6575308, "version": 3, "via": "push"}
+{"event": "learn", "mono_ns": 407264130245903, "node": "node3", "owner": "node13", "peer": "node11", "ts": 1794881747.657562, "version": 2, "via": "push"}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264149290715, "node": "node3", "peer": "node11", "ts": 1794881747.6766062}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264149473604, "node": "node3", "peer": "node12", "ts": 1794881747.6767895}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264149597856, "node": "node3", "peer": "node2", "ts": 1794881747.6769137}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264161520861, "node": "node3", "peer": "node12", "ts": 1794881747.6888363}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264161947895, "node": "node3", "peer": "node13", "ts": 1794881747.6892638}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264162226722, "node": "node3", "peer": "node14", "ts": 1794881747.6895423}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264162335848, "node": "node3", "peer": "node15", "ts": 1794881747.689652}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264162426931, "node": "node3", "peer": "node2", "ts": 1794881747.689743}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264194730337, "node": "node3", "peer": "node11", "ts": 1794881747.722046}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264194896356, "node": "node3", "peer": "node12", "ts": 1794881747.7222123}
+{"bytes": 3625, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264212458252, "node": "node3", "peer": "node11", "ts": 1794881747.7397745}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264221311692, "node": "node3", "peer": "node12", "ts": 1794881747.748627}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264221542020, "node": "node3", "peer": "node14", "ts": 1794881747.748858}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264221665813, "node": "node3", "peer": "node15", "ts": 1794881747.7489817}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264221762823, "node": "node3", "peer": "node2", "ts": 1794881747.7490788}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264253043068, "node": "node3", "peer": "node11", "ts": 1794881747.780359}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264253247840, "node": "node3", "peer": "node12", "ts": 1794881747.7805636}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264277381769, "node": "node3", "peer": "node12", "ts": 1794881747.8046978}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264291626083, "node": "node3", "peer": "node15", "ts": 1794881747.818942}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264291697895, "node": "node3", "peer": "node2", "ts": 1794881747.819014}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264303052614, "node": "node3", "peer": "node11", "ts": 1794881747.8303683}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264303167102, "node": "node3", "peer": "node12", "ts": 1794881747.8304834}
+{"bytes": 3625, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264317151724, "node": "node3", "peer": "node1", "ts": 1794881747.844467}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264322844770, "node": "node3", "peer": "node12", "ts": 1794881747.8501604}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264336689500, "node": "node3", "peer": "node15", "ts": 1794881747.864005}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264336854959, "node": "node3", "peer": "node2", "ts": 1794881747.864171}
+{"event": "record_learned", "job_id": "node2:6285275f2e8e4c749bd44904b16c7fcf:3", "mono_ns": 407264342901434, "node": "node3", "origin": "node2", "ts": 1794881747.8702173}
+{"event": "learn", "mono_ns": 407264343024001, "node": "node3", "owner": "node2", "peer": "node1", "ts": 1794881747.87034, "version": 3, "via": "pull"}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264351262780, "node": "node3", "peer": "node12", "ts": 1794881747.8785784}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264377405587, "node": "node3", "peer": "node12", "ts": 1794881747.9047215}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264380014958, "node": "node3", "peer": "node15", "ts": 1794881747.9073308}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264380176342, "node": "node3", "peer": "node2", "ts": 1794881747.9074926}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264398043563, "node": "node3", "peer": "node12", "ts": 1794881747.9253597}
+{"event": "cs_enter", "mono_ns": 407264405109022, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "resource": "printer3", "ts": 1794881747.932425}
+{"event": "cs_enter", "mono_ns": 407264412910267, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "resource": "printer2", "ts": 1794881747.9402263}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264424872716, "node": "node3", "peer": "node15", "ts": 1794881747.9521887}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264424972680, "node": "node3", "peer": "node2", "ts": 1794881747.9522889}
+{"bytes": 3907, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264429477365, "node": "node3", "peer": "node10", "ts": 1794881747.9567924}
+{"event": "record_learned", "job_id": "node12:306f216fab904a5c8e4b7a4ba910e27b:1", "mono_ns": 407264444703075, "node": "node3", "origin": "node12", "ts": 1794881747.9720187}
+{"event": "record_learned", "job_id": "node14:814184025fe24a16b685b4de933988b7:1", "mono_ns": 407264444820718, "node": "node3", "origin": "node14", "ts": 1794881747.9721367}
+{"event": "record_learned", "job_id": "node13:88199ba44d924a74b81452f04bddb97a:3", "mono_ns": 407264444867924, "node": "node3", "origin": "node13", "ts": 1794881747.9721842}
+{"event": "record_learned", "job_id": "node13:88199ba44d924a74b81452f04bddb97a:1", "mono_ns": 407264444903299, "node": "node3", "origin": "node13", "ts": 1794881747.9722195}
+{"event": "learn", "mono_ns": 407264444938903, "node": "node3", "owner": "node12", "peer": "node10", "ts": 1794881747.972255, "version": 2, "via": "pull"}
+{"event": "learn", "mono_ns": 407264444972448, "node": "node3", "owner": "node14", "peer": "node10", "ts": 1794881747.9722888, "version": 2, "via": "pull"}
+{"event": "learn", "mono_ns": 407264445014672, "node": "node3", "owner": "node13", "peer": "node10", "ts": 1794881747.9723308, "version": 4, "via": "pull"}
+{"bytes": 165, "event": "rpc_send", "message_type": "ra_request", "mono_ns": 407264468056319, "node": "node3", "peer": "node2", "ts": 1794881747.9953723}
+{"event": "record_learned", "job_id": "node12:306f216fab904a5c8e4b7a4ba910e27b:2", "mono_ns": 407264474517809, "node": "node3", "origin": "node12", "ts": 1794881748.0018334}
+{"event": "learn", "mono_ns": 407264474589999, "node": "node3", "owner": "node12", "peer": "node7", "ts": 1794881748.0019062, "version": 3, "via": "push"}
+{"event": "record_learned", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "mono_ns": 407264478615644, "node": "node3", "origin": "node3", "ts": 1794881748.0059316}
+{"acquire_ms": 980.3039429825731, "computer": "node3", "document": "node3-2.pdf", "event": "job_completed", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "mono_ns": 407264478674173, "node": "node3", "pages": 1, "printer": "printer3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "status": "completed", "total_ms": 1053.7745020119473, "ts": 1794881748.0059905}
+{"event": "cs_exit", "mono_ns": 407264478710739, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:2", "resource": "printer3", "ts": 1794881748.006027}
+{"event": "cs_enter", "mono_ns": 407264481380338, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "resource": "printer1", "ts": 1794881748.008696}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264483682450, "node": "node3", "peer": "node7", "ts": 1794881748.0109982}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264483791203, "node": "node3", "peer": "node5", "ts": 1794881748.0111074}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264483851158, "node": "node3", "peer": "node10", "ts": 1794881748.0111675}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264483916016, "node": "node3", "peer": "node15", "ts": 1794881748.0112321}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264483976454, "node": "node3", "peer": "node8", "ts": 1794881748.0112925}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264484043224, "node": "node3", "peer": "node9", "ts": 1794881748.0113595}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264484099626, "node": "node3", "peer": "node1", "ts": 1794881748.0114157}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264484147855, "node": "node3", "peer": "node6", "ts": 1794881748.011464}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264484195787, "node": "node3", "peer": "node14", "ts": 1794881748.011512}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264484255060, "node": "node3", "peer": "node4", "ts": 1794881748.0115712}
+{"event": "record_learned", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "mono_ns": 407264485203495, "node": "node3", "origin": "node3", "ts": 1794881748.0125194}
+{"acquire_ms": 986.2922300235368, "computer": "node3", "document": "node3-1.pdf", "event": "job_completed", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "mono_ns": 407264485281476, "node": "node3", "pages": 1, "printer": "printer2", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "status": "completed", "total_ms": 1058.5977219743654, "ts": 1794881748.0125976}
+{"event": "cs_exit", "mono_ns": 407264485352176, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:3", "resource": "printer2", "ts": 1794881748.0126684}
+{"bytes": 5894, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264532421238, "node": "node3", "peer": "node10", "ts": 1794881748.0597367}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264539958884, "node": "node3", "peer": "node6", "ts": 1794881748.0672748}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540194413, "node": "node3", "peer": "node7", "ts": 1794881748.0675106}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540249781, "node": "node3", "peer": "node5", "ts": 1794881748.0675662}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540277463, "node": "node3", "peer": "node15", "ts": 1794881748.0675938}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540302634, "node": "node3", "peer": "node4", "ts": 1794881748.067619}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540326072, "node": "node3", "peer": "node6", "ts": 1794881748.0676425}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540353378, "node": "node3", "peer": "node14", "ts": 1794881748.0676699}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540372170, "node": "node3", "peer": "node9", "ts": 1794881748.0676885}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540391368, "node": "node3", "peer": "node1", "ts": 1794881748.0677075}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264540411672, "node": "node3", "peer": "node1", "ts": 1794881748.067728}
+{"event": "record_learned", "job_id": "node11:946aaf0da4d2492b8434eb707ef637b5:3", "mono_ns": 407264547349549, "node": "node3", "origin": "node11", "ts": 1794881748.0746655}
+{"event": "learn", "mono_ns": 407264547431271, "node": "node3", "owner": "node11", "peer": "node10", "ts": 1794881748.074747, "version": 4, "via": "pull"}
+{"event": "record_learned", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "mono_ns": 407264574925928, "node": "node3", "origin": "node3", "ts": 1794881748.1022415}
+{"acquire_ms": 1082.9100310220383, "computer": "node3", "document": "node3-0.pdf", "event": "job_completed", "job_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "mono_ns": 407264575100266, "node": "node3", "pages": 1, "printer": "printer1", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "status": "completed", "total_ms": 1176.5111309941858, "ts": 1794881748.1024163}
+{"event": "cs_exit", "mono_ns": 407264575334363, "node": "node3", "request_id": "node3:78c4be1e9f284e94bbe3f0400ba13ac1:1", "resource": "printer1", "ts": 1794881748.10265}
+{"event": "record_learned", "job_id": "node12:306f216fab904a5c8e4b7a4ba910e27b:3", "mono_ns": 407264586172580, "node": "node3", "origin": "node12", "ts": 1794881748.1134872}
+{"event": "record_learned", "job_id": "node15:b81cfb86095246daa4a88d1d19a7dd80:1", "mono_ns": 407264586535058, "node": "node3", "origin": "node15", "ts": 1794881748.11385}
+{"event": "record_learned", "job_id": "node2:6285275f2e8e4c749bd44904b16c7fcf:1", "mono_ns": 407264586763072, "node": "node3", "origin": "node2", "ts": 1794881748.114079}
+{"event": "learn", "mono_ns": 407264586909051, "node": "node3", "owner": "node12", "peer": "node4", "ts": 1794881748.1142251, "version": 4, "via": "push"}
+{"event": "learn", "mono_ns": 407264587092720, "node": "node3", "owner": "node15", "peer": "node4", "ts": 1794881748.114409, "version": 2, "via": "push"}
+{"event": "learn", "mono_ns": 407264587224670, "node": "node3", "owner": "node2", "peer": "node4", "ts": 1794881748.1145408, "version": 4, "via": "push"}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609056844, "node": "node3", "peer": "node5", "ts": 1794881748.1363723}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609217290, "node": "node3", "peer": "node14", "ts": 1794881748.1365333}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609295961, "node": "node3", "peer": "node8", "ts": 1794881748.1366122}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609386736, "node": "node3", "peer": "node6", "ts": 1794881748.136703}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609504766, "node": "node3", "peer": "node9", "ts": 1794881748.1368208}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609611975, "node": "node3", "peer": "node5", "ts": 1794881748.136928}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609694164, "node": "node3", "peer": "node1", "ts": 1794881748.1370103}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264609876636, "node": "node3", "peer": "node4", "ts": 1794881748.1371918}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264610257934, "node": "node3", "peer": "node7", "ts": 1794881748.1375737}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264610505337, "node": "node3", "peer": "node1", "ts": 1794881748.1378212}
+{"bytes": 7314, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264631228206, "node": "node3", "peer": "node15", "ts": 1794881748.1585436}
+{"event": "record_learned", "job_id": "node15:b81cfb86095246daa4a88d1d19a7dd80:2", "mono_ns": 407264647161571, "node": "node3", "origin": "node15", "ts": 1794881748.174477}
+{"event": "learn", "mono_ns": 407264647276345, "node": "node3", "owner": "node15", "peer": "node15", "ts": 1794881748.1745923, "version": 3, "via": "pull"}
+{"bytes": 147, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264660350318, "node": "node3", "peer": "node14", "ts": 1794881748.1876655}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264660483381, "node": "node3", "peer": "node6", "ts": 1794881748.1877995}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264660524572, "node": "node3", "peer": "node7", "ts": 1794881748.1878407}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264660562853, "node": "node3", "peer": "node5", "ts": 1794881748.187879}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264660607365, "node": "node3", "peer": "node1", "ts": 1794881748.1879237}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264708203803, "node": "node3", "peer": "node6", "ts": 1794881748.2355194}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264708490085, "node": "node3", "peer": "node5", "ts": 1794881748.235806}
+{"bytes": 7600, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264731390501, "node": "node3", "peer": "node4", "ts": 1794881748.2587059}
+{"event": "record_learned", "job_id": "node4:c417ebadb13541e8bb744a07d6e7b282:1", "mono_ns": 407264743861315, "node": "node3", "origin": "node4", "ts": 1794881748.2711773}
+{"event": "learn", "mono_ns": 407264743933301, "node": "node3", "owner": "node4", "peer": "node4", "ts": 1794881748.2712493, "version": 2, "via": "pull"}
+{"bytes": 146, "event": "rpc_send", "message_type": "ra_reply", "mono_ns": 407264752128269, "node": "node3", "peer": "node6", "ts": 1794881748.2794435}
+{"event": "record_learned", "job_id": "node14:814184025fe24a16b685b4de933988b7:2", "mono_ns": 407264766455161, "node": "node3", "origin": "node14", "ts": 1794881748.2937706}
+{"event": "learn", "mono_ns": 407264766654540, "node": "node3", "owner": "node14", "peer": "node14", "ts": 1794881748.2939703, "version": 3, "via": "push"}
+{"bytes": 8167, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264826889948, "node": "node3", "peer": "node9", "ts": 1794881748.3542056}
+{"event": "record_learned", "job_id": "node5:3e1213fc62d14ed88fd78255e6749d99:1", "mono_ns": 407264877276548, "node": "node3", "origin": "node5", "ts": 1794881748.4045923}
+{"event": "record_learned", "job_id": "node15:b81cfb86095246daa4a88d1d19a7dd80:3", "mono_ns": 407264877343093, "node": "node3", "origin": "node15", "ts": 1794881748.4046593}
+{"event": "learn", "mono_ns": 407264877365668, "node": "node3", "owner": "node5", "peer": "node1", "ts": 1794881748.404682, "version": 2, "via": "push"}
+{"event": "learn", "mono_ns": 407264877385667, "node": "node3", "owner": "node15", "peer": "node1", "ts": 1794881748.404702, "version": 4, "via": "push"}
+{"bytes": 8733, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407264927688268, "node": "node3", "peer": "node4", "ts": 1794881748.455003}
+{"bytes": 8733, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265015224688, "node": "node3", "peer": "node5", "ts": 1794881748.5425406}
+{"event": "record_learned", "job_id": "node14:814184025fe24a16b685b4de933988b7:3", "mono_ns": 407265030091659, "node": "node3", "origin": "node14", "ts": 1794881748.5574079}
+{"event": "learn", "mono_ns": 407265030147976, "node": "node3", "owner": "node14", "peer": "node7", "ts": 1794881748.5574644, "version": 4, "via": "push"}
+{"bytes": 9018, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265117344155, "node": "node3", "peer": "node15", "ts": 1794881748.6446593}
+{"event": "record_learned", "job_id": "node7:cf85e28b068d4a60a11865a7bf46c3d7:1", "mono_ns": 407265129649192, "node": "node3", "origin": "node7", "ts": 1794881748.6569655}
+{"event": "record_learned", "job_id": "node7:cf85e28b068d4a60a11865a7bf46c3d7:2", "mono_ns": 407265129683764, "node": "node3", "origin": "node7", "ts": 1794881748.6569998}
+{"event": "record_learned", "job_id": "node4:c417ebadb13541e8bb744a07d6e7b282:2", "mono_ns": 407265129696743, "node": "node3", "origin": "node4", "ts": 1794881748.657013}
+{"event": "record_learned", "job_id": "node4:c417ebadb13541e8bb744a07d6e7b282:3", "mono_ns": 407265129709580, "node": "node3", "origin": "node4", "ts": 1794881748.6570258}
+{"event": "record_learned", "job_id": "node6:8c46a824ee014b31aa7b7db221e0c5ae:1", "mono_ns": 407265129721879, "node": "node3", "origin": "node6", "ts": 1794881748.6570385}
+{"event": "record_learned", "job_id": "node6:8c46a824ee014b31aa7b7db221e0c5ae:2", "mono_ns": 407265129734087, "node": "node3", "origin": "node6", "ts": 1794881748.6570504}
+{"event": "record_learned", "job_id": "node6:8c46a824ee014b31aa7b7db221e0c5ae:3", "mono_ns": 407265129746173, "node": "node3", "origin": "node6", "ts": 1794881748.6570623}
+{"event": "learn", "mono_ns": 407265129764632, "node": "node3", "owner": "node7", "peer": "node15", "ts": 1794881748.657081, "version": 3, "via": "pull"}
+{"event": "learn", "mono_ns": 407265129778672, "node": "node3", "owner": "node4", "peer": "node15", "ts": 1794881748.657095, "version": 4, "via": "pull"}
+{"event": "learn", "mono_ns": 407265129790627, "node": "node3", "owner": "node6", "peer": "node15", "ts": 1794881748.6571069, "version": 4, "via": "pull"}
+{"bytes": 10991, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265217685403, "node": "node3", "peer": "node15", "ts": 1794881748.7450006}
+{"bytes": 10991, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265321172721, "node": "node3", "peer": "node11", "ts": 1794881748.8484874}
+{"event": "record_learned", "job_id": "node7:cf85e28b068d4a60a11865a7bf46c3d7:3", "mono_ns": 407265338664550, "node": "node3", "origin": "node7", "ts": 1794881748.8659801}
+{"event": "learn", "mono_ns": 407265338778339, "node": "node3", "owner": "node7", "peer": "node11", "ts": 1794881748.8660944, "version": 4, "via": "pull"}
+{"bytes": 11272, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265432659387, "node": "node3", "peer": "node13", "ts": 1794881748.9599738}
+{"event": "record_learned", "job_id": "node1:1552920923b34d3cbd7340b65dd2efa5:2", "mono_ns": 407265449952351, "node": "node3", "origin": "node1", "ts": 1794881748.9772682}
+{"event": "learn", "mono_ns": 407265450022134, "node": "node3", "owner": "node1", "peer": "node1", "ts": 1794881748.9773383, "version": 3, "via": "push"}
+{"bytes": 11555, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265536907807, "node": "node3", "peer": "node6", "ts": 1794881749.0642219}
+{"event": "record_learned", "job_id": "node5:3e1213fc62d14ed88fd78255e6749d99:2", "mono_ns": 407265552394834, "node": "node3", "origin": "node5", "ts": 1794881749.079711}
+{"event": "record_learned", "job_id": "node5:3e1213fc62d14ed88fd78255e6749d99:3", "mono_ns": 407265552453853, "node": "node3", "origin": "node5", "ts": 1794881749.07977}
+{"event": "record_learned", "job_id": "node8:85833a60a1144f4197dcaaeb486557d7:1", "mono_ns": 407265552476162, "node": "node3", "origin": "node8", "ts": 1794881749.0797925}
+{"event": "learn", "mono_ns": 407265552532869, "node": "node3", "owner": "node5", "peer": "node6", "ts": 1794881749.0798488, "version": 4, "via": "pull"}
+{"event": "learn", "mono_ns": 407265552578449, "node": "node3", "owner": "node8", "peer": "node6", "ts": 1794881749.0798948, "version": 3, "via": "pull"}
+{"event": "record_learned", "job_id": "node9:2b0713be4aa74425bc8c6d3a66483990:1", "mono_ns": 407265553994556, "node": "node3", "origin": "node9", "ts": 1794881749.0813105}
+{"event": "record_learned", "job_id": "node9:2b0713be4aa74425bc8c6d3a66483990:2", "mono_ns": 407265554049784, "node": "node3", "origin": "node9", "ts": 1794881749.081366}
+{"event": "record_learned", "job_id": "node9:2b0713be4aa74425bc8c6d3a66483990:3", "mono_ns": 407265554066466, "node": "node3", "origin": "node9", "ts": 1794881749.081383}
+{"event": "learn", "mono_ns": 407265554083276, "node": "node3", "owner": "node9", "peer": "node5", "ts": 1794881749.0813994, "version": 4, "via": "push"}
+{"event": "record_learned", "job_id": "node8:85833a60a1144f4197dcaaeb486557d7:3", "mono_ns": 407265571223770, "node": "node3", "origin": "node8", "ts": 1794881749.0985394}
+{"event": "learn", "mono_ns": 407265571300016, "node": "node3", "owner": "node8", "peer": "node9", "ts": 1794881749.0986164, "version": 4, "via": "push"}
+{"bytes": 13532, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265637757049, "node": "node3", "peer": "node5", "ts": 1794881749.1650724}
+{"bytes": 13532, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265747607174, "node": "node3", "peer": "node6", "ts": 1794881749.2749221}
+{"event": "record_learned", "job_id": "node10:e658a36094d04b29b29a7dba736ba3c7:3", "mono_ns": 407265767170286, "node": "node3", "origin": "node10", "ts": 1794881749.2944858}
+{"event": "learn", "mono_ns": 407265767281635, "node": "node3", "owner": "node10", "peer": "node6", "ts": 1794881749.2945976, "version": 4, "via": "pull"}
+{"bytes": 13818, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265851405226, "node": "node3", "peer": "node10", "ts": 1794881749.3787205}
+{"event": "record_learned", "job_id": "node1:1552920923b34d3cbd7340b65dd2efa5:3", "mono_ns": 407265871918887, "node": "node3", "origin": "node1", "ts": 1794881749.3992343}
+{"event": "record_learned", "job_id": "node1:1552920923b34d3cbd7340b65dd2efa5:4", "mono_ns": 407265872140460, "node": "node3", "origin": "node1", "ts": 1794881749.3994558}
+{"event": "learn", "mono_ns": 407265872235721, "node": "node3", "owner": "node1", "peer": "node10", "ts": 1794881749.3995516, "version": 5, "via": "pull"}
+{"bytes": 14383, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407265959170030, "node": "node3", "peer": "node15", "ts": 1794881749.4864857}
+{"bytes": 14383, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407266041942618, "node": "node3", "peer": "node6", "ts": 1794881749.5692585}
+{"bytes": 14383, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407266144394100, "node": "node3", "peer": "node14", "ts": 1794881749.6717098}
+{"bytes": 14383, "event": "rpc_send", "message_type": "gossip", "mono_ns": 407266251537677, "node": "node3", "peer": "node14", "ts": 1794881749.7788532}
