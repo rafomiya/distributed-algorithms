@@ -24,8 +24,8 @@ setup $interpreter="python3":
 build:
     scripts/sim.sh build
 
-# Inicia uma nova execucao completa: just up [N=3] [SEED=42].
-up $n="3" $seed="42":
+# Inicia uma nova execucao completa: just up [N=15] [SEED=42].
+up $n="15" $seed="42":
     scripts/sim.sh up "$n" "$seed"
 
 # Encerra o Compose e preserva os logs.

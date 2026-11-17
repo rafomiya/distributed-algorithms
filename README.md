@@ -14,7 +14,7 @@ node1 <---- REQUEST / REPLY ----> node2
 node3 -------------------------------+----- printer2
 ```
 
-Há três computadores e duas impressoras por padrão. Cada serviço é um processo
+Há 15 computadores e cinco impressoras por padrão. Cada serviço é um processo
 independente. No Compose existem duas redes bridge: `computers` e `printers`.
 Computadores participam de ambas; impressoras participam apenas de `printers`.
 Os nomes e trabalhos simulam o IC; nenhuma impressora real é acessada.
@@ -27,7 +27,7 @@ Python >= 3.10. Prepare o ambiente e inicie os serviços:
 
 ```bash
 just setup
-just up 3 42
+just up
 ```
 
 `just`, `just help` ou `just --list --unsorted` mostra os comandos, parâmetros e
@@ -42,7 +42,7 @@ interpretador com `just python=/caminho/python test`. As variáveis de ambiente
 disponíveis em `scripts/`.
 
 `just up` inicia uma **nova execução completa**, encerrando os serviços anteriores.
-São aceitos de três a cinco computadores. As duas impressoras sempre iniciam.
+São aceitos de três a 15 computadores. As cinco impressoras sempre iniciam.
 Os logs anteriores são preservados em diretórios distintos sob `data/logs/`.
 As portas de controle são expostas apenas em localhost.
 
@@ -204,6 +204,8 @@ As receitas experimentais encaminham os argumentos diretamente para
 `just experiments --help`. Sem `--output`, os experimentos usam uma pasta com
 timestamp. Nas demonstrações, o diretório de saída é um argumento posicional
 opcional, com padrão `data/demo` ou `data/demo-local`.
+O runner aceita `--nodes` de 3 a 15 e `--printers` de 1 a 5; por padrão usa
+duas impressoras para manter compatibilidade com a matriz experimental inicial.
 `just up N SEED` configura uma execução; `--nodes` e `--seeds` definem a matriz
 dos experimentos.
 

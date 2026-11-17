@@ -8,7 +8,7 @@ usage() {
   cat <<'HELP'
 Uso: scripts/sim.sh <comando>
   build                           constrói a imagem
-  up [N=3] [SEED=42]               inicia N computadores (3..5) e 2 impressoras
+  up [N=15] [SEED=42]              inicia N computadores (3..15) e 5 impressoras
   down                            remove o ambiente; preserva logs
   status                          consulta computadores e impressoras
   print <computador> <impressora> [páginas] [documento]
@@ -29,23 +29,23 @@ cmd=${1:-help}; shift || true
 case "$cmd" in
   build) docker compose build ;;
   up)
-    N=${1:-3}; SEED=${2:-42}
-    [[ "$N" =~ ^[3-5]$ ]] || { echo 'N deve estar entre 3 e 5'; exit 1; }
+    N=${1:-15}; SEED=${2:-42}
+    [[ "$N" =~ ^([3-9]|1[0-5])$ ]] || { echo 'N deve estar entre 3 e 15'; exit 1; }
     printf 'NUM_NODES=%s\nSEED=%s\n' "$N" "$SEED" > .env
     docker compose down --remove-orphans
     export LOG_DIR=${LOG_DIR:-./data/logs/$(date -u +%Y%m%dT%H%M%S)-$$}
     mkdir -p "$LOG_DIR"
-    docker compose up -d --build --wait --wait-timeout 60 printer1 printer2 $(nodes "$N")
-    echo "Ambiente pronto: $N computadores, 2 impressoras. Logs: $LOG_DIR" ;;
+    docker compose up -d --build --wait --wait-timeout 60 printer1 printer2 printer3 printer4 printer5 $(nodes "$N")
+    echo "Ambiente pronto: $N computadores, 5 impressoras. Logs: $LOG_DIR" ;;
   down) docker compose down --remove-orphans ;;
   status)
-    N=$(num); N=${N:-3}
+    N=$(num); N=${N:-15}
     for i in $(seq 1 "$N"); do
       echo "node$i"
       curl -fs --max-time 2 "http://localhost:$((8000+i))/state" || true
       echo
     done
-    for i in 1 2; do
+    for i in 1 2 3 4 5; do
       echo "printer$i"
       curl -fs --max-time 2 "http://localhost:$((9000+i))/state" || true
       echo

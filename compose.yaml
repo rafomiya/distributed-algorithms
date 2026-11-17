@@ -4,7 +4,7 @@ x-computer: &computer
   restart: "no"
   cap_add: [NET_ADMIN]
   environment: &computer-env
-    NUM_NODES: ${NUM_NODES:-3}
+    NUM_NODES: ${NUM_NODES:-15}
     SEED: ${SEED:-42}
     RPC_TIMEOUT: ${RPC_TIMEOUT:-0.8}
     RETRY_INTERVAL: ${RETRY_INTERVAL:-0.2}
@@ -61,8 +61,61 @@ services:
     hostname: node5
     ports: ["127.0.0.1:8005:8000"]
     networks: {computers: {aliases: [node5-computers]}, printers: {}}
+  node6:
+    <<: *computer
+    hostname: node6
+    ports: ["127.0.0.1:8006:8000"]
+    networks: {computers: {aliases: [node6-computers]}, printers: {}}
+  node7:
+    <<: *computer
+    hostname: node7
+    ports: ["127.0.0.1:8007:8000"]
+    networks: {computers: {aliases: [node7-computers]}, printers: {}}
+  node8:
+    <<: *computer
+    hostname: node8
+    ports: ["127.0.0.1:8008:8000"]
+    networks: {computers: {aliases: [node8-computers]}, printers: {}}
+  node9:
+    <<: *computer
+    hostname: node9
+    ports: ["127.0.0.1:8009:8000"]
+    networks: {computers: {aliases: [node9-computers]}, printers: {}}
+  node10:
+    <<: *computer
+    hostname: node10
+    ports: ["127.0.0.1:8010:8000"]
+    networks: {computers: {aliases: [node10-computers]}, printers: {}}
+  node11:
+    <<: *computer
+    hostname: node11
+    ports: ["127.0.0.1:8011:8000"]
+    networks: {computers: {aliases: [node11-computers]}, printers: {}}
+  node12:
+    <<: *computer
+    hostname: node12
+    ports: ["127.0.0.1:8012:8000"]
+    networks: {computers: {aliases: [node12-computers]}, printers: {}}
+  node13:
+    <<: *computer
+    hostname: node13
+    ports: ["127.0.0.1:8013:8000"]
+    networks: {computers: {aliases: [node13-computers]}, printers: {}}
+  node14:
+    <<: *computer
+    hostname: node14
+    ports: ["127.0.0.1:8014:8000"]
+    networks: {computers: {aliases: [node14-computers]}, printers: {}}
+  node15:
+    <<: *computer
+    hostname: node15
+    ports: ["127.0.0.1:8015:8000"]
+    networks: {computers: {aliases: [node15-computers]}, printers: {}}
   printer1: {<<: *printer, hostname: printer1, ports: ["127.0.0.1:9001:8000"]}
   printer2: {<<: *printer, hostname: printer2, ports: ["127.0.0.1:9002:8000"]}
+  printer3: {<<: *printer, hostname: printer3, ports: ["127.0.0.1:9003:8000"]}
+  printer4: {<<: *printer, hostname: printer4, ports: ["127.0.0.1:9004:8000"]}
+  printer5: {<<: *printer, hostname: printer5, ports: ["127.0.0.1:9005:8000"]}
 
 networks:
   computers: {driver: bridge}

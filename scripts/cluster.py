@@ -28,8 +28,10 @@ async def wait_until(check, timeout=15, interval=0.03):
 
 
 class Cluster:
-    def __init__(self, count=3, seed=42, output=None, backend="local", gossip_interval=0.08):
+    def __init__(self, count=3, seed=42, output=None, backend="local", gossip_interval=0.08,
+                 printer_count=2):
         self.count, self.seed, self.backend = count, seed, backend
+        self.printer_count = printer_count
         self.output = Path(output or "data/test-run").resolve()
         self.output.mkdir(parents=True, exist_ok=True)
         self.log_dir = self.output / "logs"
@@ -37,7 +39,8 @@ class Cluster:
         self.gossip_interval = gossip_interval
         self.processes = {}
         self.files = []
-        names = [f"node{i}" for i in range(1, count + 1)] + ["printer1", "printer2"]
+        names = ([f"node{i}" for i in range(1, count + 1)] +
+                 [f"printer{i}" for i in range(1, printer_count + 1)])
         self.urls = {}
         if backend == "local":
             sockets = []
@@ -52,7 +55,8 @@ class Cluster:
                     sock.close()
         else:
             self.urls = {f"node{i}": f"http://127.0.0.1:{8000+i}" for i in range(1, count + 1)}
-            self.urls.update({f"printer{i}": f"http://127.0.0.1:{9000+i}" for i in (1, 2)})
+            self.urls.update({f"printer{i}": f"http://127.0.0.1:{9000+i}"
+                              for i in range(1, printer_count + 1)})
         self.alive = set(names)
         self.env = {**os.environ, "NUM_NODES": str(count), "SEED": str(seed),
             "GOSSIP_INTERVAL": str(gossip_interval), "RETRY_INTERVAL": "0.03",

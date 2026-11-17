@@ -19,7 +19,7 @@ class Node:
     def __init__(self):
         self.id = os.environ.get("NODE_ID", socket.gethostname())
         self.boot_id = f"{self.id}:{uuid.uuid4().hex}"
-        self.n = int(os.environ.get("NUM_NODES", "3"))
+        self.n = int(os.environ.get("NUM_NODES", "15"))
         self.port = int(os.environ.get("PORT", "8000"))
         self.seed = int(os.environ.get("SEED", "42"))
         self.rpc_timeout = float(os.environ.get("RPC_TIMEOUT", "0.8"))
@@ -34,7 +34,7 @@ class Node:
             raise ValueError("NODE_ID deve fazer parte da participação fixa")
         self.peers = sorted(set(self.peer_urls) - {self.id})
         self.printers = json.loads(os.environ.get("PRINTER_URLS", json.dumps({
-            "printer1": "http://printer1:8000", "printer2": "http://printer2:8000",
+            f"printer{i}": f"http://printer{i}:8000" for i in range(1, 6)
         })))
         self.log = EventLog(self.id, os.environ.get("LOG_DIR", "/data/logs"))
         self.session = None

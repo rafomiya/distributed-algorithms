@@ -49,30 +49,36 @@ def metadata(args):
         "gossip_interval": args.gossip_interval, "failure_loss": 0.2, "failure_delay_ms": 10,
         "gossip_fanout": int(os.environ.get("GOSSIP_FANOUT", "1")),
         "data_items": int(os.environ.get("DATA_ITEMS", "5")),
-        "topology": "malha completa de computadores e duas impressoras independentes"}
+        "topology": f"malha completa; computadores={args.nodes}; "
+                    f"impressoras={args.printers}"}
 
 
 def gossip_latencies(log_dir, job_ids, count):
     learned = defaultdict(dict)
+    origins = {}
     for path in Path(log_dir).glob("node*.jsonl"):
         for line in path.read_text().splitlines():
             event = json.loads(line)
             if event["event"] == "record_learned" and event["job_id"] in job_ids:
                 learned[event["job_id"]][event["node"]] = event["mono_ns"]
+                origins[event["job_id"]] = event["origin"]
     assert set(learned) == set(job_ids), "registro sem observação"
     result = []
     for job_id in job_ids:
         observations = learned[job_id]
         assert len(observations) == count, f"réplicas incompletas: {job_id}"
-        result.append((max(observations.values()) - min(observations.values())) / 1e6)
+        origin = origins[job_id]
+        assert origin in observations, f"nascimento local ausente: {job_id}"
+        result.append((max(observations.values()) - observations[origin]) / 1e6)
     return result
 
 
 async def trial(args, count, seed, scenario, output):
     async with Cluster(count=count, seed=seed, output=output, backend=args.backend,
-                       gossip_interval=args.gossip_interval) as cluster:
+                       gossip_interval=args.gossip_interval,
+                       printer_count=args.printers) as cluster:
         # Aquecimento separado da amostra: uma impressão e convergência completa.
-        warm_job = await cluster.submit("node1", "printer2", document="warmup.pdf")
+        warm_job = await cluster.submit("node1", "printer1", document="warmup.pdf")
         await cluster.completed(1)
         await cluster.converged([warm_job["job_id"]])
         await asyncio.sleep(args.warmup)
@@ -84,7 +90,7 @@ async def trial(args, count, seed, scenario, output):
             await cluster.partition(cluster.computers[:-1], cluster.computers[-1:])
         started = time.monotonic()
         submitted = await asyncio.gather(*(cluster.submit(node,
-            printer=f"printer{1 + (index % 2)}", document=f"{node}-{index}.pdf")
+            printer=f"printer{1 + (index % args.printers)}", document=f"{node}-{index}.pdf")
             for index in range(args.jobs_per_node) for node in cluster.computers))
         if scenario == "partition":
             await asyncio.sleep(args.partition_seconds)
@@ -174,6 +180,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--backend", choices=["docker", "local"], default="docker")
     parser.add_argument("--nodes", type=int, nargs="+", default=[3, 4, 5])
+    parser.add_argument("--printers", type=int, default=2)
     parser.add_argument("--seeds", type=int, nargs="+", default=[11, 22, 33])
     parser.add_argument("--scenarios", choices=["normal", "loss", "partition"], nargs="+", default=["normal", "loss"])
     parser.add_argument("--jobs-per-node", type=int, default=3)
@@ -183,8 +190,8 @@ if __name__ == "__main__":
     parser.add_argument("--timeout", type=float, default=30)
     parser.add_argument("--output", default="data/experiments/" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S"))
     args = parser.parse_args()
-    if any(n < 3 or n > 5 for n in args.nodes) or args.jobs_per_node < 1:
-        parser.error("use 3..5 nós e pelo menos um trabalho por nó")
+    if any(n < 3 or n > 15 for n in args.nodes) or not 1 <= args.printers <= 5 or args.jobs_per_node < 1:
+        parser.error("use 3..15 nós, 1..5 impressoras e pelo menos um trabalho por nó")
     if args.gossip_interval <= 0 or args.warmup < 0 or args.partition_seconds < 0 or args.timeout <= 0:
         parser.error("intervalos e timeout inválidos")
     asyncio.run(run(args))
