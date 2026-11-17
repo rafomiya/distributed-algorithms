@@ -29,7 +29,7 @@ excluding transport headers.
 
 ## Gossip
 
-| Scenario | Mean convergence (ms) | p50 (ms) | p95 (ms) | p99 (ms) | Push-pull exchanges | Application bytes |
+| Scenario | Mean convergence (ms) | p50 (ms) | p95 (ms) | p99 (ms) | Push-pull attempts | Application bytes |
 |---|---:|---:|---:|---:|---:|---:|
 | Normal | 260.71 ± 4.81 | 253.16 ± 18.46 | 347.84 ± 35.71 | 385.59 ± 21.07 | 319 ± 20 | 2,545,462 ± 285,273 |
 | 20% loss | 358.30 ± 2.49 | 347.53 ± 13.23 | 508.14 ± 7.69 | 573.76 ± 16.73 | 394 ± 21 | 3,004,593 ± 203,859 |
