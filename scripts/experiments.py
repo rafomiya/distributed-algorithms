@@ -87,7 +87,8 @@ async def trial(args, count, seed, scenario, output):
             for node in cluster.computers:
                 await cluster.request(node, "/fault", {"loss": 0.2, "delay_ms": 10})
         elif scenario == "partition":
-            await cluster.partition(cluster.computers[:-1], cluster.computers[-1:])
+            split = args.partition_split if args.partition_split is not None else count - 1
+            await cluster.partition(cluster.computers[:split], cluster.computers[split:])
         started = time.monotonic()
         submitted = await asyncio.gather(*(cluster.submit(node,
             printer=f"printer{1 + (index % args.printers)}", document=f"{node}-{index}.pdf")
@@ -187,11 +188,15 @@ if __name__ == "__main__":
     parser.add_argument("--warmup", type=float, default=0.5)
     parser.add_argument("--gossip-interval", type=float, default=0.08)
     parser.add_argument("--partition-seconds", type=float, default=0.4)
+    parser.add_argument("--partition-split", type=int, default=None,
+                        help="computers in the first partition group; defaults to N-1")
     parser.add_argument("--timeout", type=float, default=30)
     parser.add_argument("--output", default="data/experiments/" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S"))
     args = parser.parse_args()
     if any(n < 3 or n > 15 for n in args.nodes) or not 1 <= args.printers <= 5 or args.jobs_per_node < 1:
         parser.error("use 3..15 nós, 1..5 impressoras e pelo menos um trabalho por nó")
+    if args.partition_split is not None and any(not 1 <= args.partition_split < n for n in args.nodes):
+        parser.error("partition split must leave at least one computer in each group")
     if args.gossip_interval <= 0 or args.warmup < 0 or args.partition_seconds < 0 or args.timeout <= 0:
         parser.error("intervalos e timeout inválidos")
     asyncio.run(run(args))
